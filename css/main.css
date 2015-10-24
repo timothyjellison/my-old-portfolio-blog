@@ -45,6 +45,9 @@ body {
   background-color: #eee;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.side-projects-fader {
   opacity: 0;
   transition: .5s;
 }

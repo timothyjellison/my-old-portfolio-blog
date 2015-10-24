@@ -62,38 +62,41 @@
       <div class="col-sm-1"></div>
     </div>
   </div>
-    <div class="row side-projects" id="basic-waypoint">
-    <div class="col-sm-2 section-title">
-      <h2>Code</h2>
-    </div>
-    <div class="col-sm-3 project">
-      <a href="http://codepen.io/collection/ANqZZG/" target="_blank"><h3>CodePen</h3><img src="http://i.imgur.com/PalF0eC.jpg" /></a>
-    </div>
-    <div class="col-sm-3 project">
-      <a href="https://github.com/timothyjellison/" target="_blank"><h3>Github</h3><img src="http://i.imgur.com/bjSiRoX.jpg" /></a>
-    </div>
-    <div class="col-sm-3 project">
-      <a href="http://www.mcle.org" target="_blank"><h3>MCLE</h3><img src="http://i.imgur.com/ehwuOqL.jpg" /></a>
-    </div>
-        <div class="col-sm-1">
-      <h3></h3>
+  <div class="row side-projects" id="basic-waypoint">
+    <div class="side-projects-fader">
+      <div class="col-sm-2 section-title">
+        <h2>Code</h2>
+      </div>
+      <div class="col-sm-3 project">
+        <a href="http://codepen.io/collection/ANqZZG/" target="_blank"><h3>CodePen</h3><img src="http://i.imgur.com/PalF0eC.jpg" /></a>
+      </div>
+      <div class="col-sm-3 project">
+        <a href="https://github.com/timothyjellison/" target="_blank"><h3>Github</h3><img src="http://i.imgur.com/bjSiRoX.jpg" /></a>
+      </div>
+      <div class="col-sm-3 project">
+        <a href="http://www.mcle.org" target="_blank"><h3>MCLE</h3><img src="http://i.imgur.com/ehwuOqL.jpg" /></a>
+      </div>
+      <div class="col-sm-1">
+        
+      </div>
     </div>
   </div>
   <div class="row side-projects">
-    <div class="col-sm-2 section-title">
-      <h2>Side Projects</h2>
-    </div>
-    <div class="col-sm-3 project">
-      <a href="http://blog.pshares.org/index.php/author/timellison/" target="_blank"><h3>Blogger</h3><img src="http://i.imgur.com/BqTHPx0.jpg" /></a>
-    </div>
-    <div class="col-sm-3 project">
-      <a href="http://www.strangeletjournal.com/" target="_blank"><h3>Editor</h3><img src="http://i.imgur.com/UrJ07he.jpg" /></a>
-    </div>
-    <div class="col-sm-3 project">
-      <a href="https://www.facebook.com/groups/free.code.camp.boston/" target="_blank"><h3>Code Camper</h3><img src="http://i.imgur.com/ZrXXk6b.jpg" /></a>
-    </div>
-        <div class="col-sm-1">
-      <h3></h3>
+    <div class="side-projects-fader">
+      <div class="col-sm-2 section-title">
+        <h2>Side Projects</h2>
+      </div>
+      <div class="col-sm-3 project">
+        <a href="http://blog.pshares.org/index.php/author/timellison/" target="_blank"><h3>Blogger</h3><img src="http://i.imgur.com/BqTHPx0.jpg" /></a>
+      </div>
+      <div class="col-sm-3 project">
+        <a href="http://www.strangeletjournal.com/" target="_blank"><h3>Editor</h3><img src="http://i.imgur.com/UrJ07he.jpg" /></a>
+      </div>
+      <div class="col-sm-3 project">
+        <a href="https://www.facebook.com/groups/free.code.camp.boston/" target="_blank"><h3>Code Camper</h3><img src="http://i.imgur.com/ZrXXk6b.jpg" /></a>
+      </div>
+      <div class="col-sm-1">
+      </div>
     </div>
   </div>
   <div class="row education">
@@ -133,10 +136,11 @@
       element: document.getElementById('basic-waypoint'),
       handler: function() {
         if (!triggered) {
-          $('.side-projects').css("opacity", "1");
+          $('.side-projects-fader').css("opacity", "1");
           triggered = !triggered;
         }
-      }
+      },
+      offset: 250
     });
   </script>
 </body>
