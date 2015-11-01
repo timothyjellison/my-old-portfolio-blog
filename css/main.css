@@ -3,19 +3,48 @@ body {
   font-family: 'Slabo 27px', serif;
 }
 
+.container-fluid {
+  width: 100%;
+}
+
 .jumbotron {
-  position: relative;
   background: #ddd url("http://tells1.tk/_images/jumbotron-bg.JPG") center center;
   background-size: cover;
   overflow: hidden;
+  font-family: 'Helvetica', sans-serif;
+  padding: 0px;
+  height: 300px;
+  width: 100%;
+  margin-right: 0px;
 }
 
 .jumbotron h1 {
+  margin-top: 1em;
+  margin-left: 36px;
   color: #fff;
 }
 
 .jumbotron small {
   color: #ddd;
+}
+
+.btn-group {
+  margin-top: 1em;
+  margin-left: 36px;
+}
+
+a[type="button"]{
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  margin: 5px 5px;
+  padding: 16px;
+  font-size: 14px;
+}
+
+a[type="button"]:hover{
+  background-color: rgba(200,200,200,0.5);
+  color: white;
 }
 
 .row {
@@ -62,4 +91,39 @@ body {
 .footer p {
   padding: 1em;
   font-size: 120%;
+}
+
+@media screen and (min-width: 768px){
+  .jumbotron {
+    height: 500px;
+  }
+
+  a[type="button"]{
+    border: 5px solid white;
+    margin: 8px 8px;
+    padding: 22px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 992px){
+  a[type="button"]{
+    background-color: transparent;
+    border: 5px solid white;
+    color: white;
+    margin: 10px 10px;
+    padding: 26px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .jumbotron h1 {
+    font-size: 52px;
+  }
+  small:before {
+    content: '\A';
+    white-space: pre;
+    margin-bottom: 20px;
+  }
 }
