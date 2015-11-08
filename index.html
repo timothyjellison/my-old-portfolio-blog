@@ -7,99 +7,111 @@
   <link href="css/bootstrap.min.css" rel="stylesheet"/>
   <link href="css/main.css" rel="stylesheet" />
   <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
   <script src="js/bootstrap.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <!-- Generic JS <script src=""></script> -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-sanitize.js"></script>
+  <script src="js/main.js" ></script>
 </head>
 <body>
-      <div class="jumbotron">
-      <h1>Tim Ellison <small>front-end developer</small></h1>
-      <div class="btn-group" role="group">
-        <a href="https://github.com/timothyjellison" target="_blank" type="button" class="btn btn-default">Github</a>
-        <a href="http://codepen.io/collection/ANqZZG/" target="_blank" type="button" class="btn btn-default">CodePen</a>
-        <a href="https://www.linkedin.com/in/timothyjellison" target="_blank" type="button" class="btn btn-default">LinkedIn</a>
-        <a href="mailto:timothyellison85@gmail.com" type="button" class="btn btn-info">Email Me</a>
-      </div>
+  <div class="jumbotron">
+    <h1>Tim Ellison <br/><small>junior front-end developer</small></h1>
+    <div class="btn-group" role="group">
+      <a href="https://github.com/timothyjellison" target="_blank" type="button" class="btn btn-default">Github</a>
+      <a href="http://codepen.io/collection/ANqZZG/" target="_blank" type="button" class="btn btn-default">CodePen</a>
+      <a href="https://www.linkedin.com/in/timothyjellison" target="_blank" type="button" class="btn btn-default">LinkedIn</a>
+      <a href="mailto:timothyellison85@gmail.com" type="button" class="btn btn-info">Email Me</a>
     </div>
+  </div>
+  
   <div class="container-fluid">
 
-    <div class="row skills">
-      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
-        <h3 class="skill-group-head">Proficient</h3>
-          <h4>HTML (Haml &amp; Jade)</h4>
-          <h4>CSS (Sass &amp; Less)</h4>
-          <h4>JavaScript (basic Coffeescript)</h4>
-          <h4>jQuery</h4>
-          <h4>Bootstrap</h4>
-          <h4>Git</h4>
-          <h4>Photoshop</h4>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
-        <h3 class="skill-group-head">Learning</h3>
-        <h4>MEAN Stack</h4>
-        <h4>Ember</h4>
-        <h4>Backbone</h4>
-        <h4>d3</h4>
-        <h4>Illustrator &amp; Vector Graphics</h4>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <h3 class="skill-group-head">Soft Skills</h3>
-        <h4>Writing (business, academic, and creative)</h4>
-        <h4>Public Speaking</h4>
-        <h4>Teaching</h4>
-        <h4>Languages (basic Spanish, Italian, French, and German; proficient Latin and Ancient Greek)</h4>
+    <div class="row about-me">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 about-me">
+        <p>I'm Tim Ellison, and I want to be your next junior front-end developer.</p>
+        <p>With nearly two years of professional experience making eBooks and HTML emails, I'm ready to help with your website or web app.</p>
+        <p>See some of my projects below, or <a href="mailto:timothyellison85@gmail.com">contact me now</a>.</p>
       </div>
     </div>
-    <div class="row side-projects">
-      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 project">
-        <a href="http://codepen.io/collection/ANqZZG/" target="_blank"><h4>CodePen</h4><img class="img-responsive" src="http://i.imgur.com/PalF0eC.jpg" /></a>
+
+    <div class="row search-wikipedia">
+
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 search-wikipedia">
+        <p>This little app searches Wikipedia using AngularJS and JSON. Built as a project for <a class="light" href="http://www.freecodecamp.org" target="_blank">Free Code Camp</a>, it demonstrates practical ability in HTML, CSS, and Javascript. <a class="light" href="http://codepen.io/tellison/pen/OyZrJz" target="_blank">See the full version on CodePen.</a>
       </div>
-      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 project">
-        <a href="https://github.com/timothyjellison/" target="_blank"><h4>Github</h4><img class="img-responsive" src="http://i.imgur.com/bjSiRoX.jpg" /></a>
+
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  pull-left" ng-app="myApp" ng-controller="myController as myCtrl">
+       <div class="well well-md">
+        <label for="searchTerm">Search Wikipedia</label>
+        <div class="input-group" id="searchBar">
+          <input type="text" class="form-control" id="searchTerm" data-ng-model="searchTerm"></input>
+          <span class="input-group-btn">
+            <button class="btn btn-info" data-ng-click="search(searchTerm)"><i class="glyphicon glyphicon-search"></i> Search</button>
+          </span>
+        </div>
+       </div> 
+       <div class="well searchResult" ng-repeat="datum in data | limitTo:quantity">
+        <a href="https://en.wikipedia.org/wiki/{{datum.title}}" target="_blank">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3>{{datum.title}}</h3>
+            </div>
+            <div class="panel-body">
+              <h4 ng-bind-html="datum.snippet"></h4>
+            </div>
+          </div>
+        </a>
       </div>
-      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 project">
-        <a href="https://www.facebook.com/groups/free.code.camp.boston/" target="_blank"><h4>Free Code Camp</h4><img class="img-responsive" src="http://i.imgur.com/ZrXXk6b.jpg" /></a>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 project">
-        <a href="http://www.mcle.org" target="_blank"><h4>MCLE</h4><img class="img-responsive" src="http://i.imgur.com/ehwuOqL.jpg" /></a>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 project">
-        <a href="http://blog.pshares.org/index.php/author/timellison/" target="_blank"><h4>Blogging</h4><img class="img-responsive" src="http://i.imgur.com/BqTHPx0.jpg" /></a>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-3 project">
-        <a href="http://www.strangeletjournal.com/" target="_blank"><h4>Editing</h4><img class="img-responsive" src="http://i.imgur.com/UrJ07he.jpg" /></a>
       </div>
     </div>
-    <div class="row education">
-      <div class="col-sm-2 section-title">
-        <h2>Education</h2>
+
+    <div class="row tic-tac-toe">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 tic-tac-toe-board">
+        <div class="board">
+          <div id="a" class="block"> </div>
+          <div id="b" class="block"></div>
+          <div id="c" class="block"></div>
+          <div id="d" class="block"></div>
+          <div id="e" class="block"></div>
+          <div id="f" class="block"></div>
+          <div id="g" class="block"></div>
+          <div id="h" class="block"></div>
+          <div id="i" class="block"></div>
+        </div>
       </div>
-      <div class="col-sm-10">
-        <h3>Yale University</h3>
-          <h4>M.A. in Comparative Literature, 2009-2012</h4>
-        <h3>California State University, Fresno</h3>
-          <h4>B.A. in Classical Languages and Literatures with a minor in English, 2003-2008</h4>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 tic-tac-toe-description">
+        <p>How about a game of Tic-Tac-Toe? Jade and Sass make for ultra-clean markup, and the game mechanics and AI are written in JavaScript. <a href="http://codepen.io/tellison/pen/EVRyrB" target="_blank">See the full version on CodePen.</a></p> 
       </div>
     </div>
-    <div class="row work">
-      <div class="col-sm-2 section-title">
-        <h2>Relevant Work Experience</h2>
+
+    <div class="row bootstrap-and-more">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 bootstrap-and-more">
+        <p>And this site was designed with Bootstrap...</p>
       </div>
-      <div class="col-sm-9">
-        <h3>Massachusetts Continuing Legal Education (MCLE)</h3>
-          <h4>Marketing Manager, March 2015 - Present</h4>
-          <p>Design and production of electronic marketing materials, especially HTML emails and web pages (using HTML, CSS, XML, and Cold Fusion); Managing design and production of all print marketing materials, including our quarterly catalog, print brochures, event posters, etc.; Maintaining all marketing department schedules and coordinating with vendors; Ad hoc projects as assigned by the executive director (e.g. marketing analytics reports, sales reports, etc.)</p>
-          <h4>Online Publications Production Assistant, May 2014 - March 2015</h4>
-          <p>Conversion of all MCLE print publications to epub and mobi formats (Using HTML, CSS, XML, and some JavaScript tools I developed myself); Production of marketing emails (using HTML and CSS); Maintenance of MCLE's Online Library, requiring database work in Microsoft Excel and Access</p>
-          <h4><a href="https://www.linkedin.com/in/timothyjellison" target="_blank">See my LinkedIn profile for full details</a></h4>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 bootstrap-and-more">
+        <p>so it's responsive and mobile-friendly.</p>
       </div>
-      <div class="col-sm-1"></div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 bootstrap-and-more">
+        <p>Go ahead: resize your browser...</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 bootstrap-and-more">
+        <p>and watch everything adjust gracefully.</p>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bootstrap-and-more">
+        <p></p>
+      </div>
     </div>
+
   </div>
   <footer class="footer">
     <div class="container">
       <p class="text-muted">&copy; 2015 Tim Ellison</p>
     </div>
   </footer>
+  <script>
+function Block(o,n,e){this.name=o,this.row=n,this.column=e,this.owner="none",this.owned=!1}function reset(){blocks.forEach(function(o){$("#"+o.name).css("background-color","#fff"),$("#"+o.name).css("border-radius","0%"),$("#"+o.name).css("transform","rotate(-360deg)"),o.owned=!1,o.owner="none"}),moveCount=0,playerTurn=!0}function computerTurn(){function o(o,n){var e=blocks.filter(function(e){return e[n]==o});return e}function n(n,t){function u(o){var e=0,c=0;if(o.forEach(function(o){0==o.owned?c++:"player"==o.owner&&e++}),e==n&&c==t){var u=o.filter(function(o){return 0==o.owned});0==playerTurn&&0==r&&(r=!0,setTimeout(function(){markBlock("#"+u[0].name)},1e3))}}var l=[1,2,3];l.forEach(function(e){var c=["row","column"];c.forEach(function(c){var u=0,a=0;if(o(e,c).forEach(function(o){0==o.owned?a++:"player"==o.owner&&u++}),u==n&&a==t){var i=o(e,c).filter(function(o){return 0==o.owned});0==playerTurn&&0==r&&(r=!0,setTimeout(function(){markBlock("#"+i[0].name)},1e3))}})}),u([a,e,i]),u([c,e,g])}var r=!1;0==e.owned&&0==playerTurn&&0==r&&(r=!0,setTimeout(function(){markBlock("#e")},1e3)),n(0,1),n(2,1),9>moveCount&&!gameover&&0==r&&setTimeout(function(){do var o=Math.floor(3*Math.random())+1,n=Math.floor(3*Math.random())+1,e=blocks.filter(function(n){return n.column==o}).filter(function(o){return o.row==n});while(e[0].owned);markBlock("#"+e[0].name)},1e3),9==moveCount&&setTimeout(function(){reset()},2e3)}function markBlock(o){function n(o,n){$(o).css("background-color",n),$(o).css("transform","rotate(360deg"),$(o).css("border-radius","50%")}var e=blocks.filter(function(n){return n.name==$(o).attr("id")});e[0].owned||(playerTurn?(playerTurn=!playerTurn,e[0].owned=!0,e[0].owner="player",n(o,playerColor)):(playerTurn=!playerTurn,e[0].owned=!0,e[0].owner="computer",n(o,computerColor))),moveCount++,checkForWin()}function checkForWin(){function o(o){gameover=!0,setTimeout(function(){"player"==o?$(".announcements").text("You win!"):"computer"==o&&$(".announcements").text("You lose :-("),reset()},900)}function n(n,e){var r=blocks.filter(function(o){return o[e]==n});"player"==r[0].owner&&r[0].owned&&r[1].owned&&r[2].owned&&r[0].owner==r[1].owner&&r[1].owner==r[2].owner?o("player"):"computer"==r[0].owner&&r[0].owned&&r[1].owned&&r[2].owned&&r[0].owner==r[1].owner&&r[1].owner==r[2].owner&&o("computer")}function r(n){e.owner==n&&(a.owner==e.owner&&i.owner==e.owner?o(n):c.owner==e.owner&&g.owner==e.owner&&o(n))}for(var t=1;3>=t;)r("player"),r("computer"),n(t,"row"),n(t,"column"),t++}var playerColor="#4488AD",computerColor="#F6C237",playerTurn=!0,moveCount=0,gameover=!1,a=new Block("a",1,1),b=new Block("b",1,2),c=new Block("c",1,3),d=new Block("d",2,1),e=new Block("e",2,2),f=new Block("f",2,3),g=new Block("g",3,1),h=new Block("h",3,2),i=new Block("i",3,3),blocks=[a,b,c,d,e,f,g,h,i];$(".block").on("click",function(){0==moveCount&&$(".announcements").fadeOut("slow",function(){$(this).text(""),$(this).fadeIn("fast")}),playerTurn&&(gameover=!1,markBlock(this),computerTurn()),9==moveCount&&setTimeout(function(){reset()},2e3)});
+  </script>
 </body>
 </html>
+

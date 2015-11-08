@@ -10,8 +10,8 @@ body {
 .jumbotron {
   background: #ddd url("http://tells1.tk/_images/jumbotron-bg.JPG") center center;
   background-size: cover;
-  overflow: hidden;
-  font-family: 'Helvetica', sans-serif;
+  overflow: hidden; 
+  font-family: 'Montserrat', sans-serif;
   padding: 0px;
   height: 300px;
   width: 100%;
@@ -25,7 +25,7 @@ body {
 }
 
 .jumbotron small {
-  color: #ddd;
+  color: #eee;
 }
 
 .btn-group {
@@ -51,37 +51,88 @@ a[type="button"]:hover{
   padding-left: 2em;
 }
 
-.work p {
-  font-size: 150%;
+.row.about-me {
+  padding-bottom: 4em;
 }
 
-.work p+h4 {
-  padding-top: 15px;
+p {
+  font-size: 4em;
+  margin: 1em 2em;
 }
 
-.side-projects {
-  background-color: #eee;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.side-projects img {
-  border: 3px solid #333;
-  border-radius: 5px;
-}
-
-.side-projects img:hover{
-  border: 3px solid #111;
-}
-
-.skill-group-head {
+.boom {
   font-weight: bold;
+}
+
+label {
+  font-size: 3em;
+}
+
+.searchmatch {
+  font-weight: bold;
+}
+
+a.light {
+  color: #ddd;
+}
+
+.row.search-wikipedia {
+  padding-top: 6em;
+  padding-bottom: 1em;
+  background-color: #29749C;
+}
+
+.search-wikipedia p {
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 1em;
+  color: white;
+}
+
+.searchResult a, .searchResult a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.row.tic-tac-toe {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.board {
+  height: 32.5em;
+  width: 32.5em;
+  margin-left: 25%;
+  margin-top: 3em;
+}
+
+.block {
+  height: 10em;
+  width: 10em;
+  margin: 0.4em;
+  float: left;
+  border: 1px solid black;
+  transition: 0.75s;
+  background-color: white;
+}
+
+.block:nth-of-type(4), .block:nth-of-type(7) {
+  clear: left;
+}
+
+.tic-tac-toe-description {
+  padding-top: 0em;
+  margin-top: 0em;
+}
+
+.row.bootstrap-and-more {
+  background-color: #F6C237;
 }
 
 .footer {
   background-color: #222;
   color: #fff;
-  margin-top: 5px;
+  margin-bottom: 0;
 }
 
 .footer .container {
@@ -93,20 +144,12 @@ a[type="button"]:hover{
   font-size: 120%;
 }
 
-@media screen and (min-width: 768px){
+
+@media screen and (min-width: 1200px){
   .jumbotron {
-    height: 500px;
+    height: 600px;
   }
 
-  a[type="button"]{
-    border: 5px solid white;
-    margin: 8px 8px;
-    padding: 22px;
-    font-size: 18px;
-  }
-}
-
-@media screen and (min-width: 992px){
   a[type="button"]{
     background-color: transparent;
     border: 5px solid white;
@@ -117,14 +160,62 @@ a[type="button"]:hover{
   }
 }
 
+@media screen and (max-width: 1200px){
+  .jumbotron {
+    height: 600px;
+  }
+
+  a[type="button"]{
+    border: 5px solid white;
+    margin: 8px 8px;
+    padding: 22px;
+    font-size: 18px;
+  }
+
+
+  p {
+    margin: 0em 0em;
+    padding: 0.5em 0.25em;
+    font-size: 3em;
+  }
+
+  .search-wikipedia p, .tic-tac-toe-description p {
+    line-height: 175%;
+  }
+
+  .board {
+    margin-left: 15%;
+  }
+}
+
 @media screen and (max-width: 768px){
+  .jumbotron {
+    height: 400px;
+  }
+
   .jumbotron h1 {
     font-size: 52px;
   }
-  small:before {
-    content: '\A';
-    white-space: pre;
-    margin-bottom: 20px;
+
+
+  p {
+    margin: 0em 0em;
+    padding: 0.5em 0.25em;
+    font-size: 3em;
+  }
+
+  .board {
+    margin-left: 10%;
+  }
+
+
+  a[type="button"]{
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+    margin: 8px 8px;
+    padding: 8px;
+    font-size: 16px;
   }
 }
 
@@ -136,9 +227,11 @@ a[type="button"]:hover{
   small {
     font-size: 24px;
   }
-  small:before {
-    content: '\A';
-    white-space: pre;
+
+  p {
+    margin: 0em;
+    padding: 0em 0.25em;
+    font-size: 3em;
   }
 
   a[type="button"]{
@@ -150,3 +243,5 @@ a[type="button"]:hover{
     font-size: 12px;
   }
 }
+
+
