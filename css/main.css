@@ -1,6 +1,5 @@
 body {
   font-size: 100%;
-  font-family: 'Slabo 27px', serif;
 }
 
 .container-fluid {
@@ -56,6 +55,7 @@ a[type="button"]:hover{
 }
 
 p {
+  font-family: 'Neuton', serif;
   font-size: 4em;
   margin: 1em 2em;
 }
@@ -205,8 +205,8 @@ a.light {
   }
 
   .board {
-    height: 26em;
-    width: 26em;
+    height: 27em;
+    width: 27em;
     margin-left: 10%;
   }
 
