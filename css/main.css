@@ -200,12 +200,24 @@ a.light {
 
   p {
     margin: 0em 0em;
-    padding: 0.5em 0.25em;
+    padding: 0.5em 0.15em;
     font-size: 3em;
   }
 
   .board {
+    height: 26em;
+    width: 26em;
     margin-left: 10%;
+  }
+
+  .block {
+    height: 8em;
+    width: 8em;
+    margin: 0.4em;
+  }
+
+  .search-wikipedia p, .tic-tac-toe-description p {
+    line-height: 150%;
   }
 
   a[type="button"]{
@@ -229,20 +241,24 @@ a.light {
 
   p {
     margin: 0em;
-    padding: 0em 0.25em;
+    padding: 0em 0.15em;
     font-size: 3em;
   }
 
   .board {
     height: 24em;
     width: 24em;
-    margin-left: 15%;
+    margin-left: 5%;
   }
 
   .block {
     height: 7em;
     width: 7em;
     margin: 0.4em;
+  }
+
+  .search-wikipedia p, .tic-tac-toe-description p {
+    line-height: 125%;
   }
 
   a[type="button"]{
