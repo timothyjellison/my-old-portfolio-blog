@@ -43,7 +43,7 @@ MAJOR SECTIONS
 ***********/
 
 .jumbotron {
-  background: #ddd url("http://tells1.tk/_images/jumbotron-bg.JPG") center center;
+  background: #ddd url("http://timothyjellison.github.io/images/jumbotron-bg.JPG") center center;
   background-size: cover;
   overflow: hidden; 
   font-family: 'Montserrat', sans-serif;
@@ -92,13 +92,13 @@ MAJOR SECTIONS
 /* WIKIPEDIA SEARCH
 ******************/
 
-.row.search-wikipedia {
+.row.search-wikipedia, .row.basics {
   padding-top: 6em;
   padding-bottom: 1em;
   background-color: #29749C;
 }
 
-.search-wikipedia p {
+.search-wikipedia p, .row.basics p {
   padding-top: 0;
   margin-top: 0;
   padding-bottom: 1em;
@@ -157,16 +157,14 @@ MAJOR SECTIONS
 
 .row.more-links-and-contact {
   padding-top: 4em;
-  text-align: center;
   padding-bottom: 1em;
-  background-color: #29749C;
+  background-color: #FFF;
 }
 
 .more-links-and-contact p {
   padding-top: 0;
   margin-top: 0;
   padding-bottom: 1em;
-  color: white;
 }
 
 /* FOOTER
