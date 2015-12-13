@@ -1,0 +1,77 @@
+body {
+	font-family: 'Libre Baskerville', serif;
+	background-color: rgb(254, 254, 243);
+}
+
+.navbar {
+	background-color: rgb(254, 254, 243);
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+#myCarousel {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+#myCarousel img {
+	margin: 0 auto;
+}
+
+.row-main {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.post {
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0;
+}
+
+.post-title {
+	color: #903;
+}
+
+.post-subtitle {
+	font-style: italic; 
+}
+
+.post.last-post {
+	border: 0;
+}
+
+.post p, .post h2, .post h3, .post figure {
+	padding: 10px;
+}
+
+.post h3 {
+	padding-bottom: 0px;
+}
+
+.last-post p {
+	padding-top: 0px;
+}
+
+figure {
+	float: left;
+}
+
+figcaption {
+	padding: 4px 0 0 0;
+	text-align: center;
+}
+
+.footer {
+	background-color: #333;
+}
+
+.footer p {
+	color: #eff;
+}
