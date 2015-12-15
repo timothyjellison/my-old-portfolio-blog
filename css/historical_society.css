@@ -70,8 +70,49 @@ figcaption {
 
 .footer {
 	background-color: #333;
+	margin: 0 auto;
 }
 
-.footer p {
-	color: #eff;
+.footer ul {
+	vertical-align: top;
+	display: inline-block;
+	padding: 0 15%;
+	margin-top: 20px;
+}
+
+.footer li {
+	list-style: none;
+	line-height:1.5em;
+	float:left;
+	display:inline;
+}
+
+.footer li a {
+	color: #dee;
+}
+
+.links li {
+	width: 33.33%;
+}
+
+@media screen and (max-width: 900px) {
+	.footer ul {
+		padding: 0 10%;
+	}
+
+	.links li {
+		width: 50%;
+		padding: 0px 20px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.footer ul {
+		padding: 0 5%;
+	}
+
+	.links li {
+		width: 50%;
+		padding: 0px 20px;
+	}
 }
