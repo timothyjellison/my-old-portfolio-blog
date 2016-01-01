@@ -15,8 +15,8 @@ h1 {
 
 p {
   font-family: 'Neuton', serif;
-  font-size: 4em;
-  margin: 1em 2em;
+  font-size: 3em;
+  margin: 1em 4em;
 }
 
 label {
@@ -51,6 +51,7 @@ MAJOR SECTIONS
   height: 300px;
   width: 100%;
   margin-right: 0px;
+  margin-bottom: 0px;
 }
 
 .jumbotron h1 {
@@ -86,7 +87,38 @@ MAJOR SECTIONS
 **********/
 
 .row.about-me {
-  padding-bottom: 4em;
+  margin-top: 0;
+  background-color: #eeeeff;
+}
+
+.about-me img {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  float: left;
+  margin: 3em 4em 0 6em;
+}
+
+.about-me p + ul {
+  clear-left;
+}
+
+.about-me ul {
+  float: left;
+}
+
+.about-me li {
+  font-family: 'Neuton', serif;
+  font-size: 3em;
+  margin: 0 1em;
+  padding-top: 0;
+  border: none;
+  background-color: inherit;
+}
+
+.about-me ul + p {
+  padding-top: 0.75em;
+  clear: left;
 }
 
 /* WIKIPEDIA SEARCH
@@ -120,6 +152,7 @@ MAJOR SECTIONS
 .row.tic-tac-toe {
   padding-top: 4em;
   padding-bottom: 4em;
+  background-color: #eeeeff;
 }
 
 .board {
@@ -158,7 +191,7 @@ MAJOR SECTIONS
 .row.more-links-and-contact {
   padding-top: 4em;
   padding-bottom: 1em;
-  background-color: #FFF;
+  background-color: #eeeeff;
 }
 
 .more-links-and-contact p {
@@ -196,7 +229,7 @@ MEDIA QUERIES
 
 @media screen and (min-width: 1200px){
   .jumbotron {
-    height: 600px;
+    height: 500px;
   }
 
   .jumbotron a[type="button"]{
@@ -214,7 +247,7 @@ MEDIA QUERIES
 
 @media screen and (max-width: 1200px){
   .jumbotron {
-    height: 600px;
+    height: 500px;
   }
 
   .jumbotron a[type="button"]{
@@ -233,6 +266,12 @@ MEDIA QUERIES
   h1 {
     margin: 0em 0em;
     padding: 0.5em 0.25em;
+  }
+
+  .about-me img {
+    height: 200px;
+    width: 200px;
+    margin: 1em 1em 0 0;
   }
 
   .search-wikipedia p, .tic-tac-toe-description p {
@@ -260,12 +299,34 @@ MEDIA QUERIES
   p {
     margin: 0em 0em;
     padding: 0.5em 0.15em;
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   h1 {
     margin: 0em 0em;
     padding: 0.5em 0.15em;
+  }
+
+  .row.about-me *  {
+    padding-left: 0;
+  }
+
+  .about-me img {
+    height: 150px;
+    width: 150px;
+    margin: 1em 1em 0 0;
+  }
+
+  .about-me p+ul {
+    margin-top: 1em;
+  }
+
+  .about-me ul:nth-of-type(1), .about-me ul:nth-of-type(2) {
+    margin-bottom: 0;
+  }
+
+  .about-me ul li {
+    font-size: 2.5em;
   }
 
   .board {
@@ -298,18 +359,31 @@ MEDIA QUERIES
 *********************/
 
 @media screen and (max-width: 430px){
+  .jumbotron {
+    height: 200px;
+  }
+
   .jumbotron h1 {
     font-size: 36px;
+  }
+
+  .jumbotron a[type="button"]{
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+    margin: 5px 5px;
+    padding: 5px;
+    font-size: 12px;
   }
 
   small {
     font-size: 24px;
   }
 
+
   p {
     margin: 0em;
     padding: 0em 0.15em;
-    font-size: 3em;
   }
 
   h1 {
@@ -331,14 +405,5 @@ MEDIA QUERIES
 
   .search-wikipedia p, .tic-tac-toe-description p {
     line-height: 125%;
-  }
-
-  .jumbotron a[type="button"]{
-    background-color: transparent;
-    border: 3px solid white;
-    color: white;
-    margin: 5px 5px;
-    padding: 5px;
-    font-size: 12px;
   }
 }
