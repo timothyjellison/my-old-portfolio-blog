@@ -9,7 +9,7 @@
   <link href="css/main.css" rel="stylesheet" />
   <link href='https://fonts.googleapis.com/css?family=Neuton' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
   <script src="js/bootstrap.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-sanitize.js"></script>
@@ -30,18 +30,16 @@
     <div class="row about-me">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 about-me">
         <img src="images/profile_photo.jpg" />
-        <p>I'm Tim Ellison, and I want to build your next site, app, or web-based service.</p>
+        <p>I build fast, mobile-friendly sites that look great on all devices and browsers.</p>
         <ul class="list-group">
           <li class="list-group-item">- HTML5</li>
           <li class="list-group-item">- CSS3</li>
-          <li class="list-group-item">- Sass, SCSS, Less</li>
           <li class="list-group-item">- Bootstrap</li>
         </ul>
         <ul class="list-group">
           <li class="list-group-item">- JavaScript</li>
           <li class="list-group-item">- jQuery</li>
           <li class="list-group-item">- AngularJS</li>
-          <li class="list-group-item">- Node.js</li>
         </ul>
         <ul class="list-group">
           <li class="list-group-item">- Design</li>
@@ -52,73 +50,24 @@
     </div>
 
     <div class="row basics">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <h1>HTML5 &amp; CSS3</h1>
-        <p>My sites are fast and responsive so they look great on all browsers and devices.</p>
-        <p><a class="light" href="http://www.timothyellison.com/historical_society/index.html" target="_blank">Here's my mock-up site for a local historical society. >></a></p>
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <div class="sample sample_one"><a class="light" href="http://www.timothyellison.com/historical_society/index.html" target="_blank"><img src='images/historical_society.png' class="img img-responsive"/><br/>mock-up for a local historical society</a></div>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <div class="sample sample_two"><a class="light" href="http://codepen.io/tellison/full/OyZrJz/" target="_blank"><img src='images/wiki_viewer.png' class="img img-responsive"/><br/>Wikipedia search tool</a></div>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <div class="sample sample_three"><a class="light" href="http://www.timothyellison.com/simon_clone" target="_blank"><img src='images/simon_clone.png' class="img img-responsive"/><br/>clone of the game Simon</a></div>
       </div>
     </div>
 
-    <div class="row tic-tac-toe">
-      <div class="col-md-6 col-md-push-6 tic-tac-toe-description">
-        <h1>JavaScript &amp; jQuery</h1>
-        <p>How about a game of Tic-Tac-Toe? <a href="http://www.timothyellison.com/simon_clone" target="_blank">Or take a trip to the past and play a game of Simon. >></a></p> 
-      </div>
-      <div class="col-md-6 col-md-pull-6 tic-tac-toe-board">
-        <div class="board">
-          <div id="a" class="block"> </div>
-          <div id="b" class="block"></div>
-          <div id="c" class="block"></div>
-          <div id="d" class="block"></div>
-          <div id="e" class="block"></div>
-          <div id="f" class="block"></div>
-          <div id="g" class="block"></div>
-          <div id="h" class="block"></div>
-          <div id="i" class="block"></div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="row search-wikipedia">
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 search-wikipedia">
-        <h1>Angular &amp; AJAX</h1>
-        <p>This little app searches Wikipedia using AngularJS and JSON. <a class="light" href="http://codepen.io/tellison/pen/OyZrJz" target="_blank">See the full version on CodePen. >></a>
-      </div>
-
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  pull-left" ng-app="myApp" ng-controller="myController as myCtrl">
-       <div class="well well-md">
-        <label for="searchTerm">Search Wikipedia</label>
-        <div class="input-group" id="searchBar">
-          <input type="text" class="form-control" id="searchTerm" data-ng-model="searchTerm"></input>
-          <span class="input-group-btn">
-            <button class="btn btn-info" data-ng-click="search(searchTerm)"><i class="glyphicon glyphicon-search"></i> Search</button>
-          </span>
-        </div>
-       </div> 
-       <div class="well searchResult" ng-repeat="datum in data | limitTo:quantity">
-        <a href="https://en.wikipedia.org/wiki/{{datum.title}}" target="_blank">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3>{{datum.title}}</h3>
-            </div>
-            <div class="panel-body">
-              <h4 ng-bind-html="datum.snippet"></h4>
-            </div>
-          </div>
-        </a>
-      </div>
-      </div>
-    </div>
-
-
-    <div class="row more-links-and-contact">
+    <div class="row contact-info">
       <div class="col-xs-12 more-links-and-contact">
-        <p>See my full portfolio on <a href="https://github.com/timothyjellison" target="_blank">Github</a> and <a href="http://codepen.io/collection/ANqZZG/" target="_blank">CodePen</a>.</p>
+        <p><br/><br/>See my full portfolio on <a href="https://github.com/timothyjellison" target="_blank">Github</a> and <a href="http://codepen.io/collection/ANqZZG/" target="_blank">CodePen</a>.</p>
         <p>Have a job that needs doing? <a href="mailto:timothyellison85@gmail.com">I'd love to hear from you!</a></p>
-      </div>      
-
+      </div>  
     </div>
+
 
   </div>
   <footer class="footer">
@@ -126,9 +75,6 @@
       <p class="text-muted">&copy; 2015 Tim Ellison</p>
     </div>
   </footer>
-  <script>
-function Block(o,n,e){this.name=o,this.row=n,this.column=e,this.owner="none",this.owned=!1}function reset(){blocks.forEach(function(o){$("#"+o.name).css("background-color","#fff"),$("#"+o.name).css("border-radius","0%"),$("#"+o.name).css("transform","rotate(-360deg)"),o.owned=!1,o.owner="none"}),moveCount=0,playerTurn=!0}function computerTurn(){function o(o,n){var e=blocks.filter(function(e){return e[n]==o});return e}function n(n,t){function u(o){var e=0,c=0;if(o.forEach(function(o){0==o.owned?c++:"player"==o.owner&&e++}),e==n&&c==t){var u=o.filter(function(o){return 0==o.owned});0==playerTurn&&0==r&&(r=!0,setTimeout(function(){markBlock("#"+u[0].name)},1e3))}}var l=[1,2,3];l.forEach(function(e){var c=["row","column"];c.forEach(function(c){var u=0,a=0;if(o(e,c).forEach(function(o){0==o.owned?a++:"player"==o.owner&&u++}),u==n&&a==t){var i=o(e,c).filter(function(o){return 0==o.owned});0==playerTurn&&0==r&&(r=!0,setTimeout(function(){markBlock("#"+i[0].name)},1e3))}})}),u([a,e,i]),u([c,e,g])}var r=!1;0==e.owned&&0==playerTurn&&0==r&&(r=!0,setTimeout(function(){markBlock("#e")},1e3)),n(0,1),n(2,1),9>moveCount&&!gameover&&0==r&&setTimeout(function(){do var o=Math.floor(3*Math.random())+1,n=Math.floor(3*Math.random())+1,e=blocks.filter(function(n){return n.column==o}).filter(function(o){return o.row==n});while(e[0].owned);markBlock("#"+e[0].name)},1e3),9==moveCount&&setTimeout(function(){reset()},2e3)}function markBlock(o){function n(o,n){$(o).css("background-color",n),$(o).css("transform","rotate(360deg"),$(o).css("border-radius","50%")}var e=blocks.filter(function(n){return n.name==$(o).attr("id")});e[0].owned||(playerTurn?(playerTurn=!playerTurn,e[0].owned=!0,e[0].owner="player",n(o,playerColor)):(playerTurn=!playerTurn,e[0].owned=!0,e[0].owner="computer",n(o,computerColor))),moveCount++,checkForWin()}function checkForWin(){function o(o){gameover=!0,setTimeout(function(){"player"==o?$(".announcements").text("You win!"):"computer"==o&&$(".announcements").text("You lose :-("),reset()},900)}function n(n,e){var r=blocks.filter(function(o){return o[e]==n});"player"==r[0].owner&&r[0].owned&&r[1].owned&&r[2].owned&&r[0].owner==r[1].owner&&r[1].owner==r[2].owner?o("player"):"computer"==r[0].owner&&r[0].owned&&r[1].owned&&r[2].owned&&r[0].owner==r[1].owner&&r[1].owner==r[2].owner&&o("computer")}function r(n){e.owner==n&&(a.owner==e.owner&&i.owner==e.owner?o(n):c.owner==e.owner&&g.owner==e.owner&&o(n))}for(var t=1;3>=t;)r("player"),r("computer"),n(t,"row"),n(t,"column"),t++}var playerColor="#4488AD",computerColor="#F6C237",playerTurn=!0,moveCount=0,gameover=!1,a=new Block("a",1,1),b=new Block("b",1,2),c=new Block("c",1,3),d=new Block("d",2,1),e=new Block("e",2,2),f=new Block("f",2,3),g=new Block("g",3,1),h=new Block("h",3,2),i=new Block("i",3,3),blocks=[a,b,c,d,e,f,g,h,i];$(".block").on("click",function(){0==moveCount&&$(".announcements").fadeOut("slow",function(){$(this).text(""),$(this).fadeIn("fast")}),playerTurn&&(gameover=!1,markBlock(this),computerTurn()),9==moveCount&&setTimeout(function(){reset()},2e3)});
-  </script>
 </body>
 </html>
 

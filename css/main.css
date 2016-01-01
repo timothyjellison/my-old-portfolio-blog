@@ -121,6 +121,14 @@ MAJOR SECTIONS
   clear: left;
 }
 
+/* SAMPLES
+*********/
+
+.sample {
+  float: left;
+}
+
+
 /* WIKIPEDIA SEARCH
 ******************/
 
