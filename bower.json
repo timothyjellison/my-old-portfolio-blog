@@ -1,0 +1,21 @@
+{
+  "name": "timothyjellison.github.io",
+  "homepage": "https://github.com/timothyjellison/timothyjellison.github.io",
+  "authors": [
+    "Tim Ellison <timothyellison85@gmail.com>"
+  ],
+  "description": "My portfolio website",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}

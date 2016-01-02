@@ -104,7 +104,9 @@ MAJOR SECTIONS
 }
 
 .about-me ul {
-  float: left;
+  vertical-align: top;
+  display: inline;
+  margin-top: 20px;
 }
 
 .about-me li {
@@ -114,6 +116,11 @@ MAJOR SECTIONS
   padding-top: 0;
   border: none;
   background-color: inherit;
+  list-style: none;
+  line-height:1.5em;
+  float:left;
+  display:inline;
+  width: 15%;
 }
 
 .about-me ul + p {

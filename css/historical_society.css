@@ -84,7 +84,7 @@ figcaption {
 	list-style: none;
 	line-height:1.5em;
 	float:left;
-	display:inline;
+	display:inline-block;
 }
 
 .footer li a {
