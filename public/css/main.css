@@ -43,7 +43,7 @@ MAJOR SECTIONS
 ***********/
 
 .jumbotron {
-  background: #ddd url("http://timothyjellison.github.io/images/jumbotron-bg.JPG") center center;
+  background: #ddd url("http://timothyjellison.github.io/public/images/jumbotron-bg.JPG") center center;
   background-size: cover;
   overflow: hidden; 
   font-family: 'Montserrat', sans-serif;
