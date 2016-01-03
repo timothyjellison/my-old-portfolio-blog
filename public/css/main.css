@@ -4,13 +4,14 @@ SITE-WIDE
 
 body {
   font-size: 100%;
-  height:100%;
+  height: 100%;
 }
 
 h1 {
   font-family: 'Montserrat', sans-serif;
   color: #fff;
-  margin: 1em 2em;
+  margin: 0;
+  padding: 0.5em 0.25em;
 }
 
 p {
@@ -47,7 +48,7 @@ MAJOR SECTIONS
   background-size: cover;
   overflow: hidden; 
   font-family: 'Montserrat', sans-serif;
-  padding: 0px;
+  padding: 0 10%;
   height: 300px;
   width: 100%;
   margin-right: 0px;
@@ -56,8 +57,11 @@ MAJOR SECTIONS
 
 .jumbotron h1 {
   margin-top: 1em;
-  margin-left: 36px;
   color: #fff;
+}
+
+.jumbotron .myName {
+  margin-left: -10px;
 }
 
 .jumbotron small {
@@ -66,7 +70,6 @@ MAJOR SECTIONS
 
 .jumbotron .btn-group {
   margin-top: 1em;
-  margin-left: 36px;
 }
 
 .jumbotron a[type="button"]{
@@ -89,6 +92,7 @@ MAJOR SECTIONS
 .row.about-me {
   margin-top: 0;
   background-color: #eeeeff;
+  padding: 0 10%;
 }
 
 .about-me img {
@@ -96,11 +100,11 @@ MAJOR SECTIONS
   height: 250px;
   width: 250px;
   float: left;
-  margin: 3em 4em 0 6em;
+  margin-top: 4em;
 }
 
 .about-me p + ul {
-  clear-left;
+  clear: left;
 }
 
 .about-me ul {
@@ -131,85 +135,25 @@ MAJOR SECTIONS
 /* SAMPLES
 *********/
 
-.sample {
-  float: left;
-}
-
-
-/* WIKIPEDIA SEARCH
-******************/
-
-.row.search-wikipedia, .row.basics {
-  padding-top: 6em;
-  padding-bottom: 1em;
+.row.examples {
   background-color: #29749C;
+  padding: 0 10%;
 }
 
-.search-wikipedia p, .row.basics p {
-  padding-top: 0;
-  margin-top: 0;
-  padding-bottom: 1em;
-  color: white;
+.example {
+  padding: 2em 0;
 }
 
-.searchResult a, .searchResult a:hover {
-  color: black;
-  text-decoration: none;
-}
+/* CONTACT INFO
+**************/
 
-.searchmatch {
-  font-weight: bold;
-}
-
-/* TIC-TAC-TOE
-*************/
-
-.row.tic-tac-toe {
-  padding-top: 4em;
-  padding-bottom: 4em;
-  background-color: #eeeeff;
-}
-
-.board {
-  height: 32.5em;
-  width: 32.5em;
-  margin-left: 25%;
-  margin-top: 3em;
-}
-
-.block {
-  height: 10em;
-  width: 10em;
-  margin: 0.4em;
-  float: left;
-  border: 1px solid black;
-  transition: 0.75s;
-  background-color: white;
-}
-
-.block:nth-of-type(4), .block:nth-of-type(7) {
-  clear: left;
-}
-
-.tic-tac-toe-description {
-  padding-top: 0em;
-  margin-top: 0em;
-}
-
-.tic-tac-toe-description h1 {
-  color: #000;
-}
-
-/* LINKS AND CONTACT INFO
-************************/
-
-.row.more-links-and-contact {
+.row.contact-info {
   padding-top: 4em;
   padding-bottom: 1em;
   background-color: #eeeeff;
 }
 
-.more-links-and-contact p {
+.contact-info p {
   padding-top: 0;
   margin-top: 0;
   padding-bottom: 1em;
@@ -221,7 +165,6 @@ MAJOR SECTIONS
 .footer {
   background-color: #222;
   color: #fff;
-  margin-bottom: 0;
 }
 
 .footer .container {
@@ -248,9 +191,7 @@ MEDIA QUERIES
   }
 
   .jumbotron a[type="button"]{
-    background-color: transparent;
     border: 5px solid white;
-    color: white;
     margin: 10px 10px;
     padding: 26px;
     font-size: 20px;
@@ -261,6 +202,12 @@ MEDIA QUERIES
 ****************/
 
 @media screen and (max-width: 1200px){
+  p {
+    margin: 0;
+    padding: 0.5em 0.25em;
+    font-size: 3em;
+  }
+
   .jumbotron {
     height: 500px;
   }
@@ -272,29 +219,20 @@ MEDIA QUERIES
     font-size: 18px;
   }
 
-  p {
-    margin: 0em 0em;
-    padding: 0.5em 0.25em;
-    font-size: 3em;
-  }
-
-  h1 {
-    margin: 0em 0em;
-    padding: 0.5em 0.25em;
-  }
-
   .about-me img {
     height: 200px;
     width: 200px;
     margin: 1em 1em 0 0;
   }
 
-  .search-wikipedia p, .tic-tac-toe-description p {
-    line-height: 175%;
+  .about-me li {
+    font-size: 2.5em;
+    width: 12%;
   }
 
-  .board {
-    margin-left: 15%;
+  .example img {
+    height: 90%;
+    width: 90%;
   }
 }
 
@@ -302,6 +240,15 @@ MEDIA QUERIES
 ***************/
 
 @media screen and (max-width: 768px){
+  p {
+    padding: 0.5em 0.15em;
+    font-size: 2.5em;
+  }
+
+  h1 {
+    padding: 0.5em 0.15em;
+  }
+
   .jumbotron {
     height: 400px;
   }
@@ -310,16 +257,10 @@ MEDIA QUERIES
     font-size: 52px;
   }
 
-
-  p {
-    margin: 0em 0em;
-    padding: 0.5em 0.15em;
-    font-size: 2.5em;
-  }
-
-  h1 {
-    margin: 0em 0em;
-    padding: 0.5em 0.15em;
+  .jumbotron a[type="button"]{
+    border: 3px solid white;
+    padding: 8px;
+    font-size: 16px;
   }
 
   .row.about-me *  {
@@ -339,34 +280,9 @@ MEDIA QUERIES
   .about-me ul:nth-of-type(1), .about-me ul:nth-of-type(2) {
     margin-bottom: 0;
   }
-
-  .about-me ul li {
-    font-size: 2.5em;
-  }
-
-  .board {
-    height: 27em;
-    width: 27em;
-    margin-left: 10%;
-  }
-
-  .block {
-    height: 8em;
-    width: 8em;
-    margin: 0.4em;
-  }
-
-  .search-wikipedia p, .tic-tac-toe-description p {
-    line-height: 150%;
-  }
-
-  .jumbotron a[type="button"]{
-    background-color: transparent;
-    border: 3px solid white;
-    color: white;
-    margin: 8px 8px;
-    padding: 8px;
-    font-size: 16px;
+  
+  .about-me li {
+    width: 20%;
   }
 }
 
@@ -374,6 +290,18 @@ MEDIA QUERIES
 *********************/
 
 @media screen and (max-width: 430px){
+  p {
+    padding: 0em 0.15em;
+  }
+
+  h1 {
+    padding: 0em 0.15em;
+  }
+  
+  small {
+    font-size: 24px;
+  }
+
   .jumbotron {
     height: 200px;
   }
@@ -382,43 +310,17 @@ MEDIA QUERIES
     font-size: 36px;
   }
 
+  .jumbotron small {
+    margin-left: -6px;
+  }
+
   .jumbotron a[type="button"]{
-    background-color: transparent;
-    border: 3px solid white;
-    color: white;
     margin: 5px 5px;
     padding: 5px;
     font-size: 12px;
   }
 
-  small {
-    font-size: 24px;
-  }
-
-
-  p {
-    margin: 0em;
-    padding: 0em 0.15em;
-  }
-
-  h1 {
-    margin: 0em 0em;
-    padding: 0em 0.15em;
-  }
-
-  .board {
-    height: 24em;
-    width: 24em;
-    margin-left: 5%;
-  }
-
-  .block {
-    height: 7em;
-    width: 7em;
-    margin: 0.4em;
-  }
-
-  .search-wikipedia p, .tic-tac-toe-description p {
-    line-height: 125%;
+  .about-me li {
+    width: 25%;
   }
 }
