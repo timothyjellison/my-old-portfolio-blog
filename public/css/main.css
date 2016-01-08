@@ -84,7 +84,7 @@ MAJOR SECTIONS
 .row.about-me {
   background: #ddd url("http://timothyjellison.github.io/public/images/jumbotron-bg.JPG") center center;
   background-attachment: fixed;
-  margin-top: 9em;
+  margin-top: 90px;
   background-color: #eeeeff;
   padding: 0 10%;
 }
@@ -125,7 +125,7 @@ MAJOR SECTIONS
 ***********/
 
 .row.blogposts {
-  padding-top: 9em;
+  margin-top: 90px;
   padding: 0 10%
 }
 
