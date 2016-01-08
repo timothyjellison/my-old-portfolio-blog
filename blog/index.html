@@ -5,8 +5,8 @@ title: Tim Ellison's Blog
 	<ul class="posts">
 
 	  {% for post in site.posts %}
-	    <li><h2><span>{{ post.date | date_to_string }}</span></h2>
-	    <h1><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h1>
+	    <li>
+	    <h1><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> ({{ post.date | date_to_string }})</h1>
 	    <p>{{ post.content }}</p>
 		</li>
 	  {% endfor %}
