@@ -124,8 +124,8 @@ MAJOR SECTIONS
 /* BLOGPOSTS
 ***********/
 
-.row .blogposts {
-  margin-top: 9em;
+.row.blogposts {
+  padding-top: 9em;
   padding: 0 10%
 }
 
