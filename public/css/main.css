@@ -121,6 +121,14 @@ MAJOR SECTIONS
   padding-bottom: 1em;
 }
 
+/* BLOGPOSTS
+***********/
+
+.row .blogposts {
+  margin-top: 9em;
+  padding: 0 10%
+}
+
 /* FOOTER
 ********/
 
