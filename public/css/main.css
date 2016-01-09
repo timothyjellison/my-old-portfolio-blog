@@ -136,6 +136,17 @@ li.post-list {
   list-style: none;
 }
 
+.post * {
+  margin: 0;
+  padding: 0;
+}
+
+.post-date {
+  font-size: 2.5em;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
 /* FOOTER
 ********/
 
