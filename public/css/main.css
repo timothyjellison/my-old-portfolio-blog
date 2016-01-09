@@ -128,7 +128,7 @@ MAJOR SECTIONS
 ***********/
 
 .row.blogposts {
-  margin-top: 90px;
+  margin-top: 100px;
   padding: 0 10%;
 }
 
@@ -282,6 +282,10 @@ MEDIA QUERIES
   h1.post-title {
     text-align: left;
     font-size: 5em;
+  }
+
+  .posts {
+    padding-left: 0;
   }
 }
 
