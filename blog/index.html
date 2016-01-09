@@ -6,7 +6,7 @@ title: Tim Ellison's Blog
 	<ul class="posts">
 
 	  {% for post in site.posts %}
-	    <li>
+	    <li class="post-list">
 	    <h1><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> ({{ post.date | date_to_string }})</h1>
 	    <p>{{ post.content }}</p>
 		</li>

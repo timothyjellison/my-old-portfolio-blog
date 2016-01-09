@@ -133,6 +133,10 @@ MAJOR SECTIONS
   padding: 0 10%;
 }
 
+li.post-list {
+  list-style: none;
+}
+
 .myBlog {
   min-height: 100%;
   position: relative;
