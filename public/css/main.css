@@ -136,7 +136,8 @@ li.post-list {
   list-style: none;
 }
 
-.post * {
+.post.title {
+  font-size: 5em;
   margin: 0;
   padding: 0;
 }
@@ -217,6 +218,11 @@ MEDIA QUERIES
   .nav {
     position: relative;
     padding: 1em 0 0 0;
+  }
+
+  .row.blogposts {
+    margin-top: 0;
+    padding: 10px 3%;
   }
 
   .row.about-me *  {
