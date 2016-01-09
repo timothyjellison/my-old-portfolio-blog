@@ -140,11 +140,11 @@ h1.post-title {
   font-size: 7em;
   margin: 0;
   padding: 10px 0 6px 0;
-  color: #fff;
+  color: #000;
 }
 
 h1.post-title a{
-  color: #fff;
+  color: #000;
 }
 
 .post-date {
@@ -155,8 +155,9 @@ h1.post-title a{
   padding-bottom: 10px;
 }
 
-.post-content {
-  padding-left: inherit 0;
+p.post-content {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /* FOOTER
@@ -276,6 +277,11 @@ MEDIA QUERIES
     float: none;
     margin: 0 auto;
     text-align: center;
+  }
+
+  h1.post-title {
+    text-align: left;
+    font-size: 5em;
   }
 }
 
