@@ -177,7 +177,7 @@ MEDIA QUERIES
     height: 90%;
     width: 90%;
   }
-
+  
   .nav li {
     font-size: 2em;
   }
@@ -204,7 +204,8 @@ MEDIA QUERIES
   }
 
   .nav {
-    padding: 0 5%;
+    position: relative;
+    padding: 1em 0 0 0;
   }
 
   .row.about-me *  {
@@ -215,12 +216,6 @@ MEDIA QUERIES
     height: 150px;
     width: 150px;
     margin: 1em 1em 0 0;
-  }
-
-    .nav {
-    position: relative;
-    padding: 1em 0 0 0;
-    text-align: center;
   }
 
   .nav h1 {
@@ -236,10 +231,8 @@ MEDIA QUERIES
     clear: both;
   }
 
-  .nav li {
-    display: block;
-    padding: 0;
-    margin: 0;
+  .nav ul:before {
+    content: '\A'; 
   }
 
   .nav li:nth-of-type(1){
@@ -272,5 +265,15 @@ MEDIA QUERIES
 
   small {
     font-size: 24px;
+  }
+
+  .nav {
+    text-align: center;
+  }
+
+  .nav li {
+    display: block;
+    padding: 0;
+    margin: 0;
   }
 }
