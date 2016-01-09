@@ -137,11 +137,6 @@ li.post-list {
   list-style: none;
 }
 
-.myBlog {
-  min-height: 100%;
-  position: relative;
-}
-
 /* FOOTER
 ********/
 
@@ -157,11 +152,6 @@ li.post-list {
 .footer p {
   padding: 1em;
   font-size: 120%;
-}
-
-.blog-footer {
-  position: absolute; 
-  bottom: 0px;
 }
 
 /************
