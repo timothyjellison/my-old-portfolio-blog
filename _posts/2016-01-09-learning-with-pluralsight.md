@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Learning with Pluralsight"
-date: 2016-01-08
+date: 2016-01-09
 ---
 
 At the end of 2015 I signed up for [Microsoft's Developer Network community](https://msdn.microsoft.com/en-us) and received six free months of [Pluralsight membership](http://www.pluralsight.com). I'd never used Pluralsight and didn't know what it really had to offer.
