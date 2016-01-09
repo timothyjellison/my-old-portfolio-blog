@@ -2,7 +2,7 @@
 SITE-WIDE
 ********/
 
-body {
+html, body {
   font-size: 100%;
   height: 100%;
 }
@@ -133,6 +133,11 @@ MAJOR SECTIONS
   padding: 0 10%;
 }
 
+.myBlog {
+  min-height: 100%;
+  position: relative;
+}
+
 /* FOOTER
 ********/
 
@@ -148,6 +153,11 @@ MAJOR SECTIONS
 .footer p {
   padding: 1em;
   font-size: 120%;
+}
+
+.blog-footer {
+  position: absolute; 
+  bottom: 0px;
 }
 
 /************
