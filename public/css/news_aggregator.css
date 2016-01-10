@@ -1,0 +1,47 @@
+.container-fluid {
+  margin: 0 5%;
+  padding: 2%;
+}
+
+.container-fluid h1 {
+  font-size: 300%;
+  font-weight: bold;
+  text-align: center;
+  padding: 40px;
+}
+
+.container-fluid  h2 {
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.title-highlight {
+  text-decoration: underline;
+}
+
+.story {
+  margin-top: 30px;
+  height: 350px;
+}
+
+.container-fluid a {
+  color: black;
+}
+
+.container-fluid img {
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.container-fluid i {
+  margin-left: 5%;
+}
+
+@media (max-width: 768px){
+  .story {
+    text-align: center;
+  }
+  .story img {
+    margin: 0 auto;
+  }
+}
