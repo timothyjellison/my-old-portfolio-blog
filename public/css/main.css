@@ -13,14 +13,14 @@ h1 {
   padding: 0.5em 0.25em;
 }
 
+label {
+  font-size: 3em;
+}
+
 p {
   font-family: 'Neuton', serif;
   font-size: 3em;
   margin: 1em 4em;
-}
-
-label {
-  font-size: 3em;
 }
 
 .container-fluid {
@@ -43,34 +43,31 @@ MAJOR SECTIONS
 *********/
 
 .nav {
-  position: fixed;
-  z-index: 1;
   background-color: #fff;
   border-bottom: 1px solid #555;
   font-family: 'Montserrat', sans-serif;
-  padding: 0 10%;
-  width: 100%;
-  margin-right: 0px;
   margin-bottom: 0px;
+  margin-right: 0px;
+  padding: 0 10%;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav a {
+  color: #555;
 }
 
 .nav h1 {
-  font-size: 4em;
   float: left;
+  font-size: 4em;
   line-height: 60%;
 }
 
-
-.nav small {
-  margin-left: .35em;
-  color: #555;
-  font-size: 50%;
-}
-
 .nav li {
+  display: inline-block;
   font-family: 'Montserrat', sans-serif;
   font-size: 3em;
-  display: inline-block;
   padding: 0.5em 1%;
 }
 
@@ -78,50 +75,52 @@ MAJOR SECTIONS
   padding-left: 15%;
 }
 
-.nav a {
+.nav small {
   color: #555;
+  font-size: 50%;
+  margin-left: .35em;
 }
 
 /* ABOUT ME
 **********/
 
-.row.about-me {
+.about-me {
   background-color: #2073A5;
-  background: #ddd url("http://timothyjellison.github.io/public/images/jumbotron-bg.JPG") center center;
+  background: #2073A5 url("http://timothyjellison.github.io/public/images/jumbotron-bg.JPG") center center;
   background-attachment: fixed;
   margin-top: 90px;
   padding: 0 10%;
-}
-
-.profile-photo img {
-  border-radius: 50%;
-  height: 250px;
-  width: 250px;
-  float: left;
-  margin-top: 4em;
-  margin-right: 2em;
 }
 
 .about-me p {
   color: #fff;
 }
 
-.example {
+.about-me .profile-photo {
+  border-radius: 50%;
+  float: left;
+  height: 250px;
+  margin-top: 4em;
+  margin-right: 2em;
+  width: 250px;
+}
+
+.about-me .example {
   padding: 2em 0;
 }
 
 /* CONTACT INFO
 **************/
 
-.row.contact-info {
-  padding-top: 4em;
+.contact-info {
   padding-bottom: 1em;
+  padding-top: 4em;
 }
 
 .contact-info p {
-  padding-top: 0;
   margin-top: 0;
   padding-bottom: 1em;
+  padding-top: 0;
 }
 
 /* BLOGPOSTS
@@ -151,8 +150,7 @@ h1.post-title a{
   font-size: 2.5em;
   font-style: italic;
   margin-top: 6px 0 0 0;
-  padding: 0;
-  padding-bottom: 10px;
+  padding: 0 0 10px 0;
 }
 
 p.post-content {
@@ -173,8 +171,8 @@ p.post-content {
 }
 
 .footer p {
-  padding: 1em;
   font-size: 120%;
+  padding: 1em;
 }
 
 /************
@@ -191,7 +189,7 @@ MEDIA QUERIES
     font-size: 3em;
   }
 
-  .profile-photo img {
+  .about-me .profile-photo {
     height: 200px;
     width: 200px;
     margin: 1em 1em 0 0;
@@ -237,11 +235,11 @@ MEDIA QUERIES
     padding: 10px 3%;
   }
 
-  .row.about-me *  {
+  .about-me *  {
     padding-left: 0;
   }
 
-  .profile-photo img {
+  .about-me .profile-photo {
     height: 150px;
     width: 150px;
     margin: 1em 1em 0 0;
@@ -268,7 +266,7 @@ MEDIA QUERIES
     padding:0;
   }
 
-  .row.about-me {
+  .about-me {
     margin-top: 0;
   }
 
