@@ -35,7 +35,7 @@ p {
 MAJOR SECTIONS
 *************/
 
-#home {
+#logo {
   color: inherit;
 }
 
@@ -126,23 +126,23 @@ MAJOR SECTIONS
 /* BLOGPOSTS
 ***********/
 
-.row.blogposts {
+.blogposts {
   margin-top: 100px;
   padding: 0 10%;
 }
 
-li.post {
+.post {
   list-style: none;
 }
 
-h1.post-title {
+.post-title {
   font-size: 7em;
   margin: 0;
   padding: 10px 0 6px 0;
   color: #000;
 }
 
-h1.post-title a{
+.post-title a{
   color: #000;
 }
 
@@ -153,7 +153,7 @@ h1.post-title a{
   padding: 0 0 10px 0;
 }
 
-p.post-content {
+.post-content {
   margin-left: 0;
   margin-right: 0;
 }
@@ -175,6 +175,7 @@ p.post-content {
   padding: 1em;
 }
 
+
 /************
 MEDIA QUERIES
 ************/
@@ -184,15 +185,15 @@ MEDIA QUERIES
 
 @media screen and (max-width: 1200px){
   p {
+    font-size: 3em;
     margin: 0;
     padding: 0.5em 0.25em;
-    font-size: 3em;
   }
 
   .about-me .profile-photo {
     height: 200px;
-    width: 200px;
     margin: 1em 1em 0 0;
+    width: 200px;
   }
 
   .example img {
@@ -207,6 +208,7 @@ MEDIA QUERIES
   .nav li:nth-of-type(1) {
     padding-left: 3%;
   }
+
   .nav li:nth-of-type(4) {
     padding-right: 0;
   }
@@ -217,22 +219,19 @@ MEDIA QUERIES
 
 @media screen and (max-width: 768px){
   p {
-    padding: 0.5em 0.15em;
     font-size: 2.5em;
+    padding: 0.5em 0.15em;
   }
 
   h1 {
-    padding: 0.5em 0.15em;
+    float: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
   }
 
-  .nav {
-    position: relative;
-    padding: 1em 0 0 0;
-  }
-
-  .row.blogposts {
+  .about-me {
     margin-top: 0;
-    padding: 10px 3%;
   }
 
   .about-me *  {
@@ -241,8 +240,18 @@ MEDIA QUERIES
 
   .about-me .profile-photo {
     height: 150px;
-    width: 150px;
     margin: 1em 1em 0 0;
+    width: 150px;
+  }
+
+  .blogposts {
+    margin-top: 0;
+    padding: 10px 3%;
+  }
+
+  .nav {
+    padding: 1em 0 0 0;
+    position: relative;
   }
 
   .nav h1 {
@@ -250,36 +259,25 @@ MEDIA QUERIES
     margin-bottom: 0.25em;
   }
 
+  .nav li:nth-of-type(1){
+    padding:0;
+  }
+
   .nav ul {
-    width: 100%;
-    display: block;
-    text-align: center;
-    padding: 0;
     clear: both;
+    display: block;
+    padding: 0;
+    text-align: center;
+    width: 100%;
   }
 
   .nav ul:before {
     content: '\A'; 
   }
 
-  .nav li:nth-of-type(1){
-    padding:0;
-  }
-
-  .about-me {
-    margin-top: 0;
-  }
-
-  h1 {
-    padding: 0;
-    float: none;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  h1.post-title {
-    text-align: left;
+  .post-title {
     font-size: 5em;
+    text-align: left;
   }
 
   .posts {
@@ -309,7 +307,7 @@ MEDIA QUERIES
 
   .nav li {
     display: block;
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
 }
