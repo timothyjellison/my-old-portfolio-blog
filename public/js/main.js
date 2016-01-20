@@ -1,1 +1,5 @@
-$('#aboutMe').stellar();
+	$(function(){
+		$.stellar({
+			horizontalScrolling: false,
+		});
+	});
