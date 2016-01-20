@@ -1,6 +1,6 @@
 body {
-	font-family: 'Libre Baskerville', Times, "Times New Roman", serif;
 	background-color: rgb(254, 254, 243);
+	font-family: 'Libre Baskerville', Times, "Times New Roman", serif;
 }
 
 .navbar {
@@ -17,8 +17,8 @@ body {
 }
 
 #myCarousel {
-	max-width: 960px;
 	margin: 0 auto;
+	max-width: 960px;
 }
 
 #myCarousel img {
@@ -26,8 +26,8 @@ body {
 }
 
 .row-main {
-	max-width: 960px;
 	margin: 0 auto;
+	max-width: 960px;
 }
 
 .post {
@@ -74,17 +74,17 @@ figcaption {
 }
 
 .footer ul {
-	vertical-align: top;
 	display: inline-block;
-	padding: 0 15%;
 	margin-top: 20px;
+	padding: 0 15%;
+	vertical-align: top;
 }
 
 .footer li {
-	list-style: none;
-	line-height:1.5em;
-	float:left;
 	display:inline-block;
+	float:left;
+	line-height:1.5em;
+	list-style: none;
 }
 
 .footer li a {
@@ -101,8 +101,8 @@ figcaption {
 	}
 
 	.links li {
-		width: 50%;
 		padding: 0px 20px;
+		width: 50%;
 	}
 }
 
@@ -112,7 +112,7 @@ figcaption {
 	}
 
 	.links li {
-		width: 50%;
 		padding: 0px 20px;
+		width: 50%;
 	}
 }
