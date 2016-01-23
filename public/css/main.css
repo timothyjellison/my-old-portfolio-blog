@@ -106,7 +106,7 @@ MAJOR SECTIONS
 }
 
 .about-me .example {
-  padding: 2em 0;
+  padding: 2em 0.5em;
 }
 
 /* CONTACT INFO
