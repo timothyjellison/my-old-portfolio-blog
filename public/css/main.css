@@ -135,15 +135,9 @@ MAJOR SECTIONS
   list-style: none;
 }
 
-.post-title {
-  font-size: 7em;
-  margin: 0;
-  padding: 10px 0 6px 0;
-  color: #000;
-}
-
-.post-title a{
-  color: #000;
+.post-content, .post-content p {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .post-date {
@@ -153,9 +147,19 @@ MAJOR SECTIONS
   padding: 0 0 10px 0;
 }
 
-.post-content {
-  margin-left: 0;
-  margin-right: 0;
+.post-title {
+  font-size: 7em;
+  margin: 0;
+  padding: 10px 0 6px 0;
+  color: #000;
+}
+
+.post-title a {
+  color: #000;
+}
+
+.post-title:not:nth-of-type(1) {
+  margin-top: 1em;
 }
 
 /* FOOTER
