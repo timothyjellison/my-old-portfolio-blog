@@ -145,9 +145,11 @@ MAJOR SECTIONS
 }
 
 .post-date {
+  font-family: 'Montserrat', sans-serif; 
   font-size: 2.5em;
   font-style: italic;
   margin-top: 6px 0 0 0;
+  margin-left: 0px;
   padding: 0 0 10px 0;
 }
 
