@@ -135,7 +135,11 @@ MAJOR SECTIONS
   list-style: none;
 }
 
-.post-content, .post-content p {
+.post:not:nth-of-type(1) {
+  margin-top: 1em;
+}
+
+.post-content, .post p {
   margin-left: 0;
   margin-right: 0;
 }
@@ -156,10 +160,6 @@ MAJOR SECTIONS
 
 .post-title a {
   color: #000;
-}
-
-.post-title:not:nth-of-type(1) {
-  margin-top: 1em;
 }
 
 /* FOOTER
