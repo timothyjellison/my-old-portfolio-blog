@@ -1,0 +1,182 @@
+html {
+	height: 100%;
+}
+
+body {
+	color: #f3ffe2;
+	font-family: 'Montserrat';
+	font-size: 100%;
+	margin: 0;
+}
+
+a, a:visited, a:hover {
+	color: #f3ffe2;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	font-family: 'Josefin Sans';
+	font-size: 120%; 
+	padding-left: 12px !important;
+}
+
+p {
+	font-family: 'Josefin Sans';
+	font-size: 120%; 
+}
+
+li {
+	margin: 0;
+	padding: 0;
+}
+
+.bar {
+	height: 100em;
+	width: 100%;
+	margin: 0;
+	padding: 10% 5%;
+}
+
+.left-bar {
+	position: static;
+	box-shadow: 0px 10px 20px #333333;
+	background: #1695a3;
+	z-index: 5;
+}
+
+.middle-bar {
+	position: static;
+	box-shadow: 0px 10px 20px #333333;
+	background: #eb7f00;
+	z-index: 5;
+}
+
+.right-bar {
+	position: static;
+	box-shadow: 0px 10px 20px #333333;
+	background: #225378;
+	z-index: 5;
+}
+
+.right-bar li {
+	display: inline-block;
+	padding: 0.25em 0.5em; 
+	border: 3px solid #f3ffe2;
+	border-radius: 0.5em;
+}
+
+.right-bar i {
+	padding-right: 0.5em;
+}
+
+.buttons li:hover {
+	background-color: rgba(0,0,0,0.25);
+	cursor: pointer;
+	transition: 0.25s;
+}
+
+@media screen and (max-width: 646px) {
+	h1, p{
+		margin-top: 0;
+	}
+
+	ul {
+		margin-bottom: 0;
+	}
+
+	.left-bar li {
+		display: inline-block;
+		padding-right: 0.25em;
+	}
+
+	.bar {
+		height: auto;
+		padding: 7% 5%;
+		width: 90%;
+		box-shadow: none;
+	}
+
+	h1 {
+		font-size: 4em;
+		margin-bottom: 0.25em;
+	}
+
+	p, li {
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (min-width: 647px) {
+	body {
+		font-size: 200%;
+		overflow: hidden;
+	}
+
+	h1 {
+		margin-left: -10px;
+	}
+
+	.big-caps {
+		font-size: 160%;
+	}
+
+	.keepin-it-tight {
+		letter-spacing: -18px;	
+	}
+
+	.bar {
+		transition: 0.5s;
+		width: 90%;
+		padding: 0;
+	}
+
+	.left-bar {
+		position: absolute;
+		height: 100%;
+		left: -10%;
+		top: 0;
+		box-shadow: 10px 0px 20px #333333;
+		background: #1695a3;
+		z-index: 15;
+	}
+
+	.bar h1, .bar ul, .bar p {
+		margin-left: 20%;
+	}
+
+	.right-bar ul {
+		margin-left: 18%;
+	}
+
+	.bar p {
+		margin-right: 15%;
+	}
+
+	.middle-bar {
+		position: absolute;
+		height: 100%;
+		left: 0%;
+		top: 0;
+		box-shadow: 10px 0px 20px #333333;
+		background: #eb7f00;
+		z-index: 10;
+	}
+
+	.right-bar {
+		position: absolute;
+		height: 100%;
+		right: 0;
+		top: 0;
+		box-shadow: 10px 0px 20px #333333;
+		background: #225378;
+		z-index: 5;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	body {
+		font-size: 250%;
+		overflow: hidden;
+	}
+}
