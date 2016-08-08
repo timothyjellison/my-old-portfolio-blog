@@ -6,6 +6,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.5.0/csshake.css">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" rel="stylesheet"></script>	
+	<script src="tictactoe.js"></script>
+	<script src="main.js"></script>
 </head>
 <body>
 
@@ -20,6 +24,7 @@
 		</div>		
 		<div class="scene">
 		  <h1>Timothy Ellison<br/><small>&nbsp;Web Developer</h1>
+		  <!-- <div class="window"></div> -->
 		  <div class="desk-top"></div>
 		  <div class="desk-bottom"></div>
 		  <div class="laptop-base"></div>
@@ -31,6 +36,7 @@
 		  		<div class="mug-handle"></div>
 		  	</div>
 		  </a>
+		  <div class="tic-tac-toe"><img src="tictactoe.png" alt=""></div>
 		</div>	
 	</div>	
   <div class="container-fluid">
@@ -45,6 +51,25 @@
 			</div>
 		</div>
 	</div>
-
+	<div class="modal fade" id="tictactoeModal" tabindex="-1" role="dialog" aria-labelledby="tictactoeModal" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-body">
+					<div class="squares">
+						<div id="top-left"></div>
+						<div id="top-center"></div>
+						<div id="top-right"></div>
+						<div id="middle-left" class="on-new-row"></div>
+						<div id="middle-center"></div>
+						<div id="middle-right"></div>
+						<div id="bottom-left" class="on-new-row"></div>
+						<div id="bottom-center"></div>
+						<div id="bottom-right"></div>
+					</div>
+					<div class="clearfix"></div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 </body>
 </html>

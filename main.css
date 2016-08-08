@@ -58,6 +58,15 @@ p {
   background-color: #105b63;
 }
 
+.window {
+  position: absolute;
+  bottom: 130px;
+  right: 0px;
+  height: 250px;
+  width: 340px;
+  background-color: #66c3c9;
+}
+
 .desk-top {
   position: absolute;
   background-color: #be8733;
@@ -153,6 +162,13 @@ p {
   z-index: 0;
 }
 
+.tic-tac-toe {
+  position: absolute;
+  bottom: 100px;
+  right: 360px;
+}
+
+
 .specialties {
 	margin-top: 3em;
 	margin-bottom: 3em;
@@ -174,6 +190,43 @@ p {
 	margin-bottom: 2em; 	
 }
 
+
+/* Styles for the tic-tac-toe game */
+
+.tic-tac-toe {
+  cursor: pointer;
+}
+
+.squares {
+  margin-left: 35%;
+}
+
+.squares * {
+  border: 2px solid #333333;
+  float: left;
+  height: 5em;
+  width: 5em;
+}
+
+.selected-by-player {
+  background-color: #ff6138;
+}
+
+.selected-by-computer {
+  background-color: #79bd8f;
+}
+
+.on-new-row {
+  clear: left;
+}
+
+
+@media screen and (max-width: 575px) {
+  .squares {
+    margin-left: 28%;
+  }
+}
+
 @media screen and (max-width: 363px) {
   .jumbotron h1 {
     line-height: 100%;
@@ -183,4 +236,8 @@ p {
     line-height: 200%;
     margin-left: -6px;
   }
+  .squares {
+    margin-left: 8%;
+  }
 }
+
