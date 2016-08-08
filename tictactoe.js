@@ -118,7 +118,11 @@ $(document).ready(function(){
 		game.winner_declared = true;
   	game.play_enabled = false;
   	setTimeout(function(){
-  	  alert('The ' + winner + ' wins!');
+  		if (winner == "player") {
+  	  	alert('You win!');
+  		} else {
+  	  	alert('The computer wins.');
+  		}
   	  clear_board();
   	}, 1000);
   }
