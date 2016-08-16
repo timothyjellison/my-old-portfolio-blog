@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+I'm a front-end web developer living in Philadelphia, PA. When I'm not whipping up a button or a grid system I love spending time with my wife, family, and friends, listening to The Flop House and My Brother, My Brother, and Me, and reading reading reading.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[timothyjellison@live.com](mailto:timothyjellison@live.com)

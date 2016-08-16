@@ -3,59 +3,6 @@ layout: default
 ---
 
 
-<DOCTYPE html>
-<html lang=en>
-<head>
-  <meta charset="utf-8">
-  <title>Timothy Ellison - Web Developer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.5.0/csshake.css">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="main.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" rel="stylesheet"></script>	
-	<script src="tictactoe.js"></script>
-	<script src="main.js"></script>
-</head>
-<body>
-	<div class="jumbotron">
-		<div class="nav">
-			<ul class="nav navbar-nav navbar-right">
-			    <!-- <li class="navbar-text"><a href="http://timothyellison.com/blog" target="_blank" >Blog</a></li> -->
-			    <li class="navbar-text"><a href="https://github.com/timothyjellison" target="_blank">GitHub</a></li>
-			    <li class="navbar-text"><a href="https://www.linkedin.com/in/timothyjellison" target="_blank">LinkedIn</a></li>
-			    <li class="navbar-text"><a href="resources/Timothy Ellison - Resume.pdf">R&eacute;sum&eacute;</a></li>
-			    <li class="navbar-text"><a href="mailto:timothyellison85@gmail.com" target="_blank">Email Me</a></li>
-		  </ul>
-		</div>		
-		<div class="scene">
-		  <h1>Timothy Ellison<br/><small>&nbsp;Web Developer</h1>
-		  <!-- <div class="window"></div> -->
-		  <div class="desk-top"></div>
-		  <div class="desk-bottom"></div>
-		  <div class="laptop-base"></div>
-		  <div class="laptop-screen"></div>
-		  <a href="mailto:timothyellison85@gmail.com"><div class="email-icon">Email</div></a>
-		  <a href="http://www.github.com/timothyjellison" target="_blank">
-		  	<div class="mug">	  	
-		  		<div class="mug-body"><img src="resources/GitHub-Mark-32px.png" alt=""></div>
-		  		<div class="mug-handle"></div>
-		  	</div>
-		  </a>
-		  <div class="tic-tac-toe"><img src="resources/tictactoe.png" alt=""></div>
-		</div>	
-	</div>
-
-	<!--	
-  <div class="container-fluid">
-  	<div class="row specialties">
-  		<div class="col-xs-12 col-sm-4 specialty"><img src="resources/essentials-15@2x.png" alt="" class="img-responsive center-block"><h1 class="text-center">Responsive Design</h1></div>
-  		<div class="col-xs-12 col-sm-4 specialty"><img src="resources/essentials-06@2x.png" alt="" class="img-responsive center-block"><h1 class="text-center">JavaScript</h1></div>
-  		<div class="col-xs-12 col-sm-4 specialty"><img src="resources/essentials-19@2x.png" alt="" class="img-responsive center-block"><h1 class="text-center">Web Graphics</h1></div>
-  	</div>
-
-  -->
-  <div class="container-fluid">
 		<div class="posts">
 		  {% for post in site.posts %}
 		    <article class="post">
@@ -70,32 +17,3 @@ layout: default
 		    </article>
 		  {% endfor %}
 		</div>  	
-  </div>
-		<div class="row footer">
-			<div class="col-xs-12">
-				<p class="text-center">Timothy Ellison, &copy; 2016</p>
-			</div>
-		</div>
-	</div>
-	<div class="modal fade" id="tictactoeModal" tabindex="-1" role="dialog" aria-labelledby="tictactoeModal" aria-hidden="true">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-body">
-					<div class="squares">
-						<div id="top-left"></div>
-						<div id="top-center"></div>
-						<div id="top-right"></div>
-						<div id="middle-left" class="on-new-row"></div>
-						<div id="middle-center"></div>
-						<div id="middle-right"></div>
-						<div id="bottom-left" class="on-new-row"></div>
-						<div id="bottom-center"></div>
-						<div id="bottom-right"></div>
-					</div>
-					<div class="clearfix"></div>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-</body>
-</html>
