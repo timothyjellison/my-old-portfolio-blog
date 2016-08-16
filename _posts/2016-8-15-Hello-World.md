@@ -1,10 +1,10 @@
 ---
 layout: post
-title: You're up and running!
+title: First Post
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+This is my first post here on my new Jekyll-powered blog. My mission: to write daily stories about my work in front-end dev. Lots of gritty details about making buttons and struggling to get the positioning on an image *just* right.
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+I've got nothing for you now, unfort. I'm just kind of thrilled that I built this thing. (Though I didn't do much. It's more like I assembled it, like you assemble a dresser from Ikea.) If you want to build your own blog, check out this [Barry Clark's guide on *Smashing Magazine*](https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/).
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+I guess I'm also inspired by Chris Coyier's [Just Build Websites](http://justbuildwebsites.com/) mantra on [ShopTalk Show](http://shoptalkshow.com/), and by [Melanie Richards' exhaustive list](https://github.com/melanierichards/just-build-websites) of websites you can just build *right now*.
