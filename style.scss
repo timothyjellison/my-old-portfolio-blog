@@ -241,8 +241,8 @@ nav {
 // .main
 //
 
-.jumbotron {
-  background-color: #105b63;
+.jumbotron, .wrapper-masthead {
+  background-color: $blue;
 }
 
 .posts > .post {
