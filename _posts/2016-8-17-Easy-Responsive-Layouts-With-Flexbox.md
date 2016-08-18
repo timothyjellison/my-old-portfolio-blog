@@ -32,8 +32,8 @@ But this time instead of just laying them out in thirds horizontally, we're goin
 }
 ```
 
-Notice we started with the column arrangement first to keep within a mobile-first design pattern. All we need for the vertical arrangement of items is to set the parent's display property to a value of "flex" and its flex-direction property to a value of "column". Then inside the media query we change the flex-direction to "row" so that our items are arranged horizontally, and we set the items' width to 33.333% to make sure they're spread evenly across the page. 
+Notice we started with the column arrangement first to keep within a mobile-first design pattern. All we need for the vertical arrangement of items is to set the parent's display property to a value of "flex" and its flex-direction property to a value of "column". Then inside the media query we change the flex-direction to "row" so that our items are arranged horizontally, and we set the items' width to 33.333% to make sure they're spread in three evenly sized columns across the page. 
 
-You can easily use this to create, for example, a four-column layout for a news site. It will have 25% width on each news story when there's enough room, but will switch to a column layout when space gets tight. [Here's a pen to demonstrate.](http://codepen.io/tellison/pen/VjRRwa)
+You can easily adapt this to create, for example, a four-column layout for a news site. It will have 25% width on each news story when there's enough room, but will switch to a column layout when space gets tight. [Here's a pen to demonstrate.](http://codepen.io/tellison/pen/VjRRwa)
 
 Pretty cool, huh? So far we've gotten some good milage out of just two flexbox properties. I'll dig more into flexbox tomorrow. And again, I want to recommend Chris Coyier's awesome [guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) over on CSS Tricks.
