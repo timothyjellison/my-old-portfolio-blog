@@ -3,7 +3,7 @@ layout: post
 title: Easy Responsive Layouts With Flexbox
 ---
 
-Continuing [from yesterday's post](http://www.timothyellison.com/Starting-Out-With-Flexbox/), today I want to show a quick example of how to create a responsive layout with flexbox. We're going to work with the same HTML as last time, a parent div with three item divs in side it. 
+Continuing [from yesterday's post](http://www.timothyellison.com/Starting-Out-With-Flexbox/), today I want to show a quick example of how to create a responsive layout with flexbox. We're going to work with the same HTML as last time, a parent div with three item divs inside it. 
 
 ```html
 <div class="parent">
@@ -13,7 +13,7 @@ Continuing [from yesterday's post](http://www.timothyellison.com/Starting-Out-Wi
 </div>
 ```
 
-But this time instead of just laying them out in thirds horizontally, we're going to also lay them out vertically when the window is less than 600 pixels wide. Here's our CSS:
+But this time instead of just laying them out in thirds horizontally, we're going to also lay them out vertically when the window is less than 700 pixels wide. Here's our CSS:
 
 ```css
 .parent {
