@@ -23,7 +23,7 @@ We'll set our parent to "display: flex", but that's all we'll give it. We'll onl
 }
 
 .item {
-		flex: 1;	
+    flex: 1;	
 }
 ```
 
@@ -38,14 +38,14 @@ You can also weight the items differently by varying the numbers in the flex. Sa
 }
 
 .parent__first-child {
-		flex: 2;	
+    flex: 2;	
 }
 
 .parent__second-child {
-		flex: 4;
+    flex: 4;
 }
 
 .parent__second-child {
-		flex: 1;
+    flex: 1;
 }
 ```
