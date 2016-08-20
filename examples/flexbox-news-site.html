@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+		<style>
+			body {
+				display: flex;
+				flex-flow: column wrap;
+				font-size: 100%;
+				font-family: helvetica, arial, sans-serif;
+			}
+
+			nav {
+				height: 4em;
+				color: #efefef;
+				display: flex;
+				justify-content: flex-end;
+				background-color: #111111;
+			}
+
+			.nav__item {
+				padding: 1.5em;
+				align-items: center;
+			}
+
+			header {
+				height: 15em;
+				background-color: #aaff77;
+			}
+
+			main {
+				display: flex;
+				flex-flow: column;
+				flex-grow: 1;
+				margin: 3em auto;
+				max-width: 75em;
+			}
+
+			article {
+				width: 100%;
+				box-sizing: border-box;
+				padding: 0 1em 2em;
+			}
+
+			article * {
+				padding-bottom: 0.25em;
+			}
+
+			.article__title {
+				font-size: 2em;
+			}
+
+			.article__text {
+				line-height: 1.45em;
+			}
+
+			.article__link {
+				text-decoration: none;
+			}
+
+			footer {
+				height: 6em;
+				justify-content: flex-end;
+				background-color: #111111;
+				color: #efefef;
+				text-align: center;
+				padding: 4em 0 0;
+			}
+
+			@media screen and (min-width: 500px) {
+				main {
+					flex-flow: row wrap-reverse;
+				}
+
+				article {
+					flex: 1 0.5 22em;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<div class="nav__item">nav 1</div>
+			<div class="nav__item">nav 2</div>
+			<div class="nav__item">nav 3</div>
+		</nav>
+		<header>
+		</header>
+		<main>
+			<article>
+				<div class="article__title">Lorem Ipsum</div>
+				<div class="article__text">Dolor sit amet, consectetur adipiscing elit. Curabitur dolor purus, tincidunt eu enim in, aliquam eleifend orci. Suspendisse convallis mi nec arcu volutpat, at lobortis ligula dapibus. Suspendisse consequat, mauris eget hendrerit accumsan, tellus lectus blandit lectus, in accumsan lectus augue vel tellus. Aliquam erat volutpat. Vestibulum dictum, augue non laoreet accumsan, mauris nulla congue felis, pharetra varius massa urna iaculis mauris. <a href="#" class="article__link">Read&nbsp;more...</a></div>
+			</article>
+			<article>
+				<div class="article__title">Lorem Ipsum</div>
+				<div class="article__text">Dolor sit amet, consectetur adipiscing elit. Curabitur dolor purus, tincidunt eu enim in, aliquam eleifend orci. Suspendisse convallis mi nec arcu volutpat, at lobortis ligula dapibus. Suspendisse consequat, mauris eget hendrerit accumsan, tellus lectus blandit lectus, in accumsan lectus augue vel tellus. Aliquam erat volutpat. Vestibulum dictum, augue non laoreet accumsan, mauris nulla congue felis, pharetra varius massa urna iaculis mauris. <a href="#" class="article__link">Read&nbsp;more...</a></div>
+			</article>
+			<article>
+				<div class="article__title">Lorem Ipsum</div>
+				<div class="article__text">Dolor sit amet, consectetur adipiscing elit. Curabitur dolor purus, tincidunt eu enim in, aliquam eleifend orci. Suspendisse convallis mi nec arcu volutpat, at lobortis ligula dapibus. Suspendisse consequat, mauris eget hendrerit accumsan, tellus lectus blandit lectus, in accumsan lectus augue vel tellus. Aliquam erat volutpat. Vestibulum dictum, augue non laoreet accumsan, mauris nulla congue felis, pharetra varius massa urna iaculis mauris. <a href="#" class="article__link">Read&nbsp;more...</a></div>
+			</article>
+			<article>
+				<div class="article__title">Lorem Ipsum</div>
+				<div class="article__text">Dolor sit amet, consectetur adipiscing elit. Curabitur dolor purus, tincidunt eu enim in, aliquam eleifend orci. Suspendisse convallis mi nec arcu volutpat, at lobortis ligula dapibus. Suspendisse consequat, mauris eget hendrerit accumsan, tellus lectus blandit lectus, in accumsan lectus augue vel tellus. Aliquam erat volutpat. Vestibulum dictum, augue non laoreet accumsan, mauris nulla congue felis, pharetra varius massa urna iaculis mauris. <a href="#" class="article__link">Read&nbsp;more...</a></div>
+			</article>
+		</main>
+		<footer>
+			Tim Ellison, &copy; 2016
+		</footer>
+	</body>
+</html>
