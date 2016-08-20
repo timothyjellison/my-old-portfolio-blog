@@ -23,7 +23,7 @@ But this time instead of just laying them out in thirds horizontally, we're goin
 
 @media screen and (min-width: 700px) {
 	.parent {
-		flex-direction: row;
+	    flex-direction: row;
 	}
 
 	.item {
