@@ -5,8 +5,6 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 		<style>
 			body {
-				display: flex;
-				flex-flow: column wrap;
 				font-size: 100%;
 				font-family: helvetica, arial, sans-serif;
 			}
@@ -20,8 +18,8 @@
 			}
 
 			.nav__item {
-				padding: 1.5em;
-				align-items: center;
+				align-self: center;
+				padding-right: 1.5em;
 			}
 
 			header {
@@ -37,7 +35,6 @@
 			}
 
 			article {
-				width: 100%;
 				box-sizing: border-box;
 				padding: 0 1em 2em;
 			}
@@ -62,8 +59,12 @@
 				height: 6em;
 				background-color: #111111;
 				color: #efefef;
-				text-align: center;
-				padding: 4em 0 0;
+				display: flex;
+				justify-content: center;
+			}
+
+			.footer__text {
+				align-self: center;
 			}
 
 			@media screen and (min-width: 500px) {
@@ -104,7 +105,7 @@
 			</article>
 		</main>
 		<footer>
-			Tim Ellison, &copy; 2016
+			<div class="footer__text">Tim Ellison, &copy; 2016</div>
 		</footer>
 	</body>
 </html>

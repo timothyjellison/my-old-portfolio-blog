@@ -3,7 +3,7 @@ layout: post
 title: Responsive Site with Flexbox (Part 1)
 ---
 
-Here's [a responsive site I built with flexbox](http://www.timothyellison.com/examples/flexbox-news-site/) just this morning. I'm amazed how easy it was. I'll explore it in-depth tomorrow, but for now I'll point out that I did use one new flexbox property: *justify-content*.
+Here's [a responsive site I built with flexbox](http://www.timothyellison.com/examples/flexbox-news-site/) just this morning. I'm amazed how easy it was. I'll explore it in-depth in a follow-up post, but for now I'll point out that I did use one new flexbox property: *justify-content*.
 
 The justify-content property accepts five possible values: flex-start, flex-end, center, space-between, and space-around. Chris Coyier provides a great visual explanation in his [guide to flexbox on CSSTricks.com](https://css-tricks.com/snippets/css/a-guide-to-flexbox/). Be sure to check it out.
 
