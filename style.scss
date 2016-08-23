@@ -150,6 +150,12 @@ img {
 // .masthead
 //
 
+.jumbotron {
+  background-image: url('images/pexels-photo-40085.jpeg');
+  background-size: cover; 
+  background-position-y: 100%;
+}
+
 .wrapper-masthead {
   margin-bottom: 50px;
 }
@@ -192,7 +198,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $white;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
@@ -206,7 +212,7 @@ img {
 
 .site-description {
   margin: 0 0 0 0;
-  color: $gray;
+  color: $lightGray;
   font-size: 16px;
 
   @include mobile {
@@ -229,14 +235,14 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $blue;
+    color: $lightGray;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: $lightGray;
     }
   }
 }
