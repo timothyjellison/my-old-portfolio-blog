@@ -207,6 +207,12 @@ img {
 
   a {
     text-decoration: none;
+    color: $white;
+
+    &:hover {
+      color: $white;
+      text-decoration: none;
+    }
   }
 }
 
