@@ -153,14 +153,13 @@ img {
 }
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  padding: 2em 0;
 }
 
 .masthead {
   display: flex;
   align-content: flex-start;
   justify-content: space-between;
-  padding: 20px 0;
 
   @include mobile {
     flex-direction: column;
@@ -186,6 +185,7 @@ img {
 // }
 
 .site-info {
+  align-self: center;
 
   @include mobile {
     float: none;
@@ -225,6 +225,7 @@ img {
 }
 
 nav {
+  align-self: center;
   float: right;
   margin-bottom: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
@@ -255,6 +256,7 @@ nav {
 
     &:hover {
       // for animated underlines
+      color: $lightGray;
       text-decoration: none;
       border-bottom: 1px solid rgba(192, 192, 192, 1);
     }
