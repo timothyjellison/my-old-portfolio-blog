@@ -19,53 +19,26 @@
 </head>
 <body>
   <div class="jumbotron">
-      <div class="wrapper-masthead">
-        <div class="container">
-          <header class="masthead">
-            <!--<a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>-->
+    <div class="container-fluid">
+      <header class="masthead">
+        <!--<a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>-->
 
-            <div class="site-info">
-              <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-              <p class="site-description">{{ site.description }}</p>
-            </div>
+        <div class="site-info">
+          <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+          <p class="site-description">{{ site.description }}</p>
+        </div>
 
-            <nav>
-              <a href="{{ site.baseurl }}/">Blog</a>
-              <a href="{{ site.baseurl }}/about">About</a>
-              <a href="https://github.com/timothyjellison" target="_blank">Github</a>
-              <a href="https://www.linkedin.com/in/timothyjellison" target="_blank">LinkedIn</a>
-            </nav>
-          </header>
-        </div>
-      </div>
-      <!--
-      <ul class="nav navbar-nav navbar-right">
-          <li class="navbar-text"><a href="https://github.com/timothyjellison" target="_blank">GitHub</a></li>
-          <li class="navbar-text"><a href="https://www.linkedin.com/in/timothyjellison" target="_blank">LinkedIn</a></li>
-          <li class="navbar-text"><a href="resources/Timothy Ellison - Resume.pdf">R&eacute;sum&eacute;</a></li>
-          <li class="navbar-text"><a href="mailto:timothyellison85@gmail.com" target="_blank">Email Me</a></li>
-      </ul>
-      -->
-      <!--
-    <div class="scene">
-      <h1>Timothy Ellison<br/><small>&nbsp;Web Developer</h1>
-      <div class="desk-top"></div>
-      <div class="desk-bottom"></div>
-      <div class="laptop-base"></div>
-      <div class="laptop-screen"></div>
-      <a href="mailto:timothyellison85@gmail.com"><div class="email-icon">Email</div></a>
-      <a href="http://www.github.com/timothyjellison" target="_blank">
-        <div class="mug">
-          <div class="mug-body"><img src="resources/GitHub-Mark-32px.png" alt=""></div>
-          <div class="mug-handle"></div>
-        </div>
-      </a>
-      <div class="tic-tac-toe"><img src="resources/tictactoe.png" alt=""></div>
+        <nav>
+          <a href="{{ site.baseurl }}/">Blog</a>
+          <a href="{{ site.baseurl }}/about">About</a>
+          <a href="https://github.com/timothyjellison" target="_blank">Github</a>
+          <a href="https://www.linkedin.com/in/timothyjellison" target="_blank">LinkedIn</a>
+        </nav>
+      </header>
     </div>
-    -->
   </div>
-  <div class="container-fluid">
 
+  <div class="container-fluid">
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
