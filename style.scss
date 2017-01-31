@@ -156,38 +156,13 @@ img {
   align-content: flex-start;
   display: flex;
   justify-content: space-between;
-  padding-left: 10em;
-  padding-right: 10em;
-
-  @include largeScreen {
-    padding-left: 5em;
-    padding-right: 5em;
-  }
+  padding: 2em 10%;
 
   @include mobile {
-    padding-left: 2em;
-    padding-right: 2em;
     flex-direction: column;
     text-align: center;
   }
 }
-
-// .site-avatar {
-//   float: left;
-//   width: 70px;
-//   height: 70px;
-//   margin-right: 15px;
-//
-//   @include mobile {
-//     float: none;
-//     display: block;
-//     margin: 0 auto;
-//   }
-//
-//   img {
-//     border-radius: 5px;
-//   }
-// }
 
 .site-info {
   align-self: center;
@@ -231,7 +206,7 @@ img {
   @include mediumScreen {
     font-size: 23px;
   }
-  
+
   @include mobile {
     margin: 5px 0 3px;
   }
