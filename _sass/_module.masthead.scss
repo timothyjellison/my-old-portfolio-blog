@@ -1,0 +1,16 @@
+.header {
+  background: $darkGray;
+}
+
+.masthead {
+  display: flex;
+  flex: column;
+
+  * {
+    color: $white;
+  }
+}
+
+.site-name {
+  margin-bottom: $font-medium;
+}

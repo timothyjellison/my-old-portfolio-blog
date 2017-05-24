@@ -1,0 +1,46 @@
+$mediumPageWidth: 80vw; // 80/20 rule
+$largePageWidth: 61.8vw; // the golden ratio
+
+html {
+  text-size-adjust: 100%;
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 200px auto 100px;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  justify-content: center;
+}
+
+.page__section {
+  padding: 2em;
+
+  @include mediumScreen {
+    max-width: $mediumPageWidth;
+  };
+
+  @include largeScreen {
+    max-width: $largePageWidth;
+  };
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}

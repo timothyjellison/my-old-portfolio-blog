@@ -1,13 +1,16 @@
-
 .highlight {
   background-color: #efefef;
   padding: 7px 7px 7px 10px;
-  border: 1px solid #ddd;
-  -moz-box-shadow: 3px 3px rgba(0,0,0,0.1);
-  -webkit-box-shadow: 3px 3px rgba(0,0,0,0.1);
-  box-shadow: 3px 3px rgba(0,0,0,0.1);
-  margin: 20px 0 20px 0;
+  border: 1px solid $lightGray;
+  margin: 0 0 20px;
   overflow: scroll;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: #333333;
+  box-sizing: border-box;
+  white-space: pre-wrap;
+  width: 100%;
+  -webkit-tap-highlight-color: $white;
 }
 
 code {
