@@ -1,11 +1,5 @@
 .post {
   padding-bottom: $font-extra-large;
-
-  &.post-excerpt:not(:last-child) {
-    padding-bottom: $font-large;
-    margin-bottom: $font-large;
-    border-bottom: 1px dashed $lightGray;
-  }
 }
 
 .post-title {

@@ -2,33 +2,17 @@
 layout: default
 ---
 
+<div class="blog-grid posts">
+	{% for post in site.posts %}
+	<article class="post post-excerpt">
 
-		<div class="posts">
-			{% for post in paginator.posts %}
-		    <article class="post post-excerpt">
+		<h2 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-		      <h2 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-		      <div class="entry">
-		        {{ post.excerpt }}
-		      </div>
-
-		      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-		    </article>
-			{% endfor %}
+		<div class="entry">
+			{{ post.excerpt }}
 		</div>
 
-<!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous"><<</a>
-  {% else %}
-    <span class="previous"><<</span>
-  {% endif %}
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">>></a>
-  {% else %}
-    <span class="next ">>></span>
-  {% endif %}
+		<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+	</article>
+	{% endfor %}
 </div>
