@@ -7,6 +7,7 @@
 .masthead {
   display: flex;
   flex: column;
+  padding-top: $font-extra-large;
 
   * {
     color: $white;
@@ -14,5 +15,10 @@
 }
 
 .site-name {
-  margin-bottom: $font-medium;
+  font-size: $font-extra-large;
+  margin-bottom: $font-large;
+}
+
+.site-description {
+  font-size: 2.5rem;
 }

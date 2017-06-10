@@ -1,12 +1,13 @@
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+$helvetica: "Roboto", Helvetica, Arial, sans-serif;
+$helveticaNeue: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$georgia: "EB Garamond", Georgia, serif;
 
-$font-extra-large: 3rem;
+$font-extra-large: 4rem;
 $font-large: 2rem;
 $font-medium: 1rem;
 $font-small: 0.5rem;
 
 p {
-  line-height: 1.35rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }

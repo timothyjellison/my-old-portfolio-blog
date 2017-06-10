@@ -32,7 +32,7 @@ html {
 .page {
   display: grid;
   grid-template-columns: 0 auto 0;
-  grid-template-rows: 200px auto 100px;
+  grid-template-rows: 400px auto 100px;
   grid-template-areas:
     "header-l header header-r"
     ". main ."
@@ -68,9 +68,38 @@ html {
   };
 }
 
+.about-me {
+  display: block;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding-bottom: $font-extra-large;
+
+  @include mediumScreen {
+    display: flex;
+    grid-column-end: 3;
+  };
+}
+
+.about-me__text-block {
+  margin-bottom: $font-medium;
+
+  @include mediumScreen {
+    padding-right: $font-medium;
+  }
+}
+
+.about-me__social-media-icons {
+  text-align: center;
+
+  @include mediumScreen {
+    text-align: inherit;
+  };
+}
+
 .footer {
   display: flex;
   justify-content: center;
+  color: $gray;
 }
 
 .footer-icon {

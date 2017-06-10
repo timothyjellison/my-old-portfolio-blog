@@ -3,6 +3,12 @@ layout: default
 ---
 
 <div class="blog-grid posts">
+	<div class="about-me">
+		<p class="about-me__text-block">Hi, I'm Tim. I'm a web developer with 3+ years experience building web applications and sites for companies like Comcast, Intel, Lenovo, and Caterpillar.</p>
+		<div class="about-me__social-media-icons">
+			{% include svg-icons.html %}
+		</div>
+	</div>
 	{% for post in site.posts %}
 	<article class="post post-excerpt">
 
