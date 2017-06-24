@@ -4,11 +4,15 @@ layout: default
 
 <div class="blog-grid posts">
 	<div class="about-me">
-		<p class="about-me__text-block">Hi, I'm Tim. I'm a web developer with 3+ years experience building web applications and sites for companies like Comcast, Intel, Lenovo, and Caterpillar.</p>
+		<div class="about-me__text-block">
+			<p>Heya! I'm a web developer with 3+ years experience building web applications and sites.</p>
+			<p>The web should be accessible, performant, beautiful, and fun. Want to build something awesome together? <a href="mailto:timothyjellison@live.com" class="email-tag">Email me</a> or reach out to me on <a href="https://www.twitter.com/timothyjellison" target="_blank" class="twitter-tag">Twitter</a>.</p>
+		</div>
 		<div class="about-me__social-media-icons">
 			{% include svg-icons.html %}
 		</div>
 	</div>
+	<!--
 	{% for post in site.posts %}
 	<article class="post post-excerpt">
 
@@ -21,4 +25,5 @@ layout: default
 		<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
 	</article>
 	{% endfor %}
+	-->
 </div>
