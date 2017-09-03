@@ -6,7 +6,11 @@ tags:
 
 timreadspoetry.com wasn't my first website, but it was the first site I stuck with for longer than a couple weeks. Here's its ongoing saga.
 
-I started the site while I was living in Cambridge, UK. My wife was a research fellow at the university and I was keeping house and studying to become a web developer. The site began as timreadsbooks on tumblr, then became timreadspoetry on Blogger. In both cases I used free themes so it ended up looking indistinguishable from all the other sites out there. Popular themes were good enough for a while (because yay websites!) but when I started to get actual human visitors I decided I needed to make it my own.
+I started the site while I was living in Cambridge, UK. My wife was a research fellow at the university and I was keeping house and studying to become a web developer. 
+
+(A bit about me: I was on the Ph.D. track in Comparative Literature at Yale when I came to the realization I really wouldn't be a happy or very good professor. I left grad school and professional literature studies behind, but I'm pretty much always reading books, averaging one book a week.)
+
+The site began as timreadsbooks on tumblr, then became timreadspoetry on Blogger. In both cases I used free themes so it ended up looking indistinguishable from all the other sites out there. Popular themes were good enough for a while (because yay websites! 🎆) but when I started to get actual human visitors I decided I needed to make it my own.
 
 My design decisions were pretty basic. I wanted to imitate the simplicity of books: black text on a white page, emphasis on readability. Here's a look:
 
@@ -28,7 +32,7 @@ After reading up on all the options, I chose to create a Ghost powered blog host
 
 (The close runner-up in my search for the right Node-based blogging platform was Keystone. If you're not sold on Ghost, check Keystone out. What ultimately swayed me away was that Ghost had such close integration with Digital Ocean.)
 
-Now I had a clean slate. I surveyed my legacy posts in  Ghost's default Casper theme (oh, I just got the joke). Behold:
+Now I had a clean slate. I surveyed my legacy posts in  Ghost's default Casper theme (oh, I just got the joke 👻). Behold:
 
 ![](/images/New Design.png)
 

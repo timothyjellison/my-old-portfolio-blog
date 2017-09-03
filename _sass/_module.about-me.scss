@@ -1,3 +1,26 @@
 .about-me {
   padding-bottom: $font-xl;
 }
+
+.about-me__summary {
+  margin-bottom: $font-lg;
+}
+
+.about-me__cta {
+  background-color: $red;
+  color: $white;
+  display: block;
+  font-size: $font-md;
+  margin: 0 auto $font-lg;
+  max-width: 12em;
+  padding: $font-sm;
+  text-align: center;
+
+  @include smallScreen {
+    padding: $font-lg;
+  }
+
+  span {
+    display: block;
+  }
+}
