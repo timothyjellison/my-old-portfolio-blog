@@ -2,14 +2,13 @@
 ---
 
 @import "reset";
-@import "library.colors";
+@import "variables.colors";
+@import "mixins.breakpoints";
+@import "library.images";
 @import "library.typography";
-@import "library.breakpoints";
-@import "library.svg-icons";
-@import "library.headers";
-@import "library.paragraphs";
-@import "library.links";
-@import "module.masthead";
 @import "module.page-layout";
+@import "module.header";
+@import "module.footer";
+@import "module.about-me";
 @import "module.posts";
 @import "module.code-highlighting";

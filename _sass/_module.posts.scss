@@ -1,12 +1,18 @@
+.post,
+.post-excerpt {
+  padding-bottom: $font-xl;
+}
+
 .post {
-  padding-bottom: $font-extra-large;
+  a {
+    color: $blue;
+  }
+}
+.post__title {
+  font-size: $font-lg;
+  padding-bottom: $font-xs;
 }
 
-.post-title {
-  font-size: $font-large;
-  padding-bottom: $font-small;
-}
-
-.read-more {
+.post__read-more-link {
   color: $blue;
 }

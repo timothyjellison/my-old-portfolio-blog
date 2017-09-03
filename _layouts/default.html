@@ -17,38 +17,19 @@
   <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Roboto" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
 </head>
-<body>
-  <div class="page">
-    <div class="header-l"></div>
-    <div class="header page__section">
-      <header class="masthead">
-        <div class="site-info">
-          <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-          <p class="site-description">{{ site.description }}</p>
-        </div>
+<body class="page">
+  <header class="header">
+    <h1 class="header__site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+    <p class="header__site-description">{{ site.description }}</p>
+  </header>
 
-        <!--
-          <nav>
-            <a href="{{ site.baseurl }}/about">About</a>
-            <a href="https://github.com/timothyjellison" target="_blank">Github</a>
-          </nav>
-        -->
-      </header>
-    </div>
-    <div class="header-r"></div>
+  <main class="main" role="main">
+    {{ content }}
+  </main>
 
-    <div class="main page__section">
-      <div id="main" role="main">
-        {{ content }}
-      </div>
-    </div>
-
-    <div class="footer page__section">
-      <footer class="footer">
-        Timothy Ellison &copy; 2017
-      </footer>
-    </div>
-  </div>
+  <footer class="footer">
+    Timothy Ellison &copy; 2017
+  </footer>
   {% include analytics.html %}
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

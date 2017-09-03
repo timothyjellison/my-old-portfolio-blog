@@ -2,12 +2,51 @@ $helvetica: "Roboto", Helvetica, Arial, sans-serif;
 $helveticaNeue: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: "EB Garamond", Georgia, serif;
 
-$font-extra-large: 4rem;
-$font-large: 2rem;
-$font-medium: 1rem;
-$font-small: 0.5rem;
+$font-xl: 4rem;
+$font-lg: 2rem;
+$font-md: 1.5rem;
+$font-sm: 1rem;
+$font-xs: 0.5rem;
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $helveticaNeue;
+}
+
+h1, .h1 {
+  font-size: $font-xl;
+}
 
 p {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-family: $georgia;
+  font-size: $font-md;
+  line-height: $font-lg;
+  padding-bottom: $font-md;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+}
+
+.twitter-tag,
+.linkedin-tag {
+  &:hover {
+    color: $white;
+    background-color: $blue;
+  }
+}
+
+.email-tag {
+  &:hover {
+    color: $white;
+    background-color: $red;
+  }
+}
+
+.github-tag {
+  &:hover {
+    color: $white;
+    background-color: $darkerGray;
+  }
 }

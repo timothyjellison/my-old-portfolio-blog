@@ -2,28 +2,22 @@
 layout: default
 ---
 
-<div class="blog-grid posts">
-	<div class="about-me">
-		<div class="about-me__text-block">
-			<p>Heya! I'm a web developer with 3+ years experience building web applications and sites.</p>
-			<p>The web should be accessible, performant, beautiful, and fun. Want to build something awesome together? <a href="mailto:timothyjellison@live.com" class="email-tag">Email me</a> or reach out to me on <a href="https://www.twitter.com/timothyjellison" target="_blank" class="twitter-tag">Twitter</a>.</p>
-		</div>
-		<div class="about-me__social-media-icons">
-			{% include svg-icons.html %}
-		</div>
-	</div>
-	<!--
-	{% for post in site.posts %}
-	<article class="post post-excerpt">
-
-		<h2 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-		<div class="entry">
-			{{ post.excerpt }}
-		</div>
-
-		<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-	</article>
+<section class="about-me">
+	<p>Heya! I'm a web developer with 3+ years experience building web applications and sites. <a href="mailto:timothyjellison@live.com" class="email-tag">Email me</a>, reach out to me on <a href="https://www.twitter.com/timothyjellison" target="_blank" class="twitter-tag">Twitter</a>, check out my repos on <a href="https://github.com/timothyjellison" target="_blank" class="github-tag">GitHub</a>, or see my full resume on <a href="https://www.linkedin.com/in/timothyjellison/" target="_blank" class="linkedin-tag">LinkedIn</a>.</p>
+	<p>The web should be accessible, performant, beautiful, and fun. <a href="mailto:timothyjellison@live.com" class="email-tag">Let's build something awesome together!</a></p>
+</section>
+<section class="blog-grid posts">
+	<h1>Work &amp; Projects</h1>
+	<hr class="blog-grid__separator">
+	{% for post in site.tags.FrontPage %}
+	<a href="{{ site.baseurl }}{{ post.url }}">
+		<article class="post-excerpt">
+			<h2 class="post__title">{{ post.title }}</h1>
+			<div class="entry">
+				{{ post.excerpt }}
+			</div>
+		</article>
+	</a>
 	{% endfor %}
-	-->
+	</div>
 </div>

@@ -1,0 +1,17 @@
+.header {
+  background: $red;
+  padding-top: $font-xl;
+  margin-bottom: $font-lg;
+
+  * {
+    color: $white;
+  }
+}
+
+.header__site-name {
+  margin-bottom: $font-lg;
+}
+
+.header__site-description {
+  font-size: ($font-xl + $font-sm) / 2;
+}

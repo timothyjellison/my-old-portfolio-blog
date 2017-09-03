@@ -4,118 +4,26 @@ $mediumPageGutter: 50vw - $mediumPageWidth / 2;
 $largePageWidth: 61.8vw; // the golden ratio
 $largePageGutter: 50vw - $largePageWidth / 2;
 
-html {
-  text-size-adjust: 100%;
-}
-
-.header {
-  grid-area: header;
-}
-
-.header-l {
-  grid-area: "header-l";
-}
-
-.header-r {
-  grid-area: "header-r";
-}
-
-.main {
-  grid-area: main;
-  margin-top: $font-large
-}
-
-.footer {
-  grid-area: footer;
-}
-
 .page {
   display: grid;
-  grid-template-columns: 0 auto 0;
-  grid-template-rows: 400px auto 100px;
-  grid-template-areas:
-    "header-l header header-r"
-    ". main ."
-    ". footer .";
-  justify-content: center;
+  grid-template-rows: 400px auto 50px;
 
-  @include mediumScreen {
-    grid-template-columns: $mediumPageGutter auto $mediumPageGutter;
-  };
+  > * {
+    padding-left: $font-md;
+    padding-right: $font-md;
 
-  @include largeScreen {
-    grid-template-columns: $largePageGutter auto $largePageGutter;
-  };
-}
+    @include mediumScreen {
+      padding-left: $mediumPageGutter;
+      padding-right: $mediumPageGutter;
+    }
 
-.page__section {
-  padding: 2em;
-}
-
-.pagination {
-  text-align: center;
-}
-
-.blog-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: $font-small;
-
-  @include mediumScreen {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px;
-    grid-gap: $font-large;
-  };
-}
-
-.about-me {
-  display: block;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  padding-bottom: $font-extra-large;
-
-  @include mediumScreen {
-    display: flex;
-    grid-column-end: 3;
-  };
-}
-
-.about-me__text-block {
-  margin-bottom: $font-medium;
-
-  @include mediumScreen {
-    padding-right: $font-medium;
+    @include largeScreen {
+      padding-left: $largePageGutter;
+      padding-right: $largePageGutter;
+    }
   }
 }
 
-.about-me__social-media-icons {
-  text-align: center;
-
-  @include mediumScreen {
-    text-align: inherit;
-  };
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  color: $gray;
-}
-
-.footer-icon {
-  padding: 0 $font-small;
-}
-
-.twitter-tag {
-  &:hover {
-    color: $white;
-    background-color: $blue;
-  }
-}
-
-.email-tag {
-  &:hover {
-    color: $white;
-    background-color: $red;
-  }
+.blog-grid__separator {
+  margin-bottom: $font-lg;
 }
