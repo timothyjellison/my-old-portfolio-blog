@@ -3,6 +3,7 @@
 }
 
 .about-me__summary {
+  margin-top: $font-lg;
   margin-bottom: $font-lg;
 }
 
@@ -11,7 +12,7 @@
   color: $white;
   display: block;
   font-size: $font-md;
-  margin: 0 auto $font-lg;
+  margin: $font-lg auto $font-xl;
   max-width: 12em;
   padding: $font-sm;
   text-align: center;
