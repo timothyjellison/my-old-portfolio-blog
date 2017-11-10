@@ -24,6 +24,14 @@ $largePageGutter: 50vw - $largePageWidth / 2;
   }
 }
 
+.blog-grid {
+  @include mediumScreen {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: $mediumPageGutter;
+  }
+}
+
 .blog-grid__separator {
   margin-bottom: $font-lg;
 }
