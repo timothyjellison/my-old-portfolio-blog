@@ -1,7 +1,13 @@
 .header {
-  background: $red;
+  // background: #258dc8; /* Old browsers */
+  // background: -moz-linear-gradient(top, #258dc8 0%, #00558e 99%); /* FF3.6-15 */
+  // background: -webkit-linear-gradient(top, #258dc8 0%,#00558e 99%); /* Chrome10-25,Safari5.1-6 */
+  // background: linear-gradient(to bottom, #258dc8 0%,#00558e 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', endColorstr='#00558e',GradientType=0 ); /* IE6-9 */
+  background: #3b7686;
   padding-top: $font-xl;
   margin-bottom: $font-lg;
+  text-align: center;
 
   * {
     color: $white;
@@ -9,9 +15,14 @@
 }
 
 .header__site-name {
+  font-family: $fredericka;
+  font-size: $font-xl + $font-lg;
+  font-weight: normal;
   margin-bottom: $font-lg;
+  text-shadow: 2px 2px 2px #333;
 }
 
 .header__site-description {
   font-size: ($font-xl + $font-sm) / 2;
+  font-family: $helvetica;
 }

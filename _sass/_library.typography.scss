@@ -1,3 +1,4 @@
+$fredericka: "Fredericka the Great", cursive;
 $helvetica: "Roboto", Helvetica, Arial, sans-serif;
 $helveticaNeue: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: "EB Garamond", Georgia, serif;
@@ -27,41 +28,4 @@ p {
 a {
   color: $black;
   text-decoration: none;
-}
-
-.twitter-tag,
-.linkedin-tag {
-  text-decoration: underline;
-  text-decoration-color: $blue;
-  text-decoration-style: dashed;
-
-  &:hover {
-    text-decoration: none;
-    color: $white;
-    background-color: $blue;
-  }
-}
-
-.email-tag {
-  text-decoration: underline;
-  text-decoration-color: $red;
-  text-decoration-style: dashed;
-
-  &:hover {
-    text-decoration: none;
-    color: $white;
-    background-color: $red;
-  }
-}
-
-.github-tag {
-  text-decoration: underline;
-  text-decoration-color: $darkerGray;
-  text-decoration-style: dashed;
-
-  &:hover {
-    text-decoration: none;
-    color: $white;
-    background-color: $darkerGray;
-  }
 }
