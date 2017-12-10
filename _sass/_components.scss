@@ -1,0 +1,95 @@
+
+.page {
+  display: grid;
+  grid-template-rows: 40em auto 50px;
+
+  > * {
+    padding-left: $font-md;
+    padding-right: $font-md;
+
+    @include mediumScreen {
+      padding-left: $mediumPageGutter;
+      padding-right: $mediumPageGutter;
+    }
+
+    @include largeScreen {
+      padding-left: $largePageGutter;
+      padding-right: $largePageGutter;
+    }
+  }
+}
+
+.blog-grid {
+  @include mediumScreen {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: $mediumPageGutter;
+  }
+}
+
+.blog-grid__separator {
+  margin-bottom: $font-lg;
+}
+
+
+
+.post,
+.post-excerpt {
+  padding-bottom: $font-xl;
+}
+
+.post {
+  a {
+    color: $blue;
+  }
+}
+
+.post__title {
+  font-size: $font-lg;
+  padding-bottom: $font-xs;
+}
+
+.post__read-more-link {
+  color: $blue;
+}
+
+
+.header {
+  padding-top: 8em;
+  padding-bottom: 16em;
+  font-family: $helvetica;
+  background: linear-gradient(rgba(30, 30, 30, 0.2), rgba(30, 30, 30, 0.2)), url('../images/jesse-gardner-med.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__text {
+  color: white;
+}
+
+.header__title {
+  padding-bottom: $font-md;
+}
+
+.about-me {
+  padding-bottom: $font-xl;
+}
+
+.about-me__summary {
+  margin-top: $font-xl;
+  margin-bottom: $font-lg;
+  line-height: 1.8;
+}
+
+.about-me__cta {
+  text-decoration: underline;
+}
+
+.projects__header {
+  margin-bottom: $font-md;
+}
+
+.footer {
+  color: $gray;
+  text-align: center;
+}

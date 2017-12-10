@@ -1,3 +1,41 @@
+body {
+  background-color: #fafafa;
+  color: #101010;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $helveticaNeue;
+}
+
+h1, .h1 {
+  @include fluid-type(320px, 1080px, 48px, 92px);
+}
+
+h2, .h2 {
+  @include fluid-type(320px, 1080px, 24px, 40px);
+}
+
+p {
+  font-family: $georgia;
+  @include fluid-type(320px, 640px, 18px, 32px);
+  line-height: $font-lg;
+  padding-bottom: $font-md;
+}
+
+a {
+  color: $black;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+///////////////////////
+// CODE HIGHLIGHTING //
+///////////////////////
+
 .highlight {
   background-color: #efefef;
   padding: 7px 7px 7px 10px;

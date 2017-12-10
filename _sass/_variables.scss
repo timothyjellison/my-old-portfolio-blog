@@ -1,0 +1,38 @@
+////////////
+// LAYOUT //
+////////////
+
+$mediumPageWidth: 80vw; // 80/20 rule
+$mediumPageGutter: 50vw - $mediumPageWidth / 2;
+
+$largePageWidth: 61.8vw; // the golden ratio
+$largePageGutter: 50vw - $largePageWidth / 2;
+
+////////////////
+// TYPOGRAPHY //
+////////////////
+
+$helvetica: Helvetica, Arial, sans-serif;
+$helveticaNeue: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$georgia: "EB Garamond", Georgia, serif;
+
+$font-xl: 4rem;
+$font-lg: 2rem;
+$font-md: 1.5rem;
+$font-sm: 1rem;
+$font-xs: 0.5rem;
+
+////////////
+// COLORS //
+////////////
+
+$red: #e45555;
+$blue: #4183C4;
+
+$black: #000;
+$darkerGray: #222;
+$darkGray: #333;
+$gray: #666;
+$lightGray: #ccc;
+$lighterGray: #eee;
+$white: #fff;
