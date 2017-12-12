@@ -13,13 +13,13 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  @include fluid-type(320px, 1080px, 24px, 40px);
+  @include fluid-type(320px, 1080px, 30px, 40px);
 }
 
 p {
   font-family: $georgia;
-  @include fluid-type(320px, 640px, 18px, 32px);
-  line-height: $font-lg;
+  @include fluid-type(320px, 640px, 24px, 32px);
+  line-height: 1.4;
   padding-bottom: $font-md;
 }
 

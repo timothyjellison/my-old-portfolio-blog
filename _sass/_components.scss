@@ -1,7 +1,11 @@
 
 .page {
   display: grid;
-  grid-template-rows: 40em auto 50px;
+  grid-template-rows: 30em auto 50px;
+
+  @include mediumScreen {
+    grid-template-rows: 40em auto 50px;
+  }
 
   > * {
     padding-left: $font-md;
@@ -55,15 +59,27 @@
 
 
 .header {
-  padding-top: 8em;
+  padding-top: 10em;
   padding-bottom: 16em;
   font-family: $helvetica;
-  background: linear-gradient(rgba(30, 30, 30, 0.2), rgba(30, 30, 30, 0.2)), url('../images/jesse-gardner-med.jpg');
+  background-image: url('../images/jesse-gardner-med.jpg');
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.header__text {
+.header[data-title="Comcast"] {
+  background-image: url('http://www.ramsa.com/api/sites/default/files/A00007-ESTO-2008A63.420_0.jpg');
+  background-position-y: bottom;
+}
+
+.header[data-title="Contribution"] {
+  background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/1809Tdj/footage-of-computer-display-screen-with-green-moving-text-with-code-in-the-terminal-software_sjbizma2_thumbnail-full01.png');
+}
+
+.header__text,
+.header__text a {
   color: white;
 }
 
@@ -71,22 +87,16 @@
   padding-bottom: $font-md;
 }
 
-.about-me {
-  padding-bottom: $font-xl;
+.main {
+  margin-top: 8em;
 }
 
 .about-me__summary {
-  margin-top: $font-xl;
-  margin-bottom: $font-lg;
-  line-height: 1.8;
+  margin-bottom: 8em;
 }
 
 .about-me__cta {
   text-decoration: underline;
-}
-
-.projects__header {
-  margin-bottom: $font-md;
 }
 
 .footer {
