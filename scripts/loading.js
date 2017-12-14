@@ -57,13 +57,9 @@
 
   var mainContent = document.getElementById('mainContent');
 
-  var dog = 'dog';
-
-  if (window.addEventListener) {
-    window.addEventListener('scroll', function(e) {
-      if (window.scrollY >= (mainContent.offsetTop - 500)) {
-        mainContent.classList.remove('hidden');
-      }
-    });
-  }
+  window.addEventListener('scroll', function(e) {
+    if (window.scrollY >= (mainContent.offsetTop - 500)) {
+      mainContent.classList.remove('hidden');
+    }
+  });
 })();
