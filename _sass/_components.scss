@@ -1,7 +1,7 @@
 
 .page {
   display: grid;
-  grid-template-rows: 30em auto 50px;
+  grid-template-rows: 33em auto 50px;
 
   @include mediumScreen {
     grid-template-rows: 40em auto 50px;
