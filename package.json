@@ -4,7 +4,8 @@
   "description": "",
   "main": "google-analytics.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp:pre": "gulp pre-commit"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,8 @@
     "gulp-concat": "^2.6.1",
     "gulp-filter": "^5.0.1",
     "gulp-uglify": "^3.0.0"
-  }
+  },
+  "pre-commit": [
+    "gulp:pre"
+  ]
 }
