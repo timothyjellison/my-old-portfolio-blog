@@ -4,13 +4,19 @@ var babel = require('gulp-babel');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 
-gulp.task('js', function() {
+gulp.task('pre-commit', guppy.src('pre-commit', function () {
+  return gulp.src('scripts/**/*.js')
+    .pipe(babel({ presets: ['es2015'] }))
+    .pipe(concat('bundle.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest(''));
+  }
+));
+
+gulp.task('default', function() {
   return gulp.src('scripts/**/*.js')
         .pipe(babel({presets: ['es2015']}))
         .pipe(concat('bundle.js'))
         .pipe(uglify())
         .pipe(gulp.dest(''));
 });
-
-gulp.task('pre-commit', ['js']);
-gulp.task('default', ['js']);
