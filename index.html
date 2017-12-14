@@ -3,6 +3,7 @@ layout: default
 ---
 
 <section class="about-me">
+	<h2 class="screenreader-only">About Me</h2>
 	<div class="about-me__summary">
 		<p>
 			I'm a web developer with experience creating all things HTML, CSS, and JavaScript.
@@ -17,13 +18,13 @@ layout: default
 	</div>
 </section>
 <section class="posts">
-	<h1 "projects__header">Work &amp; Projects</h1>
+	<h2 class="h1">Work &amp; Projects</h2>
 	<hr class="blog-grid__separator">
 	<div class="blog-grid">
 		{% for post in site.tags.FrontPage %}
 		<a href="{{ site.baseurl }}{{ post.url }}">
 			<article class="post-excerpt">
-				<h2 class="post__title">{{ post.title }}</h1>
+				<h3 class="post__title">{{ post.title }}</h3>
 				<div class="entry">
 					{{ post.excerpt }}
 				</div>

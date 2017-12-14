@@ -99,10 +99,6 @@
   opacity: 0;
 }
 
-.main.hidden {
-  transform: translateX(-50px);
-}
-
 .about-me__summary {
   margin-bottom: 8em;
 }
@@ -114,4 +110,12 @@
 .footer {
   color: $gray;
   text-align: center;
+}
+
+.screenreader-only {
+  position: absolute;
+  left: -1000px;
+  top: - 1000px;
+  opacity: 0;
+  visibility: hidden;
 }
