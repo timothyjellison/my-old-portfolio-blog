@@ -10,8 +10,8 @@
 - [x] Add babel-polyfill so the image loader (which uses window.Promises) works in IE11
 - [x] Add a gulpfile to transpile, concatenate, and minify my JavaScript
 - [x] Fix all w3c validation issues
+- [x] Add [husky](https://www.npmjs.com/package/husky) to attach my gulp scripts to a git precommit hook
 - [ ] Fix issue with text not animating into view on IE11 (opacity and transition are supported in IE11, so I think this actually an issue with scroll detection.)
-- [ ] Add [git-guppy](https://www.npmjs.com/package/git-guppy) to attach my gulp scripts to a git pre-commit hook
 - [ ] Provide fallback for displaying header background images in case any image fails to load
 - [ ] Limit 1s text transition to opacity property to prevent awkward resize animation
 - [ ] Explore better ways of displaying images in blog posts
