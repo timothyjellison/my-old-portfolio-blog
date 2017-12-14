@@ -23,6 +23,15 @@
   }
 }
 
+.spinner {
+  position: absolute;
+  top: 50vh;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  transition: ease-out 0.5s;
+}
+
 .blog-grid {
   @include mediumScreen {
     display: grid;
@@ -62,20 +71,10 @@
   padding-top: 10em;
   padding-bottom: 16em;
   font-family: $helvetica;
-  background-image: url('../images/jesse-gardner-med.jpg');
   background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.header[data-title="Comcast"] {
-  background-image: url('http://www.ramsa.com/api/sites/default/files/A00007-ESTO-2008A63.420_0.jpg');
-  background-position-y: bottom;
-}
-
-.header[data-title="Contribution"] {
-  background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/1809Tdj/footage-of-computer-display-screen-with-green-moving-text-with-code-in-the-terminal-software_sjbizma2_thumbnail-full01.png');
 }
 
 .header__text,
@@ -89,6 +88,19 @@
 
 .main {
   margin-top: 8em;
+  transition: 1s;
+}
+
+.content-wrapper {
+  transition: ease-in 1s;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.main.hidden {
+  transform: translateX(-50px);
 }
 
 .about-me__summary {
