@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var guppy = require('git-guppy')(gulp);
 var babel = require('gulp-babel');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
@@ -11,4 +12,5 @@ gulp.task('js', function() {
         .pipe(gulp.dest(''));
 });
 
+gulp.task('pre-commit', ['js']);
 gulp.task('default', ['js']);
