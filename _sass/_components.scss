@@ -32,6 +32,15 @@
   transition: ease-out 0.5s;
 }
 
+.nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 10vw;
+  color: white;
+  display: flex;
+}
+
 .blog-grid {
   @include mediumScreen {
     display: grid;
@@ -88,10 +97,11 @@
 
 .main {
   margin-top: 8em;
-  transition: 1s;
+  transition: opacity 1s;
 }
 
 .content-wrapper {
+  transition-property: opacity;
   transition: ease-in 1s;
 }
 
