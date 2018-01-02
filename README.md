@@ -5,6 +5,7 @@
 - [x] Add navigation bar
 - [x] Add a /blog page that displays all blog posts
 - [x] Write a blog post about my goals for 2018
+- [x] Write a blog post about working through chapter 1 of Michael Hartl's Ruby on Rails book
 - [ ] Limit the /blog page to only showing posts that don't have the FrontPage tag
 - [ ] Fix issue with text not animating into view on IE11 (opacity and transition are supported in IE11, so I think this actually an issue with scroll detection.)
 - [ ] Provide fallback for displaying header background images in case any image fails to load
