@@ -1,5 +1,6 @@
 ---
 title: New Year, New Goals
+tags: Blog
 ---
 
 It's January 1, 2018, and I'm feeling pumped.

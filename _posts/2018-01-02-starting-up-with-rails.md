@@ -1,5 +1,6 @@
 ---
 title: Starting Up With Rails
+tags: Blog
 ---
 
 So I've started working through Michael Hartl's free [Ruby on Rails Tutorial](https://www.railstutorial.org/book), and here are some first impressions and key takeaways. I'm looking at this from the perspective of someone whose primary coding experience is JavaScript and Node.
