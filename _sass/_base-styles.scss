@@ -31,6 +31,17 @@ p {
   padding-bottom: $font-md;
 }
 
+li {
+  @include fluid-type(320px, 640px, 24px, 32px);
+  line-height: 1.4;
+  padding-bottom: $font-sm;
+}
+
+ul {
+  margin-left: 2em;
+  list-style-type: initial;
+}
+
 a {
   color: $black;
   text-decoration: none;

@@ -84,6 +84,27 @@
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+.header__nav {
+  position: absolute;
+  top: 16px;
+  right: 0;
+}
+
+.header__nav ul {
+  list-style: none;
+}
+
+.header__nav li {
+  @include fluid-type(320px, 640px, 16px, 20px);
+  display: inline-block;
+  padding-right: 1em;
+}
+
+.header__nav a {
+  color: white;
 }
 
 .header__text,

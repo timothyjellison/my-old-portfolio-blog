@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+{% for post in site.posts %}
+<a href="{{ site.baseurl }}{{ post.url }}">
+  <article class="post-excerpt">
+    <h3 class="post__title">{{ post.title }}</h3>
+    <div class="entry">
+      {{ post.excerpt }}
+    </div>
+  </article>
+</a>
+{% endfor %}
