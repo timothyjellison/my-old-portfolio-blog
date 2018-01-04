@@ -7,7 +7,8 @@
 - [x] Write a blog post about my goals for 2018
 - [x] Write a blog post about working through chapter 1 of Michael Hartl's Ruby on Rails book
 - [x] Limit the /blog page to only showing posts that have the Blog tag
-- [ ] Display a preview of my two most recent blog posts the front page, in a section marked **Blog**, with a link at the bottom to read more
+- [ ] Write a blog post that finishes my notes about Hartle chapter 2
+- [ ] Display a preview of my two most recent blog posts on the front page, in a section marked **Blog**, with a link at the bottom to read more
 - [ ] Add an animated mobile hamburger for mobile navigation ([something like this](https://eichefam.net/2014/10/01/animated-hamburger/))
 - [ ] Fix issue with text not animating into view on IE11 (opacity and transition are supported in IE11, so I think this actually an issue with scroll detection.)
 - [ ] Provide fallback for displaying header background images in case any image fails to load
