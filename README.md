@@ -6,13 +6,13 @@
 - [x] Add a /blog page that displays all blog posts
 - [x] Limit the /blog page to only showing posts that have the Blog tag
 - [x] Improve inline code highlighting in the blog posts
+- [x] Add link to http://www.timothyellison.com/fave-resources/ in navigation bar
 - [ ] Write a blog post that finishes my notes about Hartle chapter 2
 - [ ] Display a preview of my two most recent blog posts on the front page, in a section marked **Blog**, with a link at the bottom to read more
 - [ ] Add an animated mobile hamburger for mobile navigation ([something like this](https://eichefam.net/2014/10/01/animated-hamburger/))
 - [ ] Fix issue with text not animating into view on IE11 (opacity and transition are supported in IE11, so I think this actually an issue with scroll detection.)
 - [ ] Provide fallback for displaying header background images in case any image fails to load
 - [ ] Explore better ways of displaying images in blog posts
-- [ ] Add link to http://www.timothyellison.com/fave-resources/ in navigation bar
 - [ ] Add custom CSS for [/fave-resources](http://www.timothyellison.com/fave-resources/) so that it matches the rest of the pages' aesthetic
 - [ ] **Write some blog posts!**
   - [ ] My gulp setup for this website
