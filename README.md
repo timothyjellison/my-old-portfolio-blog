@@ -7,20 +7,17 @@
 - [x] Limit the /blog page to only showing posts that have the Blog tag
 - [x] Improve inline code highlighting in the blog posts
 - [x] Add link to http://www.timothyellison.com/fave-resources/ in navigation bar
+- [x] Add a sticky nav bar
 - [ ] Write a blog post that finishes my notes about Hartle chapter 2
 - [ ] Display a preview of my two most recent blog posts on the front page, in a section marked **Blog**, with a link at the bottom to read more
 - [ ] Add an animated mobile hamburger for mobile navigation ([something like this](https://eichefam.net/2014/10/01/animated-hamburger/))
 - [ ] Fix issue with text not animating into view on IE11 (opacity and transition are supported in IE11, so I think this actually an issue with scroll detection.)
-- [ ] Provide fallback for displaying header background images in case any image fails to load
 - [ ] Explore better ways of displaying images in blog posts
 - [ ] Add custom CSS for [/fave-resources](http://www.timothyellison.com/fave-resources/) so that it matches the rest of the pages' aesthetic
 - [ ] **Write some blog posts!**
   - [ ] My gulp setup for this website
   - [ ] My git-hooks setup
-  - [ ] How my font-awesome spinner works
-  - [ ] How my image loader works
-  - [ ] How I added babel-polyfill to make the image loading compatible with IE11
-  - [ ] My design decisions and implementation (white text on a photo, lots of vertical whitespace, fluid typography, font choice)
+  - [ ] My design decisions and implementation (lots of vertical whitespace, fluid typography, font choice)
   - [ ] The experience of using [the w3c validator tool](https://validator.w3.org/) with jekyll
 
 ## December 2017
