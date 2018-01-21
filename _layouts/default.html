@@ -17,13 +17,26 @@
 </head>
 <body>
   <div id="contentWrapper" class="page content-wrapper">
-    <header class="header tartan" id="header">
+    <header class="header tartan" data-bgboy>
+      <nav class="header__nav--mobile" id="navburgerContainer" data-bgboy="dark">
+        <ul class="nav-links">
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="https://github.com/timothyjellison" target="_blank">Github</a></li>
+          <li><a href="http://www.timothyellison.com/fave-resources/" target="_blank">Faves</a></li>
+          <li><a href="mailto:timothyjellison@live.com">Email Me</a></li>
+        </ul>
+      </nav>
+      <div class="navburger" id="navburger">
+        <div class="navburger__line"></div>
+        <div class="navburger__line"></div>
+        <div class="navburger__line"></div>
+      </div>
       <div class="header__text">
         <h1 class="header__title"><a href="http://www.timothyellison.com/">Timothy Ellison</a><br/>
         <span class="small">Web&nbsp;Developer</span></h1>
       </div>
-      <nav class="header__nav" id="headerNav">
-        <ul>
+      <nav class="header__nav" id="headerNav" data-bgboy="dark">
+        <ul class="nav-links">
           <li><a href="/blog">Blog</a></li>
           <li><a href="https://github.com/timothyjellison" target="_blank">Github</a></li>
           <li><a href="http://www.timothyellison.com/fave-resources/" target="_blank">Faves</a></li>

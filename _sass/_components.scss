@@ -29,16 +29,6 @@
   transition: ease-out 0.5s;
 }
 
-.nav {
-  z-index: 10;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-right: 10vw;
-  color: white;
-  display: flex;
-}
-
 .blog-grid {
   @include mediumScreen {
     display: grid;
@@ -50,8 +40,6 @@
 .blog-grid__separator {
   margin-bottom: $font-lg;
 }
-
-
 
 .post,
 .post-excerpt {
@@ -73,17 +61,19 @@
   color: $blue;
 }
 
+*[data-bgboy] {
+  background-color: hsl(0, 60%, 30%);
+  transition: background-color 10s;
+}
 
 .header {
   padding-top: 10em;
   padding-bottom: 16em;
   font-family: $helvetica;
   position: relative;
-  transition: background-color 10s;
   // tartan background pattern
   // all credit to Marta Amada and Lea Verou
   // http://lea.verou.me/css3patterns/#tartan
-  background-color: hsl(0, 60%, 40%);
   background-image: repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
   repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
   repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
@@ -97,8 +87,57 @@
   height: 50px;
   bottom: 0;
   left: 0;
-  background-color: hsl(0, 60%, 30%);
-  transition: background-color 10s;
+
+  @include mobileOnly {
+    display: none;
+  }
+}
+
+.header__nav--mobile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 68px;
+  padding-top: 68px;
+  padding-bottom: 0px;
+  transition: background-color 10s, padding-bottom 1s;
+  width: 100%;
+  overflow: hidden;
+  display: none;
+
+  @include mobileOnly {
+    display: block;
+  }
+}
+
+.mobile-nav-open {
+  padding-bottom: 400px;
+}
+
+.navburger {
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  padding: 5px;
+  border: 5px solid white;
+  width: 55px;
+  height: 48px;
+  margin: 0 0 0 auto;
+  display: none;
+
+  @include mobileOnly {
+    display: block;
+  }
+}
+
+.navburger__line {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+
+  &:not(:last-of-type) {
+    margin-bottom: 6px;
+  }
 }
 
 .header__nav--sticky {
@@ -119,7 +158,8 @@
   padding-bottom: 0;
 }
 
-.header__nav a {
+.nav-links,
+.nav-links a {
   color: white;
 }
 

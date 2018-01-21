@@ -22,6 +22,12 @@
   }
 }
 
+@mixin mobileOnly {
+  @media screen and (max-width: 540px) {
+    @content;
+  }
+}
+
 // from https://css-tricks.com/snippets/css/fluid-typography/
 @function strip-unit($value) {
   @return $value / ($value * 0 + 1);

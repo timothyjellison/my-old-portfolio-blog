@@ -1,19 +1,32 @@
 (function() {
-  var header = document.getElementById('header');
   var headerNav = document.getElementById('headerNav');
+  var navburgerContainer = document.getElementById('navburgerContainer');
+  var navburger = document.getElementById('navburger');
+  var bgboiz = document.querySelectorAll('[data-bgboy]');
 
-  var updateHeaderHue = (function() {
-    var bgHue = 0;
+  var updateBgColor = (function() {
+    var hue = 0;
 
     return function() {
-      bgHue += bgHue >= 360 ? -360 : 20;
-      header.style.backgroundColor = 'hsl(' + bgHue + ', 60%, 40%)';
-      headerNav.style.backgroundColor = 'hsl(' + bgHue + ', 60%, 30%)';
+      hue += hue >= 360 ? -360 : 20;
+
+      for (var i = 0; i < bgboiz.length; i++) {
+        var lightness = bgboiz[i].dataset.bgboy === "dark" ? '30%' : '40%';
+
+        bgboiz[i].style.backgroundColor = 'hsl(' + hue + ', 60%, ' + lightness + ')';
+      }
     }
   })();
 
-  updateHeaderHue();
-  setInterval(updateHeaderHue, 10000);
+  updateBgColor()
+  setInterval(updateBgColor, 10000);
+
+  navburger.addEventListener('click', function(e) {
+    console.log('clickem');
+    var action = navburgerContainer.classList.contains('mobile-nav-open') ? 'remove' : 'add';
+
+    navburgerContainer.classList[action]('mobile-nav-open');
+  });
 
   window.addEventListener('scroll', function(e) {
     if (window.scrollY >= 429) {
