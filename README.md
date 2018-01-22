@@ -8,10 +8,9 @@
 - [x] Improve inline code highlighting in the blog posts
 - [x] Add link to http://www.timothyellison.com/fave-resources/ in navigation bar
 - [x] Add a sticky nav bar
+- [x] Add an animated mobile hamburger for mobile navigation ([something like this](https://eichefam.net/2014/10/01/animated-hamburger/))
 - [ ] Write a blog post that finishes my notes about Hartle chapter 2
 - [ ] Display a preview of my two most recent blog posts on the front page, in a section marked **Blog**, with a link at the bottom to read more
-- [ ] Add an animated mobile hamburger for mobile navigation ([something like this](https://eichefam.net/2014/10/01/animated-hamburger/))
-- [ ] Fix issue with text not animating into view on IE11 (opacity and transition are supported in IE11, so I think this actually an issue with scroll detection.)
 - [ ] Explore better ways of displaying images in blog posts
 - [ ] Add custom CSS for [/fave-resources](http://www.timothyellison.com/fave-resources/) so that it matches the rest of the pages' aesthetic
 - [ ] **Write some blog posts!**
