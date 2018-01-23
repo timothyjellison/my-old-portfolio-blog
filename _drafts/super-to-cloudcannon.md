@@ -5,3 +5,4 @@ tags:
 ---
 
 
+I'm upping my Jekyll game by moving content editing to CloudCannon.
