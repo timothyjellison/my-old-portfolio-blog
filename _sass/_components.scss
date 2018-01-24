@@ -1,7 +1,7 @@
 
 .page {
   display: grid;
-  grid-template-rows: 480px auto 50px;
+  grid-template-rows: 50px auto 50px;
 
   > *,
   .header__nav {
@@ -18,6 +18,10 @@
       padding-right: $largePageGutter;
     }
   }
+}
+
+.page--home {
+  grid-template-rows: 480px auto 50px;
 }
 
 .spinner {
@@ -80,6 +84,12 @@
   background-attachment: fixed;
 }
 
+.header--default {
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 50px;
+}
+
 .header__nav {
   position: absolute;
   text-align: right;
@@ -90,6 +100,19 @@
 
   @include mobileOnly {
     display: none;
+  }
+
+  ul {
+    margin-left: 0;
+    list-style: none;
+    line-height: 3.5;
+  }
+
+  li {
+    @include fluid-type(320px, 640px, 16px, 20px);
+    display: inline-block;
+    padding-right: 1em;
+    padding-bottom: 0;
   }
 }
 
@@ -145,19 +168,6 @@
   top: 0;
 }
 
-.header__nav ul {
-  margin-left: 0;
-  list-style: none;
-  line-height: 3.5;
-}
-
-.header__nav li {
-  @include fluid-type(320px, 640px, 16px, 20px);
-  display: inline-block;
-  padding-right: 1em;
-  padding-bottom: 0;
-}
-
 .nav-links,
 .nav-links a {
   color: white;
@@ -175,15 +185,6 @@
 .main {
   margin-top: 8em;
   transition: opacity 1s;
-}
-
-.content-wrapper {
-  transition-property: opacity;
-  transition: ease-in 1s;
-}
-
-.hidden {
-  opacity: 0;
 }
 
 .about-me__summary {

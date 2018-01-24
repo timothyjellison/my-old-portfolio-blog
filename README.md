@@ -9,10 +9,13 @@
 - [x] Add link to http://www.timothyellison.com/fave-resources/ in navigation bar
 - [x] Add a sticky nav bar
 - [x] Add an animated mobile hamburger for mobile navigation ([something like this](https://eichefam.net/2014/10/01/animated-hamburger/))
+- [x] Have a larger header for the home page, and a slimmer header for all other pages
+- [x] Make as much content as possible editable by CloudCannon
+- [x] Write a blog post about switching to CloudCannon
 - [ ] Write a blog post that finishes my notes about Hartle chapter 2
 - [ ] Display a preview of my two most recent blog posts on the front page, in a section marked **Blog**, with a link at the bottom to read more
 - [ ] Explore better ways of displaying images in blog posts
-- [ ] Add custom CSS for [/fave-resources](http://www.timothyellison.com/fave-resources/) so that it matches the rest of the pages' aesthetic
+- [ ] Make the fave-resources page into a yaml generated page
 - [ ] **Write some blog posts!**
   - [ ] My gulp setup for this website
   - [ ] My git-hooks setup
