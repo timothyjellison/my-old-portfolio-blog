@@ -22,6 +22,16 @@
 
 .page--home {
   grid-template-rows: 480px auto 50px;
+
+  .nav-links__home {
+    display: none;
+  }
+
+  .header__nav--scroll-event {
+    .nav-links__home {
+      display: inline-block;
+    }
+  }
 }
 
 .spinner {
@@ -168,9 +178,18 @@
   top: 0;
 }
 
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+}
+
 .nav-links,
-.nav-links a {
+.nav-links-mobile {
   color: white;
+
+  a {
+    color: white;
+  }
 }
 
 .header__text,

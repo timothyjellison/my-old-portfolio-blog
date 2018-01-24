@@ -29,10 +29,9 @@
   });
 
   window.addEventListener('scroll', function(e) {
-    if (window.scrollY >= 429) {
-      headerNav.classList.add('header__nav--sticky');
-    } else {
-      headerNav.classList.remove('header__nav--sticky');
-    }
+    var action = window.scrollY >= 429 ? 'add' : 'remove';
+
+    headerNav.classList[action]('header__nav--sticky');
+    headerNav.classList[action]('header__nav--scroll-event');
   });
 })();
