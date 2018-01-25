@@ -3,7 +3,7 @@ title: Building a Toy App with Rails
 tags: Blog
 ---
 
-I'm continuing my notes on Michael Hartl's free [Ruby on Rails Tutorial](https://www.railstutorial.org/book), picking up where I left off in chapter 2.
+I'm continuing my notes on Michael Hartl's free Ruby on Rails Tutorial, picking up where I left off in chapter 2.
 
 * You can add validation to a data model in the model's `.rb` file. For example, to limit the length of a micropost's to 140 characters, we just add `validates :content, length: { maximum: 140 }` to `model/micropost.rb`. To require a field, add `presence: true`. Rails adds a bunch of super ugly validation messages for you, so you'll want to restyle those at some point.
 

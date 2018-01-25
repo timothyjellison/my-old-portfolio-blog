@@ -3,7 +3,9 @@ title: Starting Up With Rails
 tags: Blog
 ---
 
-So I've started working through Michael Hartl's free [Ruby on Rails Tutorial](https://www.railstutorial.org/book), and here are some first impressions and key takeaways. I'm looking at this from the perspective of someone whose primary coding experience is JavaScript and Node.
+So I've started working through Michael Hartl's free Ruby on Rails Tutorial, and here are some first impressions and key takeaways.
+
+I'm looking at this from the perspective of someone whose primary coding experience is JavaScript and Node. ([Here's a link to the book, in case you want to follow along.](https://www.railstutorial.org/book).)
 
 * For JavaScript developers familar with Node's more common app scaffolding options (Yeoman, create-react-app, the Angular CLI), Ruby on Rails is a breeze to start working with. Just `rails new dirname`, wait for it to build, then `cd` into `dirname` and `rails server` to get the thing running on `localhost:3000`.
 

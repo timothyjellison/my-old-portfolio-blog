@@ -71,8 +71,19 @@
   padding-bottom: $font-xs;
 }
 
+.post__date {
+  font-style: italic;
+}
+
 .post__read-more-link {
   color: $blue;
+}
+
+.post__nav {
+  margin-top: $font-lg;
+  font-size: $font-md;
+  display: flex;
+  justify-content: space-between;
 }
 
 *[data-bgboy] {

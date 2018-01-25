@@ -12,10 +12,11 @@
 - [x] Have a larger header for the home page, and a slimmer header for all other pages
 - [x] Make as much content as possible editable by CloudCannon
 - [x] Write a blog post about switching to CloudCannon
+- [x] Add links to the next and previous blog posts at the bottom of each blog post
+- [ ] Make the fave-resources page into a yaml generated page
 - [ ] Write a blog post that finishes my notes about Hartle chapter 2
 - [ ] Display a preview of my two most recent blog posts on the front page, in a section marked **Blog**, with a link at the bottom to read more
 - [ ] Explore better ways of displaying images in blog posts
-- [ ] Make the fave-resources page into a yaml generated page
 - [ ] **Write some blog posts!**
   - [ ] My gulp setup for this website
   - [ ] My git-hooks setup
