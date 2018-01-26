@@ -13,9 +13,10 @@
 - [x] Make as much content as possible editable by CloudCannon
 - [x] Write a blog post about switching to CloudCannon
 - [x] Add links to the next and previous blog posts at the bottom of each blog post
-- [ ] Make the fave-resources page into a yaml generated page
+- [x] Display a preview of my four most recent blog posts on the front page, in a section marked **From the Blog**
+- [x] Write a blog post about my new npm package: csvtoyaml
+- [ ] Make the fave-resources page into a yaml data generated page
 - [ ] Write a blog post that finishes my notes about Hartle chapter 2
-- [ ] Display a preview of my two most recent blog posts on the front page, in a section marked **Blog**, with a link at the bottom to read more
 - [ ] Explore better ways of displaying images in blog posts
 - [ ] **Write some blog posts!**
   - [ ] My gulp setup for this website

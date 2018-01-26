@@ -26,4 +26,18 @@ layout: home
 		</a>
 		{% endfor %}
 	</div>
+	<h2 class="h1 editable">From the Blog</h2>
+	<hr class="blog-grid__separator" />
+	<div class="blog-grid">
+		{% for post in site.tags.Blog limit:4 %}
+		<a href="{{ site.baseurl }}{{ post.url }}">
+			<article class="post-excerpt">
+				<h3 class="post__title">{{ post.title }}</h3>
+				<div class="entry">
+					{{ post.excerpt }}
+				</div>
+			</article>
+		</a>
+		{% endfor %}
+	</div>
 </section>
