@@ -6,7 +6,45 @@ layout: master
   {% include _header/header-home.html %}
 
   <main class="main" id="mainContent">
-    {{ content }}
+    <section class="about-me">
+      <h2 class="screenreader-only">About Me</h2>
+      <div class="about-me__summary">
+        <p class="editable">Hi! I'm a web developer with experience creating everything from large enterprise web applications to personal WordPress blogs to HTML emails and even eBooks.<br /><br />My clients have included non-profits and Fortune 500 companies, but no matter who I'm working with I hold myself to the same standard: make the web accessible, performant, beautiful, and fun.</p>
+        <p>
+          <a class="about-me__cta editable" href="mailto:timothyjellison@live.com">Let's build something great together.</a>
+        </p>
+      </div>
+    </section>
+    <section class="posts">
+      <h2 class="h1 editable">Work &amp; Projects</h2>
+      <hr class="blog-grid__separator" />
+      <div class="blog-grid">
+        {% for post in site.tags.FrontPage %}
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          <article class="post-excerpt">
+            <h3 class="post__title">{{ post.title }}</h3>
+            <div class="entry">
+              {{ post.excerpt }}
+            </div>
+          </article>
+        </a>
+        {% endfor %}
+      </div>
+      <h2 class="h1 editable">From the Blog</h2>
+      <hr class="blog-grid__separator" />
+      <div class="blog-grid">
+        {% for post in site.tags.Blog limit:4 %}
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          <article class="post-excerpt">
+            <h3 class="post__title">{{ post.title }}</h3>
+            <div class="entry">
+              {{ post.excerpt }}
+            </div>
+          </article>
+        </a>
+        {% endfor %}
+      </div>
+    </section>
   </main>
 
   {% include footer.html %}

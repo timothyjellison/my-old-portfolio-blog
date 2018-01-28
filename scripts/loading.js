@@ -22,7 +22,6 @@
   setInterval(updateBgColor, 10000);
 
   navburger.addEventListener('click', function(e) {
-    console.log('clickem');
     var action = navburgerContainer.classList.contains('mobile-nav-open') ? 'remove' : 'add';
 
     navburgerContainer.classList[action]('mobile-nav-open');
@@ -31,7 +30,9 @@
   window.addEventListener('scroll', function(e) {
     var action = window.scrollY >= 429 ? 'add' : 'remove';
 
-    headerNav.classList[action]('header__nav--sticky');
-    headerNav.classList[action]('header__nav--scroll-event');
+    if (headerNav) {
+      headerNav.classList[action]('header__nav--sticky');
+      headerNav.classList[action]('header__nav--scroll-event');
+    }
   });
 })();

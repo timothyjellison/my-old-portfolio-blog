@@ -1,5 +1,6 @@
 ---
 title: Adding Bootstrap to a Rails App
+permalink: /blog/:title/
 tags: Blog
 ---
 

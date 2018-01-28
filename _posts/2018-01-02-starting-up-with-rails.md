@@ -1,5 +1,6 @@
 ---
 title: Starting Up With Rails
+permalink: /blog/:title/
 tags: Blog
 ---
 

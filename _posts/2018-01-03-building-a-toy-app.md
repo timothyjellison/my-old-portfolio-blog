@@ -1,5 +1,6 @@
 ---
 title: Building a Toy App with Rails
+permalink: /blog/:title/
 tags: Blog
 ---
 

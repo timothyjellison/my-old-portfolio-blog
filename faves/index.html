@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+<h2>Favorite Books</h2>
+<ul>
+  {% for book in site.data.faves.books.books %}
+    <li><strong>{{book.title}}</strong>, by {{book.author}}</li>
+  {% endfor %}
+</ul>

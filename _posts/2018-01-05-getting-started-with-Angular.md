@@ -1,5 +1,6 @@
 ---
 title: Getting Started with Angular
+permalink: /blog/:title/
 tags: Blog
 ---
 

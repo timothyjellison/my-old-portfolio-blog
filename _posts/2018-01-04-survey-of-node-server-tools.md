@@ -1,5 +1,6 @@
 ---
 title: A Quick Survey of Node Server Building Tools
+permalink: /blog/:title/
 tags: NotReadyForProduction
 ---
 

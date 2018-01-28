@@ -1,5 +1,6 @@
 ---
 title: Contribution to AVA Test Runner
+permalink: /blog/:title/
 tags: FrontPage
 ---
 
