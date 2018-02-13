@@ -55,6 +55,14 @@
   margin-bottom: $font-lg;
 }
 
+.posts {
+  padding-top: 220px;
+
+  @include smallScreen {
+    padding-top: 150px;
+  }
+}
+
 .post,
 .post-excerpt {
   padding-bottom: $font-xl;
@@ -138,6 +146,7 @@
 }
 
 .header__nav--mobile {
+  z-index: 999;
   position: fixed;
   top: 0;
   right: 0;
@@ -185,6 +194,7 @@
 }
 
 .header__nav--sticky {
+  z-index: 999;
   position: fixed;
   top: 0;
 }
@@ -223,6 +233,24 @@
 
 .about-me__cta {
   text-decoration: underline;
+}
+
+.contact-form {
+  padding-top: 4rem;
+  text-align: center;
+  font-family: $helveticaNeue;
+  padding-bottom: 8rem;
+
+  input,
+  textarea {
+    font-size: $font-sm;
+  }
+
+  .button-primary {
+    font-size: $font-md;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
 }
 
 .footer {
