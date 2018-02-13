@@ -47,6 +47,11 @@ a {
   text-decoration: none;
 }
 
+a.classic-blue {
+  color: $blue;
+  text-decoration: underline;
+}
+
 img {
   max-width: 100%;
 }
