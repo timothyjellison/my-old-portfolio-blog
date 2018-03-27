@@ -7,7 +7,7 @@ tags:
 
 What if we wrote the docs first, then the unit tests, and only after those were solid wrote the code?
 
-We've been bringing on a new team member at work and as I've been explaining to him how our rather large React/Redux project is set up I'm kicking myself that we don't have any documentation. We don't even have an up-to-date README.md. All knowledge is shared developer-to-developer and by reading the code. But peer-to-peer knowledge can only ever result in juniors knowing less than seniors, and reading code is a slow and taxing experience. As Peter Seibel has pointed out, ["We don’t read code, we *decode*&nbsp;it."](http://www.gigamonkeys.com/code-reading/)
+We've been bringing on a new team member at work and as I've been explaining to him how our rather large React/Redux project is set up I'm kicking myself that we don't have any documentation. All knowledge is shared developer-to-developer and by reading the code. But peer-to-peer knowledge can only ever result in juniors knowing less than seniors, and reading code is a slow and taxing experience. As Peter Seibel has pointed out, ["We don’t read code, we *decode*&nbsp;it."](http://www.gigamonkeys.com/code-reading/)
 
 Now for us, the solution is clearly to get serious about documenting our existing pages in our existing documentation solution. The backend devs use [Confluence](https://www.atlassian.com/software/confluence); some other front-end teams use [GitHub Wikis](https://help.github.com/articles/about-github-wikis/). The pieces are all there and we just need to get serious about using them.
 
