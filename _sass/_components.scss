@@ -1,3 +1,6 @@
+/* -------------- *\
+  LAYOUT
+\* -------------- */
 
 .page {
   display: grid;
@@ -34,15 +37,6 @@
   }
 }
 
-.spinner {
-  position: absolute;
-  top: 50vh;
-  margin: 0 auto;
-  width: 100%;
-  text-align: center;
-  transition: ease-out 0.5s;
-}
-
 .blog-grid {
   @include mediumScreen {
     display: grid;
@@ -53,6 +47,19 @@
 
 .blog-grid__separator {
   margin-bottom: $font-lg;
+}
+
+/* -------------- *\
+  COMPONENTS
+\* -------------- */
+
+.spinner {
+  position: absolute;
+  top: 50vh;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  transition: ease-out 0.5s;
 }
 
 .posts {
@@ -228,10 +235,11 @@
 }
 
 .about-me__summary {
-  margin-bottom: 8em;
+  margin-bottom: 4em;
 }
 
 .about-me__cta {
+  color: hsl(0, 60%, 30%);
   text-decoration: underline;
 }
 
