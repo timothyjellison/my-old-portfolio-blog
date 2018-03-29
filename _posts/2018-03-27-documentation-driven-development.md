@@ -11,6 +11,8 @@ We've been bringing on a new team member at work and as I've been explaining to 
 
 Now for us, the solution is clearly to get serious about documenting our existing pages in our existing documentation solution. The backend devs use [Confluence](https://www.atlassian.com/software/confluence); some other front-end teams use [GitHub Wikis](https://help.github.com/articles/about-github-wikis/). The pieces are all there and we just need to get serious about using them.
 
+*Update: I put together a proposal for using Confluence to document our UI and presented it to my team lead. He loved the idea and we're moving forward with it starting this sprint. Super stoked!*
+
 But moving forward or (more ideally) for a greenfield project, I think it would be interesting to try a documentation-driven solution. The basic setup:
 
 1. In your documentation tool of choice, create a page or paragraph for the new feature you want to add. Using jargon-free language and without going into the specifics of the code, describe what the feature is, what it does, and what value it's intended to provide. Include links to wireframes, user stories, etc.
