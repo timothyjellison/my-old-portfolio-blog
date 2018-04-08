@@ -16,7 +16,7 @@ Growing up I got my sense of self-worth from being a know-it-all. I liked being 
 I must have been so obnoxious. My sincere retroactive apologies to all my teachers and classmates.&nbsp;
 {: .present-before-paste}
 
-But my knowledge was picked up here and there. It came from scattered reading and TV shows. Rather than choose to be one thing—a science geek, a musician, a scholar—I lived on the surface of everything. That worked out pretty well for me as long as nobody outclassed me in any of those subjects.
+My knowledge was picked up here and there. It came from scattered reading and TV shows. I read the Guinness Book of World Records and the annual World Almanac for trivia facts. Rather than choose to be one thing—a science geek, a musician, a scholar—I lived on the surface of everything. That worked out pretty well for me as long as nobody outclassed me in any of those subjects.
 {: .present-before-paste}
 
 But outclass me they did. In high school I met kids who were much better at science than me, so I moved away from science and gave myself entirely to music and writing. In college I met people who were far better at music than me, so I concentrated entirely on my literary studies. In grad school I met geniuses who could think and write with a facility that literally put me to shame.
