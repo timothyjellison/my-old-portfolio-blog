@@ -23,11 +23,11 @@ Groucho Marx famously resigned from the Friar's Club of Beverly Hills with the w
 
 It was a problem of motivation. At root, I didn't want to be a good person or to contribute to society or even to make tons of money. *All I wanted was to be admired.*&nbsp;I've got a lot of baggage I could point to from my childhood to explain the origins of that desire, but it wouldn't excuse my slavish devotion to it for nearly thirty years. It was a childish desire and the only way to escape it was to grow up.&nbsp;
 
-While working at that boring office job I discovered computer programming through [Codecademy](https://www.codecademy.com/). After writing my first website I knew this was the work I wanted to do for the rest of my career.
+While working at that boring office job I discovered computer programming through [freeCodeCamp](https://www.freecodecamp.org/) and&nbsp;[Codecademy](https://www.codecademy.com/). After writing my first website I knew this was the work I wanted to do for the rest of my life.
 
 As I learned to code, I was wary of slipping into old habits. I needed to structure my learning in such a way that I would know more than&nbsp;*just enough*&nbsp;to get by. I consciously decided to emphasize depth over breadth. It's a decision that's served me well in every web development job I've served in since then.&nbsp;
 
-**But here's the big win, the real takeaway from this whole story:**&nbsp;I'm at peace with the fact there will always be better web developers than me. I'm still going to enjoy writing code even if I'm not the best programmer in the world and I don't know every programming language. I just need to concentrate on the specifics of my work and the real value it provides. Work satisfaction, money, and even some happiness will come from really *doing* what I'm doing and doing it well.
+**But here's the big win, the real takeaway from this whole story:**&nbsp;I'm at peace with the fact there will always be better web developers than me. I'm still going to enjoy writing code even if I'm not the best programmer in the world and I don't know every programming language. It's a big group and I'm happy and proud to be a part of it, even if I'm not the best.
 
 For a younger me, that last paragraph was unthinkable. It represents a true paradigm shift and a real victory.
 
