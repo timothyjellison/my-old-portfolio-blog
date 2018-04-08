@@ -6,9 +6,9 @@ layout: default
   <div class="columns">
     <div class="column is-10 is-offset-1">
       {% for post in site.tags.Blog %}
-      <div class="home-page__post-excerpt">
+      <div class="post-excerpt">
         <a href="{{ site.baseurl }}{{ post.url }}">
-          <h3 class="title is-size-3">{{ post.title }}</h3>
+          <h3 class="post-excerpt__title title is-size-3">{{ post.title }}</h3>
           <div class="subtitle is-size-4">
             {{ post.excerpt }}
           </div>

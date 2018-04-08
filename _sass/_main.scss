@@ -1,10 +1,14 @@
-.home-page__post-excerpt {
+.post-excerpt {
   border-bottom: 1px solid gray;
   padding-bottom: 2em;
   padding-top: 2em;
   line-height: 1.2;
 }
 
-.home-page__post-excerpt:hover .title {
+.post-excerpt:hover .title {
   color: hsl(217, 71%, 53%);
+}
+
+.post-excerpt__title {
+  padding-bottom: 5px;
 }
