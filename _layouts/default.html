@@ -1,10 +1,8 @@
 ---
 layout: master
 ---
-<div class="page">
-  {% include _header/header-default.html %}
-  <main class="main" id="mainContent">
-    {{ content }}
-  </main>
-  {% include footer.html %}
-</div>
+
+{% include header-nav-only.html %}
+<main class="section">
+  {{ content }}
+</main>

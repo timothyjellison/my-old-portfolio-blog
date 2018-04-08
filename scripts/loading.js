@@ -1,20 +1,27 @@
 (function() {
-  var headerNav = document.getElementById('headerNav');
-  var navburgerContainer = document.getElementById('navburgerContainer');
-  var navburger = document.getElementById('navburger');
+  document.addEventListener('DOMContentLoaded', function () {
 
-  navburger.addEventListener('click', function(e) {
-    var action = navburgerContainer.classList.contains('mobile-nav-open') ? 'remove' : 'add';
+    // Get all "navbar-burger" elements
+    var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-    navburgerContainer.classList[action]('mobile-nav-open');
-  });
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
 
-  window.addEventListener('scroll', function(e) {
-    var action = window.scrollY >= 429 ? 'add' : 'remove';
+      // Add a click event on each of them
+      $navbarBurgers.forEach(function ($el) {
+        $el.addEventListener('click', function () {
 
-    if (headerNav) {
-      headerNav.classList[action]('header__nav--sticky');
-      headerNav.classList[action]('header__nav--scroll-event');
+          // Get the target from the "data-target" attribute
+          var target = $el.dataset.target;
+          var $target = document.getElementById(target);
+
+          // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+          $el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
     }
+
   });
 })();

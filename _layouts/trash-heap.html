@@ -1,0 +1,43 @@
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+        <p class="is-size-3 editable">Hi! I'm a front-end developer. I love building websites and exploring all things HTML, CSS, and JavaScript.</p>
+        <p class="is-size-3 editable">I'm available for projects so if you want a website <a class="about-me__cta" href="mailto:timothyjellison@live.com">email me!</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+        <h2 class="is-size-1 editable">Work &amp; Projects</h2>
+        {% for post in site.tags.FrontPage %}
+          <h3 class="is-size-3">{{ post.title }}</h3>
+          <div class="is-size-4">{{ post.excerpt }}</div>
+          <a href="{{ site.baseurl }}{{ post.url }}">Read More...</a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Hero footer: will stick at the bottom -->
+<div class="hero-foot">
+  <nav class="tabs">
+    <div class="container">
+      <ul>
+        <li class="is-active"><a>Overview</a></li>
+        <li><a>Modifiers</a></li>
+        <li><a>Grid</a></li>
+        <li><a>Elements</a></li>
+        <li><a>Components</a></li>
+        <li><a>Layout</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>

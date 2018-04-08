@@ -2,49 +2,22 @@
 layout: master
 ---
 
-<div class="page page--home">
-  {% include _header/header-home.html %}
-
-  <main class="main" id="mainContent">
-    <section class="about-me">
-      <h2 class="screenreader-only">About Me</h2>
-      <div class="about-me__summary">
-        <p class="editable">Hi! I'm a front-end developer. I love building websites and exploring all things HTML, CSS, and JavaScript.</p>
-        <p class="editable">I'm available for projects so if you want a website <a class="about-me__cta" href="mailto:timothyjellison@live.com">email me!</a></p>
-      </div>
-    </section>
-
-    <section class="posts">
-      <h2 class="h1 editable">Work &amp; Projects</h2>
-      <hr class="blog-grid__separator" />
-      <div class="blog-grid">
-        {% for post in site.tags.FrontPage %}
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          <article class="post-excerpt">
-            <h3 class="post__title">{{ post.title }}</h3>
-            <div class="entry">
-              {{ post.excerpt }}
-            </div>
-          </article>
-        </a>
-        {% endfor %}
-      </div>
-      <h2 class="h1 editable">From the Blog</h2>
-      <hr class="blog-grid__separator" />
-      <div class="blog-grid">
+{% include header.html %}
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
         {% for post in site.tags.Blog limit:4 %}
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          <article class="post-excerpt">
-            <h3 class="post__title">{{ post.title }}</h3>
-            <div class="entry">
-              {{ post.excerpt }}
-            </div>
-          </article>
-        </a>
+          <div class="home-page__post-excerpt">
+            <a href="{{ site.baseurl }}{{ post.url }}">
+              <h3 class="title is-size-3">{{ post.title }}</h3>
+              <div class="subtitle is-size-4">
+                {{ post.excerpt }}
+              </div>
+            </a>
+          </div>
         {% endfor %}
       </div>
-    </section>
-  </main>
-
-  {% include footer.html %}
-</div>
+    </div>
+  </div>
+</section>
