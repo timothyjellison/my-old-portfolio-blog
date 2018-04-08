@@ -25,7 +25,7 @@ It was a problem of motivation. At root, I didn't want to be a good person or to
 
 While working at that boring office job I discovered computer programming through [Codecademy](https://www.codecademy.com/). After writing my first website I knew this was the work I wanted to do for the rest of my career.
 
-As I learned to code, I was wary of slipping into old habits. I needed to structure my learning in such a way that I would know more than&nbsp;*just enough*&nbsp;to get by. I consciously decided to emphasize depth over breadth, and it's served me well in my career.&nbsp;
+As I learned to code, I was wary of slipping into old habits. I needed to structure my learning in such a way that I would know more than&nbsp;*just enough*&nbsp;to get by. I consciously decided to emphasize depth over breadth. It's a decision that's served me well in every web development job I've served in since then.&nbsp;
 
 **But here's the big win, the real takeaway from this whole story:**&nbsp;I'm at peace with the fact there will always be better web developers than me. I'm still going to enjoy writing code even if I'm not the best programmer in the world and I don't know every programming language. I just need to concentrate on the specifics of my work and the real value it provides. Work satisfaction, money, and even some happiness will come from really *doing* what I'm doing and doing it well.
 
