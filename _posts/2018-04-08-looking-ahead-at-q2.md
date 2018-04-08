@@ -27,7 +27,7 @@ While working at that boring office job I discovered computer programming throug
 
 As I learned to code, I was wary of slipping into old habits. I needed to structure my learning in such a way that I would know more than&nbsp;*just enough*&nbsp;to get by. I consciously decided to emphasize depth over breadth, and it's served me well in my career.&nbsp;
 
-**But here's the big win, the real takeaway from this whole story:**&nbsp;I'm at peace with the fact there will always be better web developers than me. I'm still going to enjoy writing code even if I'm not the best programmer in the world. I just need to concentrate on the specifics of my work and the real value it provides. Work satisfaction, money, and even some happiness will come from really doing what I'm doing and doing it well.
+**But here's the big win, the real takeaway from this whole story:**&nbsp;I'm at peace with the fact there will always be better web developers than me. I'm still going to enjoy writing code even if I'm not the best programmer in the world. I just need to concentrate on the specifics of my work and the real value it provides. Work satisfaction, money, and even some happiness will come from really *doing* what I'm doing and doing it well.
 
 For a younger me, that last paragraph was unthinkable. It represents a true paradigm shift and a real victory.
 
@@ -39,7 +39,7 @@ I say I want to expand into Ruby and SQL and Angular and to contribute to six op
 
 Let's just scrap all that and start over. Here's how I'm re-evaluating for Q2.
 
-I have this website. It's OK but far from great. I'm going to make it great. I'm going to learn everything it takes to make this website great and then I'm going to execute on that knowledge. Maybe that will involve learning new languages and maybe it won't, but that doesn't matter because the goal has real value. What matters is digging in and getting it done. Q2 is about really getting to know this website inside and out. It's a time to recommit to being an expert in my chosen areas rather than fret about being a beginner in a dozen areas.
+I have this website. It's OK but far from great. I'm going to make it great. I'm going to learn everything it takes to make this website great and then I'm going to execute on that knowledge. Maybe that will involve learning new languages and maybe it won't, but that doesn't matter because the goal has real value. What matters is digging in and getting it done. Q2 is about really getting to know this website inside and out. It's a time to recommit to being an expert in my chosen few areas rather than fret about being a beginner in a dozen areas.
 
 This website uses [Jekyll](https://jekyllrb.com/), [Cloudinary](https://cloudinary.com/),&nbsp;[Bulma](https://bulma.io/), [GitHub Pages](https://pages.github.com/), and [CloudCannon](https://cloudcannon.com/). I'm gonna learn the hell out of all of them by using them to their full potential on this website.
 
