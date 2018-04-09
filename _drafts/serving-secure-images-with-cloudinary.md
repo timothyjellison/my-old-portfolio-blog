@@ -1,5 +1,5 @@
 ---
-title: Serving Secure Images with Cloudinary
+title: Serving HTTPS Images with Cloudinary
 permalink: '/blog/:title/'
 tags:
   - Blog
