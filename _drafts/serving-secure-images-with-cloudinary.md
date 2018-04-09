@@ -8,7 +8,7 @@ tags:
 I was surprised to see a security warning in the console when I fired up my website this morning.&nbsp;
 {: .present-before-paste}
 
-&nbsp;
+[console warning about image from unsecure source]: https://res.cloudinary.com/dzwa7qhj1/image/upload/v1523272027/https_warning.png
 {: .present-before-paste}
 
 My site is hosted using&nbsp;[GitHub pages](https://pages.github.com/), I made sure to go into my repository's settings and select "Enforce HTTPS". But to keep things 💯 you need to make sure&nbsp;*everything*&nbsp;your site interacts with also uses HTTPS. The culprit was my profile picture hosted on [Cloudinary](https://cloudinary.com/).
