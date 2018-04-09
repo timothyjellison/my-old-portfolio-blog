@@ -5,13 +5,13 @@ tags:
   - Blog
 ---
 
-I was surprised to see a security warning in the console when I fired up my website this morning.&nbsp;
+I was surprised to see a security warning in the console when I fired up my website this morning.
 {: .present-before-paste}
 
 ![console warning about image from unsecure source](https://res.cloudinary.com/dzwa7qhj1/image/upload/v1523272027/https_warning.png)
 {: .present-before-paste}
 
-My site is hosted using&nbsp;[GitHub pages](https://pages.github.com/), and to keep my site secure I made sure to go into my repository's settings and select "Enforce HTTPS". But to keep things 💯 you need to make sure&nbsp;*everything*&nbsp;your site interacts with also uses HTTPS. The culprit was my profile picture hosted on [Cloudinary](https://cloudinary.com/).
+My site is hosted using [GitHub pages](https://pages.github.com/), and to keep my site secure I made sure to go into my repository's settings and select "Enforce HTTPS". But to keep things 💯 you need to make sure *everything* your site interacts with also uses HTTPS. The culprit was my profile picture hosted on [Cloudinary](https://cloudinary.com/).
 {: .present-before-paste}
 
 I'm super happy with Cloudinary, BTW. The problem was entirely with how I was using it. How hard would it be to get my Cloudinary image to use HTTPS rather than plain, unsecure HTTP?
