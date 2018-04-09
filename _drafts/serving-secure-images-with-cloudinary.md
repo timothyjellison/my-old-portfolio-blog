@@ -20,7 +20,7 @@ How hard would it be to get my Cloudinary image to use HTTPS rather than plain, 
 Not hard at all! 👍
 {: .present-before-paste}
 
-&nbsp;
+[picture of cloudinary interface]: https://res.cloudinary.com/dzwa7qhj1/image/upload/v1523272036/Cloudinary_https.png
 {: .present-before-paste}
 
 When you store an image in your Cloudinary Media Library, the app provides you with a bunch of links to easily integrate your image into whatever context you need. There's a plain URL and an HTTPS URL, plus a bunch of preformatted links for [React](https://github.com/cloudinary/cloudinary-react), Angular, Android, iOS, and more. I just needed to choose the HTTPS version of my image and use that link instead of the plain URL. Problem solved!
