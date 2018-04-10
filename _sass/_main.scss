@@ -19,6 +19,10 @@
 
 .footer__icon {
   color: #363636;
+
+  * {
+    max-width: 50px;
+  }
 }
 
 .about-me__image {
