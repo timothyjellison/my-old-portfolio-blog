@@ -12,3 +12,21 @@
 .post-excerpt__title {
   padding-bottom: 5px;
 }
+
+.post-excerpt__final-cta {
+  margin-top: 2em;
+}
+
+.footer__icon {
+  color: #363636;
+}
+
+.about-me__image {
+  padding-bottom: 1em;
+  width: 100%;
+
+  @media screen and (min-width: 769px){
+    padding-right: 1em;
+    max-width: 320px;
+  }
+}
