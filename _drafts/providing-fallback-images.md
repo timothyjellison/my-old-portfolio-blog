@@ -3,7 +3,9 @@ title: Providing Fallback Images
 permalink: '/blog/:title/'
 tags:
   - Blog
-  - Accessibility
+  - CSS
+  - Images
+  - Cloudinary
 ---
 
 The images in one of my posts weren't displaying on iPhone 😲. It seems the WebP image format isn't supported everywhere despite it's obvious radness. Happily, when I went looking for answers there were already plenty of helpful pointers in the right direction.&nbsp;
