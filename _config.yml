@@ -12,6 +12,7 @@ footer-links:
   instagram:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
 
+github: [metadata]
 google_analytics: UA-52933192-2
 url: http://www.timothyellison.com
 

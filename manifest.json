@@ -1,6 +1,17 @@
 {
-  "short_name": "Timothy Ellison",
+  "short_name": "Tim Ellison",
   "name": "Timothy Ellison - Web Developer",
   "start_url": "index.html?launcher=true",
-  "theme_color": "#209cee"
+  "theme_color": "#209cee",
+  "background_color": "#209cee",
+  "display": "standalone",
+  "icons": [{
+    "sizes": "192x192",
+    "src": "images/pixel-192x192.png",
+    "type": "image/png"
+  }, {
+    "sizes": "512x512",
+    "src": "images/pixel-512x512.png",
+    "type": "image/png"
+  }]
 }
