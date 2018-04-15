@@ -9,9 +9,9 @@
   {% include scripts.html %}
   <script>
     if('serviceWorker' in navigator) {
-      navigator.serviceWorker
-               .register('/sw.js')
-               .then(function() { console.log("Service Worker Registered"); });
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js')
+      });
     }
   </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
