@@ -6,8 +6,8 @@ tags:
   - Accessibility
 ---
 
-Lighthouse was flagging the SVG icons in my site's footer as inaccessible to screen reader software. I thought I'd have to create some hidden text elements or something unsemantic (🤢) but the solution was actually much more elegant.
+If you're using svg icons as links, you need to provide some form of alt text so that screen readers can announce the icon. The solution to this problem is actually easier than you'd think.
 
-I found [this helpful little article](https://fontawesome.com/how-to-use/accessibility) on the FontAwesome website that explains all you have to do is add a title attribute to your &lt;svg&gt; tag with a text explanation of what the SVG conveys. Seriously, that was it. Problem solved. 🍾
+I found [this helpful little article](https://fontawesome.com/how-to-use/accessibility) on the FontAwesome website that explains all you have to do is add a "title" attribute to your &lt;svg&gt; tag with a text explanation of what the SVG conveys. &lt;svg title="CodePen"&gt;, for example.&nbsp;
 
-It reminded me of an important principle: 99 times out of 100 the browser makers and the good folks at the W3C have already found a solution for your problem. Don't just start hacking; get reading and solve your problems the smart way.
+9 times out of 10, browser makers and the good folks at the W3C have already found a solution for your problem. Don't just start hacking; get reading and solve your problems the smart way.
