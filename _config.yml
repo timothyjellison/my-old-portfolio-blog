@@ -11,7 +11,7 @@ exclude:
   - CNAME
   - gulpfile.js
 
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
 google_analytics: UA-52933192-2
 title: Tim Ellison
@@ -23,7 +23,7 @@ defaults:
     values:
       title: Tim Ellison - Web Developer
 
-description: Stylish Jekyll Theme
+description: Tim Ellison - Web Developer
 author:
   name: Tim Ellison
   email: timothyellison85@gmail.com
@@ -43,4 +43,3 @@ BASE_PATH:
 
 plugins_dir:
   - jekyll-paginate
-  - pygments.rb

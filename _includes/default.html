@@ -35,7 +35,7 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-default visible-xs" role="navigation">
+	<nav class="navbar navbar-default visible-xs">
 		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -45,22 +45,22 @@
 				<span class="icon-bar"></span>
 			</button>
 			{% if site.author.github %}
-			<a type="button" class="navbar-toggle nav-link" href="http://github.com/{{ site.author.github }}">
+			<a class="navbar-toggle nav-link" href="http://github.com/{{ site.author.github }}">
 				<i class="fa fa-github"></i>
 			</a>
 			{% endif %}
 			{% if site.author.twitter %}
-			<a type="button" class="navbar-toggle nav-link" href="http://twitter.com/{{ site.author.twitter }}">
+			<a class="navbar-toggle nav-link" href="http://twitter.com/{{ site.author.twitter }}">
 				<i class="fa fa-twitter"></i>
 			</a>
 			{% endif %}
 			{% if site.author.email %}
-			<a type="button" class="navbar-toggle nav-link" href="mailto:{{ site.author.email }}">
+			<a class="navbar-toggle nav-link" href="mailto:{{ site.author.email }}">
 				<i class="fa fa-envelope"></i>
 			</a>
 			{% endif %}
 			<a class="navbar-brand" href="{{ site.BASE_PATH }}/">
-				<img src="//www.gravatar.com/avatar/{{site.author.email_md5}}?s=35" class="img-circle" />
+				<img src="//www.gravatar.com/avatar/{{site.author.email_md5}}?s=35" class="img-circle" alt=""/>
 				{{ site.title }}
 			</a>
 		</div>
@@ -100,8 +100,8 @@
 		</footer>
 	</div>
 
-	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/resources/bootstrap/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/js/app.js"></script>
+	<script src="{{ site.BASE_PATH }}/assets/resources/jquery/jquery.min.js"></script>
+	<script src="{{ site.BASE_PATH }}/assets/resources/bootstrap/js/bootstrap.min.js"></script>
+	<script src="{{ site.BASE_PATH }}/assets/js/app.js"></script>
 </body>
 </html>
