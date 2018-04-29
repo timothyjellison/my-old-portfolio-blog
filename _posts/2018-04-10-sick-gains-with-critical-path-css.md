@@ -1,8 +1,8 @@
 ---
+layout: post
 title: Sick Gains with Critical Path CSS
 permalink: '/blog/:title/'
 tags:
-  - Blog
   - Performance
   - CSS
 ---

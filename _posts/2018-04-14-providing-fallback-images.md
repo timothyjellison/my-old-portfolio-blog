@@ -1,8 +1,8 @@
 ---
+layout: post
 title: Providing Fallback Images
 permalink: '/blog/:title/'
 tags:
-  - Blog
   - CSS
   - Images
   - Cloudinary

@@ -1,8 +1,7 @@
 ---
+layout: post
 title: Everything is Awesome
 permalink: '/blog/:title/'
-tags:
-  - Blog
 ---
 
 I've had an awesome week. I've #crushed every challenge that's come my way. You know that feeling when you've been working out or practicing an instrument for a long time and you never seem to improve at all until - BAM - one day you're doing things you'd never think yourself capable of. That's been my week. 😃

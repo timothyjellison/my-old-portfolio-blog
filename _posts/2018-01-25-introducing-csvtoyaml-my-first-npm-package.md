@@ -1,8 +1,7 @@
 ---
+layout: post
 title: 'Introducing csvtoyaml: My First NPM Package'
 permalink: /blog/:title/
-tags:
-  - Blog
 ---
 
 

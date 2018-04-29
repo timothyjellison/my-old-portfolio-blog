@@ -1,7 +1,7 @@
 ---
+layout: post
 title: Adding Bootstrap to a Rails App
 permalink: /blog/:title/
-tags: Blog
 ---
 
 Adding Bootstrap to a Ruby on Rails application is surprisingly easy.

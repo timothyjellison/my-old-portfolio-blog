@@ -1,8 +1,7 @@
 ---
+layout: post
 title: Tutorial for jQuery Validation Plugin
 permalink: /blog/:title/
-tags:
-- FrontPage
 ---
 
 I wrote up some documentation in order to learn a plugin I needed for work, which turned into a presentation I gave to the other developers on my team.

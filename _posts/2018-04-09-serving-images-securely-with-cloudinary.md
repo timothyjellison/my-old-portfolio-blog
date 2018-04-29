@@ -1,8 +1,7 @@
 ---
+layout: post
 title: Serving Images Securely with Cloudinary
 permalink: '/blog/:title/'
-tags:
-  - Blog
 ---
 
 I was surprised to see a security warning in the console when I fired up my website this morning. My site is hosted using GitHub pages, and to keep my site secure I made sure to go into my repository's settings and select "Enforce HTTPS". But to keep things 💯 you need to make sure all your site's assets use HTTPS too.

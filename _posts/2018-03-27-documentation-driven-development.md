@@ -1,8 +1,7 @@
 ---
+layout: post
 title: Documentation-Driven Development
 permalink: '/blog/:title/'
-tags:
-  - Blog
 ---
 
 What if we wrote the docs first, then the unit tests, and only after those were solid wrote the code?

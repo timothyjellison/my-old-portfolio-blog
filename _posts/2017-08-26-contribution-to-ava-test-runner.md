@@ -1,7 +1,7 @@
 ---
+layout: post
 title: Contribution to AVA Test Runner
 permalink: /blog/:title/
-tags: FrontPage
 ---
 
 Test-driven development is one of those ideas that, as soon as I understood it, I knew I could never live without it again.

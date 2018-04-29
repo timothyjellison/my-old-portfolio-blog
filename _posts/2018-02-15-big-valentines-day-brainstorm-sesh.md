@@ -1,8 +1,7 @@
 ---
+layout: post
 title: Big Valentine's Day Brainstorm Sesh
 permalink: '/blog/:title/'
-tags:
-  - Blog
 ---
 
 For a few days now I've wanted to set aside fifteen minutes to write down some project ideas and another fifteen minutes to write a new post here on my blog.

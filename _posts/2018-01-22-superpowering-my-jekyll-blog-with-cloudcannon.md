@@ -1,8 +1,7 @@
 ---
+layout: post
 title: Superpowering My Jekyll Blog With CloudCannon
 permalink: /blog/:title/
-tags:
-  - Blog
 ---
 
 

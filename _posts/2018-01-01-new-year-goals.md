@@ -1,7 +1,7 @@
 ---
+layout: post
 title: New Year, New Goals
 permalink: /blog/:title/
-tags: Blog
 ---
 
 It's January 1, 2018, and I'm feeling pumped.

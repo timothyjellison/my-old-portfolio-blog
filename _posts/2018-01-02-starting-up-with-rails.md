@@ -1,7 +1,7 @@
 ---
+layout: post
 title: Starting Up With Rails
 permalink: /blog/:title/
-tags: Blog
 ---
 
 So I've started working through Michael Hartl's free Ruby on Rails Tutorial, and here are some first impressions and key takeaways.

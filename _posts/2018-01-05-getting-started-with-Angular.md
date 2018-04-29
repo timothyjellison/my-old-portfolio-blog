@@ -1,7 +1,7 @@
 ---
+layout: post
 title: Getting Started with Angular
 permalink: /blog/:title/
-tags: Blog
 ---
 
 Here are some quick notes I through together when starting to learn Angular and TypeScript.
@@ -16,18 +16,19 @@ Your app lives in the `src` directory. You'll see a bunch of `.ts` files, which 
 
 TypeScript provides **type annotations** that will throw compile time errors if you have a type mismatch.
 
-
-```javascript
+{% highlight typescript %}
+{% raw %}
 function greeter(person: string) {
   return `Hello, ${person}`;
 }
-```
+{% endraw %}
+{% endhighlight %}
 
 [Read more about types](https://www.typescriptlang.org/docs/handbook/basic-types.html)
 
 TypeScript allows you to define an **interface**, an object schema with strictly defined keys and property types. You can use an interface the same way you'd use a type annotation.
 
-```javascript
+{% highlight typescript %}
 interface Person {
   firstName: string;
   lastName: string;
@@ -36,13 +37,13 @@ interface Person {
 function greeter(person: Person) {
   return `Hello, ${person.firstName} ${person.lastName}`;
 }
-```
+{% endhighlight %}
 
 [Read more about interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html)
 
 TypeScript also has **its own `class` syntax** that lets you define properties and methods using keywords like `static`, `private`, `public`, and `protected` that are more common in strongly typed languages.
 
-```javascript
+{% highlight typescript %}
 class Student {
   fullName: string;
 
@@ -52,30 +53,30 @@ class Student {
 }
 
 let user = new Student("Jane", "M.", "User");
-```
+{% endhighlight %}
 
 [Read more about classes](https://www.typescriptlang.org/docs/handbook/classes.html)
 
 Finally, TypeScript provides a decorator syntax that looks like this: `@Decorator`. You can use decorators to quickly add properties to classes. You define a decorator as a function, like this:
 
-```javascript
+{% highlight typescript %}
 function course(target) {
   Object.defineProperty(target.prototype, 'course', {value: () => "Angular 2"})
 }
-```
+{% endhighlight %}
 
 And implement it with the `@course` syntax in the line above your where you declare the class to decorate.
 
-```javascript
+{% highlight typescript %}
 @course
 class Person {}
-```
+{% endhighlight %}
 
 Now when `const x = new Person();` `x.course() === 'Angular 2' // true`.
 
 To add arguments to a decorator (e.g. @course('Angular 2')), declare it as function that returns a decorator.
 
-```javascript
+{% highlight typescript %}
 function course(name) {
   return function(target) {
     Object.defineProperty(
@@ -85,7 +86,7 @@ function course(name) {
     )
   }
 }
-```
+{% endhighlight %}
 
 OK, enough about TypeScript, let's get back to the Angular app. Your app.component.ts is already set up to use app.component.html for it's markup structure and app.component.css for its component-specific styling. Pretty awesome.
 
@@ -95,7 +96,7 @@ Now that app.module.ts has imported 'CarComponent', you can add it to your `app.
 
 Angular components have lifecycle hooks just like React components. The generate component command already provided CarComponent with an `ngOnInit()` lifecycle hook, but of course there are lots of others. [Here's a complete list.](https://angular.io/guide/lifecycle-hooks#lifecycle-sequence) You just need to be sure to import the desired hook from '@angular/core' and specify in the component's class declaration that the class implements that hook. It's easier than it sounds.
 
-```javascript
+{% highlight typescript %}
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -109,7 +110,7 @@ export class CarComponent implements OnInit {
 
   ngOnInit() { }
 }
-```
+{% endhighlight %}
 
 You can give your component class private variables that will be exposed to the .component.html using curly-brace expression binding. So we can define `private x: string = "hi"` and then display that string value in our component using `{{x}}`.
 
@@ -119,7 +120,7 @@ You can use `ng generate directive` to quickly create a directive. (It's true th
 
 Angular's core library exposes an ElementRef class that we can use to reference the element to which our directive is applied. Here's an example:
 
-```javascript
+{% highlight typescript %}
 import { Directive, ElementRef } from '@angular/core';
 
 @Directive({
@@ -130,7 +131,7 @@ export class HighlightDirective {
     el.nativeElement.style.backgroundColor = 'yellow';
   }
 }
-```
+{% endhighlight %}
 
 This lets us add the attribute directive "appHighlight" to any element in our application.
 
