@@ -41,5 +41,5 @@ tags_path: tags.html
 
 BASE_PATH:
 
-plugins:
+plugins_dir:
   - jekyll-paginate
