@@ -1,45 +1,45 @@
-#!/bin/sh
-#husky 0.14.3
+# #!/bin/sh
+# #husky 0.14.3
 
-command_exists () {
-  command -v "$1" >/dev/null 2>&1
-}
+# command_exists () {
+#   command -v "$1" >/dev/null 2>&1
+# }
 
-has_hook_script () {
-  [ -f package.json ] && cat package.json | grep -q "\"$1\"[[:space:]]*:"
-}
+# has_hook_script () {
+#   [ -f package.json ] && cat package.json | grep -q "\"$1\"[[:space:]]*:"
+# }
 
-cd "."
+# cd "."
 
-# Check if precommit script is defined, skip if not
-has_hook_script precommit || exit 0
+# # Check if precommit script is defined, skip if not
+# has_hook_script precommit || exit 0
 
-# Node standard installation
-export PATH="$PATH:/c/Program Files/nodejs"
+# # Node standard installation
+# export PATH="$PATH:/c/Program Files/nodejs"
 
-# Check that npm exists
-command_exists npm || {
-  echo >&2 "husky > can't find npm in PATH, skipping precommit script in package.json"
-  exit 0
-}
+# # Check that npm exists
+# command_exists npm || {
+#   echo >&2 "husky > can't find npm in PATH, skipping precommit script in package.json"
+#   exit 0
+# }
 
-# Export Git hook params
-export GIT_PARAMS="$*"
+# # Export Git hook params
+# export GIT_PARAMS="$*"
 
-# Run npm script
-echo "husky > npm run -s precommit (node `node -v`)"
-echo
+# # Run npm script
+# echo "husky > npm run -s precommit (node `node -v`)"
+# echo
 
-npm run -s precommit || {
-  echo
-  echo "husky > pre-commit hook failed (add --no-verify to bypass)"
-  exit 1
-}
+# npm run -s precommit || {
+#   echo
+#   echo "husky > pre-commit hook failed (add --no-verify to bypass)"
+#   exit 1
+# }
 
-if [ "$(git status --porcelain| egrep '^ M' | wc -l)" -gt 0 ]; then
-  echo "Unstaged files were added during gulp tasks. Please stage changes and try committing again."
-  exit 1
-else
-  echo "All set!"
-  exit 0
-fi
+# if [ "$(git status --porcelain| egrep '^ M' | wc -l)" -gt 0 ]; then
+#   echo "Unstaged files were added during gulp tasks. Please stage changes and try committing again."
+#   exit 1
+# else
+#   echo "All set!"
+#   exit 0
+# fi

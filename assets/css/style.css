@@ -1,72 +1,191 @@
-@import url(//fonts.googleapis.com/css?family=Ubuntu:500&subset=latin,latin-ext);
+@import url(//fonts.googleapis.com/css?family=Futura);
 
 body{
 	color: #2c3e50;
+	font-family: Helvetica, Futura, Avenir, sans-serif;
+	font-size: 24px;
 }
 
-.sidebar {
-	position: fixed;
-	top: 0px;
-	padding-top: 10%;
+header,
+footer {
+	background-color: #3a4458;
+	color: white;
 }
 
-.sidebar-header {
-	text-align: center;
-	margin-bottom: 10px;
-}
-.sidebar-header .title{
-	font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-	letter-spacing: 3px;
-	text-transform: uppercase;
+.row {
+	display: flex;
+	justify-content: space-around;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
-.sidebar-header .title a{
-	font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+.row__content {
+	display: flex;
+	justify-content: space-between;
+	max-width: 960px;
+	padding: 1em 0;
+	width: 100%;
+}
+
+.hero {
+	height: 300px;
+	margin-bottom: 40px;
+	position: relative;
+  background-image: linear-gradient(#3a4458, #333);
+}
+
+.hero svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+	height: 5vw;
+  /* set height to pixels if you want angle to change with screen width */
+}
+
+.hero__title {
+	padding-top: 1em;
+	font-size: 72px;
+}
+
+.hero__subtitle {
+	display: block;
+	font-size: 36px;
+}
+
+.nav__nav-link,
+.nav__nav-link:link,
+.nav__nav-link:visited,
+.nav__nav-link:hover,
+.nav__nav-link:active {
+	color: white;
+	font-size: 30px;
 	text-decoration: none;
-	color: #888;
 }
 
-a.nav-link {
-	padding-bottom: 5px;
-	padding-top: 7px;
-	color: #888;
-}
-a.nav-link i{
-	font-size: 16px;
-}
-a.nav-link:hover { color: #777; }
-
-#bio {
-	font-size: 18px;
-	margin: 0 auto;
-	margin-bottom: 10px;
+.nav__nav-link:not(:last-of-type) {
+	padding-right: 1em;
 }
 
-#contact-list li .fa,
-article .share .btn {
-	-o-transition:color .2s ease-out, background 1s ease-in;
-  -ms-transition:color .2s ease-out, background 1s ease-in;
-  -moz-transition:color .2s ease-out, background 1s ease-in;
-  -webkit-transition:color .2s ease-out, background 1s ease-in;
-  transition:color .2s ease-out, background 1s ease-in;
+.about.row {
+	margin-bottom: 30px;
+	font-size: 30px;
+	line-height: 1.2;
+
 }
-#contact-list li:hover .fa-twitter,
-article .share .twitter:hover {
-	color: #00ACEE;
-	border-color: #00ACEE;
+
+.features__feature {
+	max-width: 200px;
+	font-size: 22px;
 }
-#contact-list li:hover .fa-linkedin {
-	color: #1D87BD;
+
+.features__description {
+	padding-top: 1em;
+	text-align: center;
 }
-#contact-list li:hover .fa-envelope {
-	color: #E93E30;
+
+.features__row-content.row__content {
+	flex-direction: column;
+	align-items: center;
 }
-#contact-list li:hover .fa-pinterest {
-	color: #CC2127;
+
+@media screen and (min-width: 675px) {
+	.features__row-content.row__content {
+		flex-direction: row;
+		justify-content: space-around;
+	}
 }
-#contact-list li:hover .fa-rss {
-	color: #e74c3c;
+
+.hexagon {
+  position: relative;
+  width: 200px;
+  height: 115.47px;
+  margin: 57.74px 0;
 }
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+}
+
+.hexagon.features__hexagon-1 {
+	background-color: #78c2e1;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 512 512'%3E%3Cpath d='M444.788 291.1l42.616 24.599c4.867 2.809 7.126 8.618 5.459 13.985-11.07 35.642-29.97 67.842-54.689 94.586a12.016 12.016 0 0 1-14.832 2.254l-42.584-24.595a191.577 191.577 0 0 1-60.759 35.13v49.182a12.01 12.01 0 0 1-9.377 11.718c-34.956 7.85-72.499 8.256-109.219.007-5.49-1.233-9.403-6.096-9.403-11.723v-49.184a191.555 191.555 0 0 1-60.759-35.13l-42.584 24.595a12.016 12.016 0 0 1-14.832-2.254c-24.718-26.744-43.619-58.944-54.689-94.586-1.667-5.366.592-11.175 5.459-13.985L67.212 291.1a193.48 193.48 0 0 1 0-70.199l-42.616-24.599c-4.867-2.809-7.126-8.618-5.459-13.985 11.07-35.642 29.97-67.842 54.689-94.586a12.016 12.016 0 0 1 14.832-2.254l42.584 24.595a191.577 191.577 0 0 1 60.759-35.13V25.759a12.01 12.01 0 0 1 9.377-11.718c34.956-7.85 72.499-8.256 109.219-.007 5.49 1.233 9.403 6.096 9.403 11.723v49.184a191.555 191.555 0 0 1 60.759 35.13l42.584-24.595a12.016 12.016 0 0 1 14.832 2.254c24.718 26.744 43.619 58.944 54.689 94.586 1.667 5.366-.592 11.175-5.459 13.985L444.788 220.9a193.485 193.485 0 0 1 0 70.2zM336 256c0-44.112-35.888-80-80-80s-80 35.888-80 80 35.888 80 80 80 80-35.888 80-80z'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position-x: center;
+}
+
+.hexagon.features__hexagon-1:before {
+  bottom: 100%;
+  border-bottom: 57.74px solid #78c2e1;
+
+}
+
+.hexagon.features__hexagon-1:after {
+  top: 100%;
+  width: 0;
+  border-top: 57.74px solid #78c2e1;
+}
+
+.hexagon.features__hexagon-2 {
+	background-color: #7fbe99;
+	background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 320 512'%3E%3Cpath d='M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position-x: center;
+}
+
+.hexagon.features__hexagon-2:before {
+  bottom: 100%;
+  border-bottom: 57.74px solid #7fbe99;
+
+}
+
+.hexagon.features__hexagon-2:after {
+  top: 100%;
+  width: 0;
+  border-top: 57.74px solid #7fbe99;
+}
+
+.hexagon.features__hexagon-3 {
+	background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 496 512'%3E%3Cpath d='M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z'/%3E%3C/svg%3E");
+	background-color: #b98ec1;
+	background-repeat: no-repeat;
+	background-position-x: center;
+}
+
+.hexagon.features__hexagon-3:before {
+  bottom: 100%;
+  border-bottom: 57.74px solid #b98ec1;
+
+}
+
+.hexagon.features__hexagon-3:after {
+  top: 100%;
+  width: 0;
+  border-top: 57.74px solid #b98ec1;
+}
+
+footer {
+	font-size: 1em;
+	margin-top: 63px;
+}
+
+.footer__copyright {
+	margin-bottom: 0;
+}
+
+footer.row__content {
+	align-items: center;
+}
+
+.social-media-buttons a {
+	color: white;
+	padding-right: 1em;
+}
+
 article .share .facebook:hover {
 	color: #43609C;
 	border-color: #43609C;
@@ -74,10 +193,6 @@ article .share .facebook:hover {
 article .share .gplus:hover {
 	color: #C13929;
 	border-color: #C13929;
-}
-
-#contact-list-secondary {
-	padding-bottom: 10px;
 }
 
 .page-header {
@@ -118,6 +233,31 @@ article {
 	padding: 0 5% 0;
 }
 
+.desktop-only {
+	display: none;
+}
+
+.mobile-only {
+	display: block;
+}
+
+@media screen and (min-width: 675px) {
+	.desktop-only {
+		display: block;
+	}
+
+	.desktop-only--flex {
+		display: flex;
+	}
+
+	.mobile-only {
+		display: none;
+	}
+}
+
+.pager li {
+	display: inline-block;
+}
 article.home div a, article.home pre a { color: #2c3e50; }
 article.home div a:hover, article.home pre a:hover { color: #2c3e50; text-decoration: none; }
 article img { max-width: 100%; }
@@ -153,7 +293,6 @@ article.home h4 a:hover {
 
 footer {
 	padding-top: 15px;
-	font-family: 'Ubuntu';
 }
 
 /* nav-vertical-tabs component */
@@ -196,3 +335,35 @@ ul.dropdown-menu>li>a>i.fa {
     width: 1.3em;
 }
 
+a.btn-github,
+a.btn-envelope,
+a.btn-stack-overflow,
+a.btn-linkedin {
+	width: 100%;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+
+a.btn-github {
+	color: black;
+}
+
+a.btn-envelope {
+	color: red;
+}
+
+a.btn-stack-overflow {
+	color: orange;
+}
+
+a.btn-linkedin {
+	color: #0075bb;
+}
+
+.img-circle {
+	/* border: 5px solid grey; */
+	border-radius: 100%;
+	box-shadow: 8px 8px 10px #333;
+	width: 200px;
+	height: 200px;
+}
